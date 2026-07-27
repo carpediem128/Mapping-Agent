@@ -1,0 +1,13 @@
+{
+  "created_at": "2026-07-20T15:29:04",
+  "format": [
+    "SQLite",
+    "JSON"
+  ],
+  "files": [
+    "C:\\Users\\Carpe diem\\Documents\\New project\\hardtech_investment_agent\\data\\free_storage_backups\\mapping_20260720_152904.db",
+    "C:\\Users\\Carpe diem\\Documents\\New project\\hardtech_investment_agent\\data\\free_storage_backups\\mapping_sources_20260720_152904.json",
+    "C:\\Users\\Carpe diem\\Documents\\New project\\hardtech_investment_agent\\data\\free_storage_backups\\site_data_20260720_152904.json"
+  ],
+  "note": "Free local storage snapshot; keep private because contact data may be sensitive."
+}

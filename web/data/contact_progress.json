@@ -1,0 +1,777 @@
+{
+  "rows": [
+    {
+      "company": "常州富烯",
+      "industry": "待识别",
+      "industries": [
+        "待识别"
+      ],
+      "companyType": "",
+      "intro": "",
+      "team": "",
+      "round": "",
+      "oneLiner": "",
+      "landline": "0519-68203318; 0519-83637718-8673",
+      "mobile": "18861267966",
+      "email": "sales@fuxitech.com.cn",
+      "progress": "发邮件",
+      "meeting": "否",
+      "person": "马剑凯",
+      "source": "官网联系方式 + 第三方公司联系方式页",
+      "sourceDate": "页面无发布日期",
+      "url": "https://www.fuxitech.com.cn/contact_us.html",
+      "note": "官网公开电话/邮箱；马剑凯手机号来自第三方联系方式页，建议拨测。",
+      "evidence": "",
+      "mappingSources": [],
+      "contactSources": [
+        "招聘联系信息汇总_20260630_v1.xlsx"
+      ],
+      "hasContact": true
+    },
+    {
+      "company": "国科光领",
+      "industry": "待识别",
+      "industries": [
+        "待识别"
+      ],
+      "companyType": "",
+      "intro": "",
+      "team": "",
+      "round": "",
+      "oneLiner": "",
+      "landline": "027-87002926",
+      "mobile": "13554126343",
+      "email": "hr@gk-photonlink.com",
+      "progress": "座机没人接，手机转同事明天对接",
+      "meeting": "否",
+      "person": "未披露",
+      "source": "官网/招聘相关页",
+      "sourceDate": "公司/招聘信源 2023-02-09",
+      "url": "http://www.gk-photonlink.com/",
+      "note": "",
+      "evidence": "",
+      "mappingSources": [],
+      "contactSources": [
+        "招聘联系信息汇总_20260630_v1.xlsx"
+      ],
+      "hasContact": true
+    },
+    {
+      "company": "墨睿",
+      "industry": "待识别",
+      "industries": [
+        "待识别"
+      ],
+      "companyType": "",
+      "intro": "",
+      "team": "",
+      "round": "",
+      "oneLiner": "",
+      "landline": "0870-8662889；0870-8664215",
+      "mobile": "19387015318（打错了）",
+      "email": "tanfang@ytmorion.com；1748417672@qq.com",
+      "progress": "没人接；无法接通；打错了",
+      "meeting": "否",
+      "person": "谭女士",
+      "source": "招聘页；早期招聘页",
+      "sourceDate": "2024-07-01；2023-07-01；2023-05-01",
+      "url": "https://www.hf960.com/n172091c23.aspx；https://hf960.com/n149553c23.aspx；https://www.hf960.com/n144065c23.aspx",
+      "note": "",
+      "evidence": "",
+      "mappingSources": [],
+      "contactSources": [
+        "招聘联系信息汇总_20260630_v1.xlsx"
+      ],
+      "hasContact": true
+    },
+    {
+      "company": "云南中宣",
+      "industry": "待识别",
+      "industries": [
+        "待识别"
+      ],
+      "companyType": "",
+      "intro": "",
+      "team": "",
+      "round": "",
+      "oneLiner": "",
+      "landline": "0874-7255399",
+      "mobile": "18687888567；19188445347; 13608859220",
+      "email": "shuailun@foxmail.com；fei.fan@zxliquidmetal.com",
+      "progress": "可以联系15087427337，没人接；加微信：杨：1918845347；发邮件",
+      "meeting": "否",
+      "person": "帅先生；凡经理",
+      "source": "招聘页；官网联系页",
+      "sourceDate": "2020-03-01；页面无发布日期",
+      "url": "https://www.hf960.com/n89581c23.aspx；https://www.alloykingdom.com/contact.html",
+      "note": "",
+      "evidence": "",
+      "mappingSources": [],
+      "contactSources": [
+        "招聘联系信息汇总_20260630_v1.xlsx"
+      ],
+      "hasContact": true
+    },
+    {
+      "company": "云南中宣深圳子公司",
+      "industry": "待识别",
+      "industries": [
+        "待识别"
+      ],
+      "companyType": "",
+      "intro": "",
+      "team": "",
+      "round": "",
+      "oneLiner": "",
+      "landline": "0755-86950775",
+      "mobile": "13185953230",
+      "email": "",
+      "progress": "未填写",
+      "meeting": "否",
+      "person": "雷经理",
+      "source": "官网联系页",
+      "sourceDate": "页面无发布日期",
+      "url": "https://www.alloykingdom.com/contact.html",
+      "note": "",
+      "evidence": "",
+      "mappingSources": [],
+      "contactSources": [
+        "招聘联系信息汇总_20260630_v1.xlsx"
+      ],
+      "hasContact": true
+    },
+    {
+      "company": "傲科光电（Aluksen）",
+      "industry": "电芯片",
+      "industries": [
+        "电芯片"
+      ],
+      "companyType": "TIA/Driver/CDR芯片设计",
+      "intro": "傲科光电（Aluksen）是一家专注于高速光芯片、电芯片和光电集成产品的模拟半导体芯片设计企业。公司以服务人工智能算力和商业航天建设为使命，核心产品包括光通信驱动器（Driver）、跨阻放大器（TIA）、时钟与数据恢复芯片（CDR）以及硅光芯片。产品覆盖从25G到800G多种速率，主要应用于长距OTN电信骨干网、卫星通信、AI数据中心互联（DCI）以及数据中心内部（DCN）场景。",
+      "team": "公开资料未充分披露；核心团队长期聚焦高速模拟IC、光互连通信芯片与光电集成产品。",
+      "round": "B轮",
+      "oneLiner": "高速模拟电芯片设计公司，主攻光模块用Driver、TIA、CDR，并延伸硅光/TFLN光电集成。",
+      "landline": "0755-21003314; 0755-21003314-8015",
+      "mobile": "",
+      "email": "sales@aluksen.com",
+      "progress": "要了我的联系方式",
+      "meeting": "否",
+      "person": "",
+      "source": "官网联系方式",
+      "sourceDate": "页面未标注；抓取2026-06-30",
+      "url": "https://www.aluksen.com/about/",
+      "note": "",
+      "evidence": "公司总机：0755-21003314；销售电话：0755-21003314-8015；电子邮箱：sales@aluksen.com。",
+      "mappingSources": [
+        "260629_电芯片_Mapping.xlsx"
+      ],
+      "contactSources": [
+        "招聘联系信息汇总_20260630_v1.xlsx"
+      ],
+      "hasContact": true
+    },
+    {
+      "company": "成都英思嘉半导体（InSiGa）",
+      "industry": "电芯片",
+      "industries": [
+        "电芯片"
+      ],
+      "companyType": "TIA/Driver/CDR芯片设计",
+      "intro": "成都英思嘉半导体技术有限公司（InSiGa）成立于2016年，位于四川省成都市，是一家专注于高速光通信电芯片研发和设计的专精特新中小企业。公司产品涵盖2.5G-1.6T速率，提供5G承载网络、数据中心互联（DCI）、AI集群、PON光接入和城域网等应用场景的完整电芯片解决方案，包括TIA、Driver和CDR等产品线，已获得多轮融资。",
+      "team": "Vikas Manan（法定代表人/核心管理层）；团队长期专注高速Driver、CDR、TIA和OSA研发生产。",
+      "round": "C轮",
+      "oneLiner": "高速光通信电芯片公司，覆盖10G至1.6T Driver、CDR、TIA，并面向LPO/CPO推出高线性驱动器。",
+      "landline": "",
+      "mobile": "13320816992",
+      "email": "karen.zhuo@insigatech.com",
+      "progress": "联系方式是对的，但是拒绝了",
+      "meeting": "否",
+      "person": "卓女士",
+      "source": "招聘平台（未公开联系方式）",
+      "sourceDate": "页面未标注；抓取2026-06-30",
+      "url": "https://mp.weixin.qq.com/s/1MM4GkHoKnGny8PdLtJ3eQ",
+      "note": "猎聘/BOSS可确认公司招聘页，但页面显示企业邮箱/公司电话未公布。",
+      "evidence": "猎聘公司页：企业邮箱未公布，公司电话未公布，联系地址为天府软件园A1-3。",
+      "mappingSources": [
+        "260629_电芯片_Mapping.xlsx"
+      ],
+      "contactSources": [
+        "招聘联系信息汇总_20260630_v1.xlsx"
+      ],
+      "hasContact": true
+    },
+    {
+      "company": "飞昂创新科技（Wingcomm）",
+      "industry": "电芯片",
+      "industries": [
+        "电芯片"
+      ],
+      "companyType": "TIA/Driver/CDR芯片设计",
+      "intro": "飞昂创新科技（Wingcomm）是一家专注于光纤通信高速模拟和混合信号光电集成电路的无晶圆厂IC公司。公司产品面向100G及以上速率的光收发器、有源光缆（AOC）、光学子组件（OSA）和板载光学组件（BOA），提供完整的IC产品组合，包括跨阻放大器（TIA）、激光驱动器和时钟数据恢复（CDR）芯片。核心团队来自国际一线光通信芯片企业，拥有丰富的高速模拟芯片设计和大规模量产经验。",
+      "team": "公开团队信息有限；公司聚焦高速光通信芯片，向400G及更高速率方案演进。",
+      "round": "战略/产业融资",
+      "oneLiner": "高速光通信电芯片公司，曾发布25G NRZ与50G PAM4收发电芯片完整方案。",
+      "landline": "0513-51011000",
+      "mobile": "",
+      "email": "info@wingcomm.com",
+      "progress": "无联系方式",
+      "meeting": "否",
+      "person": "",
+      "source": "行业新闻/公司联系方式",
+      "sourceDate": "2016-09-18",
+      "url": "http://www.iccsz.com/Site/CN/News/2016/09/18/20160918065042927000.htm",
+      "note": "信源主体写作“飞昂通讯科技南通有限公司/Wingcomm”，与Excel括号品牌一致，建议拨测确认主体关系。",
+      "evidence": "飞昂通讯科技南通有限公司 地址：江苏省南通市经济技术开发区益兴大厦1501；电话：0513-51011000；E-mail：info@wingcomm.com。",
+      "mappingSources": [
+        "260629_电芯片_Mapping.xlsx"
+      ],
+      "contactSources": [
+        "招聘联系信息汇总_20260630_v1.xlsx"
+      ],
+      "hasContact": true
+    },
+    {
+      "company": "光梓信息",
+      "industry": "电芯片",
+      "industries": [
+        "电芯片"
+      ],
+      "companyType": "TIA/Driver/CDR芯片设计",
+      "intro": "光梓信息科技（上海）有限公司是一家高速模拟光电子芯片设计企业，致力于为5G通信、数据中心和3D传感提供高性能模拟芯片解决方案。公司在光通信领域主要提供TIA、Driver芯片产品，覆盖25G至100G速率，同时在3D ToF（飞行时间）传感器芯片方面具有竞争力。核心团队由海内外资深芯片设计专家组成。",
+      "team": "公开资料有限；团队聚焦CMOS/SiGe高速光通信收发电芯片。",
+      "round": "—",
+      "oneLiner": "高速光通信电芯片设计公司，基于CMOS/SiGe推出VCSEL Driver、TIA、CDR等产品。",
+      "landline": "",
+      "mobile": "",
+      "email": "may.cao@photonic-tech.com",
+      "progress": "未填写",
+      "meeting": "否",
+      "person": "",
+      "source": "工商信息页",
+      "sourceDate": "页面未标注；抓取2026-06-30",
+      "url": "https://aiqicha.baidu.com/company_directors_24531634204223",
+      "note": "电话为部分遮罩，不作为可拨打联系方式。",
+      "evidence": "光梓信息科技（上海）有限公司；邮箱：may.cao@photonic-tech.com；官网：www.photonic-tech.com。",
+      "mappingSources": [
+        "260629_电芯片_Mapping.xlsx"
+      ],
+      "contactSources": [
+        "招聘联系信息汇总_20260630_v1.xlsx"
+      ],
+      "hasContact": true
+    },
+    {
+      "company": "杭州芯耘光电科技",
+      "industry": "电芯片",
+      "industries": [
+        "电芯片"
+      ],
+      "companyType": "TIA/Driver/CDR芯片设计",
+      "intro": "杭州芯耘光电科技有限公司成立于2016年，位于浙江省杭州市余杭区，是一家专注于100G及以上速率的光芯片及硅光子集成技术开发的科技型企业。公司产品涵盖长距离高速光通信芯片、硅光子集成器件及光电微系统模组，致力于完成高端光电子芯片的国产化，在硅光集成领域拥有独特技术布局，覆盖光芯片设计、工艺开发和封装测试全流程。",
+      "team": "公开团队信息有限；公司定位为具备高速硅光子产品与高速模拟集成电路产品能力的光通信企业。",
+      "round": "—",
+      "oneLiner": "高速模拟芯片与光通信解决方案公司，提供CDR+TIA、CDR+Driver和PCIe Redriver等高速电芯片。",
+      "landline": "",
+      "mobile": "18007121166",
+      "email": "chaolong.liu@xy-technology.com",
+      "progress": "打错了",
+      "meeting": "否",
+      "person": "柳超龙",
+      "source": "公开招聘信息",
+      "sourceDate": "2018-01-02",
+      "url": "https://www.sohu.com/a/214148021_755809",
+      "note": "",
+      "evidence": "公司：芯耘光电；地点：杭州；HR：柳超龙（18007121166，chaolong.liu@xy-technology.com）。",
+      "mappingSources": [
+        "260629_电芯片_Mapping.xlsx"
+      ],
+      "contactSources": [
+        "招聘联系信息汇总_20260630_v1.xlsx"
+      ],
+      "hasContact": true
+    },
+    {
+      "company": "巨风半导体",
+      "industry": "电芯片",
+      "industries": [
+        "电芯片"
+      ],
+      "companyType": "TIA/Driver/CDR芯片设计",
+      "intro": "广东巨风半导体有限公司（TREX Tech）是一家专注功率半导体领域的设计公司，应用涵盖大家电、工控、新能源及车载市场。公司拥有自主芯片研发能力及完整的知识产权体系，产品覆盖IGBT、MOSFET、SiC功率器件等，面向电机驱动、电源管理和新能源转换等应用。在光电和电芯片领域布局相对有限。",
+      "team": "核心团队来自国内头部功率/模拟半导体企业，在高速驱动芯片和电源管理IC领域拥有丰富量产经验，逐步向光通信高速电芯片（TIA/Driver类）方向拓展",
+      "round": "—",
+      "oneLiner": "从事高速模拟/混合信号电芯片设计，布局光通信EIC方向",
+      "landline": "020-89888457",
+      "mobile": "",
+      "email": "",
+      "progress": "打错了",
+      "meeting": "否",
+      "person": "",
+      "source": "公开电话目录；招聘平台未公开",
+      "sourceDate": "抓取2026-06-30",
+      "url": "https://www.dianhua.cn/dt/755e6e840c874a4fa3769dcec4db368b/78b369faea82c8c516dc1689356bd2e3",
+      "note": "猎聘/BOSS招聘页未公开电话/邮箱；电话目录仅作公开线索，建议拨测。",
+      "evidence": "电话邦页面显示“巨风 电话 020-89888457”。",
+      "mappingSources": [
+        "260629_电芯片_Mapping.xlsx"
+      ],
+      "contactSources": [
+        "招聘联系信息汇总_20260630_v1.xlsx"
+      ],
+      "hasContact": true
+    },
+    {
+      "company": "玏芯科技",
+      "industry": "电芯片",
+      "industries": [
+        "电芯片"
+      ],
+      "companyType": "TIA/Driver/CDR芯片设计",
+      "intro": "玏芯科技（苏州）有限公司成立于2020年，是一家专注于高速光通信电芯片设计的国家高新技术企业。公司在光通信电芯片（TIA/Driver/CDR）领域拥有专业技术积累，产品面向数据中心光模块和5G承载网络应用，支持25G至400G速率，已获得多家投资机构支持。",
+      "team": "核心创始团队来自国际知名光通信芯片厂商，拥有多年光电芯片研发经历，核心团队具备以56G~112G PAM4 SerDes为核心的高速光电芯片全流程设计经验，对光通信电芯片（TIA/Driver/CDR）的设计、验证、量产有深厚积累",
+      "round": "A轮",
+      "oneLiner": "专注高速光通信TIA/Driver/CDR电芯片设计，覆盖25G~100G速率",
+      "landline": "+86-0512-6299-7081",
+      "mobile": "",
+      "email": "HR@luxictech.com; Sales@luxictech.com",
+      "progress": "没人接",
+      "meeting": "否",
+      "person": "",
+      "source": "官网联系方式",
+      "sourceDate": "页面未标注；抓取2026-06-30",
+      "url": "https://www.luxictech.com/index.php?c=category&id=4",
+      "note": "",
+      "evidence": "电话/ Tel 客服：+86-0512-6299-7081；人力资源：HR@luxictech.com；市场营销中心：Sales@luxictech.com。",
+      "mappingSources": [
+        "260629_电芯片_Mapping.xlsx"
+      ],
+      "contactSources": [
+        "招聘联系信息汇总_20260630_v1.xlsx"
+      ],
+      "hasContact": true
+    },
+    {
+      "company": "米硅科技（Milicons）",
+      "industry": "电芯片",
+      "industries": [
+        "电芯片"
+      ],
+      "companyType": "TIA/Driver/CDR芯片设计",
+      "intro": "米硅科技（Milicons）是一家专注于光通信高速电芯片设计的无晶圆厂半导体公司。公司产品包括跨阻放大器（TIA）、激光驱动器（Driver）等光模块核心电芯片，覆盖10G至400G速率，广泛应用于数据中心光互联和5G承载网络。核心团队来自国际一线光通信芯片企业，具有丰富的高速模拟芯片设计及量产经验。",
+      "team": "核心团队由硅谷归国的资深模拟集成电路设计工程师组成，在美国硅谷和中国上海双布局，拥有20+年高速模拟/混合信号IC设计经验，创始人曾在国际一线光通信芯片公司担任技术负责人",
+      "round": "—",
+      "oneLiner": "从事光通信高速TIA/Driver模拟集成电路设计，兼顾中美两地市场",
+      "landline": "021-50393078",
+      "mobile": "13735469551（15021746417）",
+      "email": "sales@minisilicon.com; marketing@minisilicon.com; hr@minisilicon.com",
+      "progress": "给的电话是空号",
+      "meeting": "否",
+      "person": "赵女士",
+      "source": "官网联系方式/招贤纳士",
+      "sourceDate": "页面未标注；抓取2026-06-30",
+      "url": "http://www.minisilicon.com/AboutStd.html",
+      "note": "",
+      "evidence": "业务联系：sales@minisilicon.com；市场合作：marketing@minisilicon.com；加入我们：hr@minisilicon.com。",
+      "mappingSources": [
+        "260629_电芯片_Mapping.xlsx"
+      ],
+      "contactSources": [
+        "招聘联系信息汇总_20260630_v1.xlsx"
+      ],
+      "hasContact": true
+    },
+    {
+      "company": "厦门亿芯源半导体（EOChip）",
+      "industry": "电芯片",
+      "industries": [
+        "电芯片"
+      ],
+      "companyType": "TIA/Driver/CDR芯片设计",
+      "intro": "厦门亿芯源半导体科技有限公司（EOChip）成立于2016年，位于福建省厦门市，是一家专注于高速光通信芯片和低功耗MCU芯片研发设计的半导体企业。公司在光通信领域提供TIA、Driver等电芯片产品，覆盖25G至100G速率，同时布局车载激光雷达芯片，面向自动驾驶传感应用，已获得多轮融资。",
+      "team": "公开资料未充分披露；公司为专精特新重点“小巨人”，在厦门、福州、大连、成都、威海等地布局。",
+      "round": "—",
+      "oneLiner": "高速光通信集成电路芯片供应商，面向千兆入户、5G承载和数据中心提供电芯片。",
+      "landline": "0592-5612908",
+      "mobile": "",
+      "email": "",
+      "progress": "没人接",
+      "meeting": "否",
+      "person": "",
+      "source": "招聘平台工商信息",
+      "sourceDate": "页面未标注；抓取2026-06-30",
+      "url": "https://www.liepin.com/company/gs52190943/",
+      "note": "猎聘公司页公开公司电话；建议拨测确认仍有效。",
+      "evidence": "公司电话 0592-5612908；联系地址：中国(福建)自由贸易试验区厦门片区港中路16号。",
+      "mappingSources": [
+        "260629_电芯片_Mapping.xlsx"
+      ],
+      "contactSources": [
+        "招聘联系信息汇总_20260630_v1.xlsx"
+      ],
+      "hasContact": true
+    },
+    {
+      "company": "芯波微电子",
+      "industry": "电芯片",
+      "industries": [
+        "电芯片"
+      ],
+      "companyType": "TIA/Driver/CDR芯片设计",
+      "intro": "芯波微电子是一家专注于高速光通信电芯片设计的半导体公司，产品主要包括TIA（跨阻放大器）和Driver（激光驱动器）芯片，面向400G/800G光模块应用。公司采用先进的SiGe BiCMOS和CMOS工艺平台，致力于为数据中心和5G通信提供高性能、低功耗的电芯片解决方案。",
+      "team": "公开团队信息有限；公司定位为高端光通信芯片设计公司，产品已覆盖接入网、5G前传和数通场景。",
+      "round": "—",
+      "oneLiner": "专注高端光通信电芯片的Fabless公司，产品覆盖PON、5G前传和数据中心PAM4套片。",
+      "landline": "",
+      "mobile": "",
+      "email": "hr@sibroad.com; sale@sibroad.com",
+      "progress": "未填写",
+      "meeting": "否",
+      "person": "",
+      "source": "官网联系方式",
+      "sourceDate": "页面未标注；抓取2026-06-30",
+      "url": "http://www.sibroad.cn/",
+      "note": "",
+      "evidence": "应聘联系：hr@sibroad.com；产品采购和合作联系：sale@sibroad.com；深圳总部：深圳市龙岗区雪岗路2018号天安云谷。",
+      "mappingSources": [
+        "260629_电芯片_Mapping.xlsx"
+      ],
+      "contactSources": [
+        "招聘联系信息汇总_20260630_v1.xlsx"
+      ],
+      "hasContact": true
+    },
+    {
+      "company": "知芯半导体",
+      "industry": "电芯片",
+      "industries": [
+        "电芯片"
+      ],
+      "companyType": "TIA/Driver/CDR芯片设计",
+      "intro": "知芯半导体专注于模拟芯片和数模混合芯片设计，产品面向通信和消费电子领域。在光通信电芯片方面有一定布局，关注高速TIA和Driver芯片方向。公司处于技术积累和市场拓展阶段。",
+      "team": "王利明教授（创始人，博士，西安电子科技大学杭州研究院教授/博导团队，长期从事短波红外光电探测芯片与器件研究，从航天级应用向民用短波红外传感领域拓展）",
+      "round": "—",
+      "oneLiner": "从事光通信相关高速模拟/混合信号电芯片设计",
+      "landline": "021-60959032",
+      "mobile": "个人求职：David 180-4999-5953（同微信）；  Lisa158-2145-5847（同微信）企业合作：Jessiee 182-2132-1820（同微信）",
+      "email": "tangyingying@semiedu.com.cn",
+      "progress": "空号",
+      "meeting": "否",
+      "person": "",
+      "source": "检索未确认",
+      "sourceDate": "抓取2026-06-30",
+      "url": "https://www.liepin.com/company-jobs/12246621/",
+      "note": "搜索结果主要为“智芯半导体”（不同字）或其他近似主体；为避免加错，未采用。",
+      "evidence": "未能定位与Excel“知芯半导体”严格一致且公开电话/邮箱的信源。",
+      "mappingSources": [
+        "260629_电芯片_Mapping.xlsx"
+      ],
+      "contactSources": [
+        "招聘联系信息汇总_20260630_v1.xlsx"
+      ],
+      "hasContact": true
+    },
+    {
+      "company": "国科精密（中科国科精密）",
+      "industry": "光刻机",
+      "industries": [
+        "光刻机",
+        "电芯片"
+      ],
+      "companyType": "光学元件",
+      "intro": "国科精密是中国科学院体系内专注于高端精密光学系统研发的企业，是中科院在光刻机关联技术领域的重要布局。公司依托中科院的技术力量和人才储备，主要从事光刻机曝光光学系统的研发与工程化工作，聚焦于高端物镜系统、光学检测与精密校准等核心技术方向，为国产光刻机的光学系统自主化提供关键技术支撑。",
+      "team": "中科院体系（上海光机所/长光所等联合组建），承担02专项光学分项关键攻关任务，为国产光刻机提供精密光学元件和光机电一体化系统",
+      "round": "国家战略投资",
+      "oneLiner": "中科院体系精密光学及光机电集成企业，承担多项国产高端光学攻关任务",
+      "landline": "0431-86708095",
+      "mobile": "17386886963",
+      "email": "",
+      "progress": "空号",
+      "meeting": "否",
+      "person": "孟老师",
+      "source": "早期校园招聘页",
+      "sourceDate": "2019-08-08",
+      "url": "http://archiverm.yingjiesheng.com/job-004-249-495.html",
+      "note": "",
+      "evidence": "长春国科精密光学技术有限公司2020校园招聘；联系方式：0431-86708095，17386886963，孟老师。",
+      "mappingSources": [
+        "260629_光刻机_Mapping.xlsx"
+      ],
+      "contactSources": [
+        "招聘联系信息汇总_20260630_v1.xlsx"
+      ],
+      "hasContact": true
+    },
+    {
+      "company": "国望光学",
+      "industry": "光刻机",
+      "industries": [
+        "光刻机",
+        "电芯片"
+      ],
+      "companyType": "光学元件",
+      "intro": "北京国望光学科技有限公司成立于2018年6月，总部位于北京经济技术开发区，是由北京市人民政府、中科院相关单位及自然人（研发经营团队）共同投资设立的战略性高技术企业，注册资本30亿元人民币。公司面向极大规模IC制造装备产业发展需求，主要从事浸没式光刻机曝光光学系统的研发与产业化，业务覆盖超精密光学检测、超精密光机制造等核心技术领域。国望光学继承并整合了中科院相关单位在02专项光刻机曝光光学系统方面的研发成果与知识产权，规划占地面积110亩，是国内光刻机光学系统领域的关键力量。",
+      "team": "精密光学领域企业，公开创始人信息有限（IT桔子来源，信息待进一步确认）",
+      "round": "—",
+      "oneLiner": "从事精密光学元件研制，布局光刻机光学系统国产替代",
+      "landline": "0431-86708095",
+      "mobile": "17386886963",
+      "email": "",
+      "progress": "空号",
+      "meeting": "否",
+      "person": "孟老师",
+      "source": "早期校园招聘页",
+      "sourceDate": "2020-06-18",
+      "url": "http://archiverm.yingjiesheng.com/job-004-658-859.html",
+      "note": "",
+      "evidence": "北京国望光学科技有限公司2021校园招聘；联系电话：0431-86708095，17386886963，孟老师。",
+      "mappingSources": [
+        "260629_光刻机_Mapping.xlsx"
+      ],
+      "contactSources": [
+        "招聘联系信息汇总_20260630_v1.xlsx"
+      ],
+      "hasContact": true
+    },
+    {
+      "company": "恒拓微电子",
+      "industry": "光刻机",
+      "industries": [
+        "光刻机",
+        "电芯片"
+      ],
+      "companyType": "光刻机整机",
+      "intro": "恒拓微电子成立于2020年前后，是一家专注于光刻机核心零部件及子系统研发的半导体设备企业。公司聚焦光刻机关键模块技术，涵盖精密运动控制、光学对准、环境控制等方向，为国产光刻机的自主可控提供核心技术支持。公司核心团队具有多年精密装备研发经验，获得多家产业资本的投资支持。",
+      "team": "公开资料有限（IT桔子投资事件来源，信息待进一步确认）",
+      "round": "—",
+      "oneLiner": "从事半导体光刻及相关设备与工艺技术研发",
+      "landline": "029-82668077",
+      "mobile": "",
+      "email": "",
+      "progress": "打不通",
+      "meeting": "否",
+      "person": "",
+      "source": "招聘平台工商信息",
+      "sourceDate": "页面未标注；抓取2026-06-30",
+      "url": "https://www.liepin.com/company/gs26714506/",
+      "note": "猎聘公司页公开公司电话；建议拨测确认仍有效。",
+      "evidence": "公司电话 029-82668077；联系地址 西安市雁翔路交大科技园博源大厦四层A座。",
+      "mappingSources": [
+        "260629_光刻机_Mapping.xlsx"
+      ],
+      "contactSources": [
+        "招聘联系信息汇总_20260630_v1.xlsx"
+      ],
+      "hasContact": true
+    },
+    {
+      "company": "鸿源鼎芯",
+      "industry": "光刻机",
+      "industries": [
+        "光刻机",
+        "电芯片"
+      ],
+      "companyType": "光刻机整机",
+      "intro": "鸿源鼎芯成立于2021年前后，是一家聚焦半导体光刻机核心部件研发与制造的高科技企业。公司主要涉足光刻机精密运动台、晶圆传输系统及光学对准模组等关键子系统，服务于光刻机整机制造与设备维护场景。公司依托国内半导体装备产业链，致力于解决光刻机核心部件的自主化难题。",
+      "team": "公开资料有限（IT桔子投资事件来源，信息待进一步确认）",
+      "round": "—",
+      "oneLiner": "从事半导体光刻设备相关技术研发",
+      "landline": "",
+      "mobile": "13880445510",
+      "email": "13880445510@qq.com",
+      "progress": "没有融资计划",
+      "meeting": "否",
+      "person": "",
+      "source": "11467公开商贸页；招聘平台未公开",
+      "sourceDate": "抓取2026-06-30",
+      "url": "https://www.11467.com/qiye/100223783.htm",
+      "note": "页面存在反爬，搜索摘要显示电子邮箱；手机号由邮箱本地部分推断，需拨测确认。",
+      "evidence": "360/11467搜索摘要：四川鸿源鼎芯科技有限公司；电子邮箱 13880445510@qq.com。",
+      "mappingSources": [
+        "260629_光刻机_Mapping.xlsx"
+      ],
+      "contactSources": [
+        "招聘联系信息汇总_20260630_v1.xlsx"
+      ],
+      "hasContact": true
+    },
+    {
+      "company": "科益虹源光电技术",
+      "industry": "光刻机",
+      "industries": [
+        "光刻机",
+        "电芯片"
+      ],
+      "companyType": "光源系统",
+      "intro": "北京科益虹源光电技术有限公司成立于2016年，总部位于北京，是中科院微电子研究所孵化的高科技企业，专注于半导体光刻用准分子激光光源的研发与产业化。公司是国家02科技重大专项光刻机光源课题的承担单位，致力于开发ArF干式和浸没式光刻机所需的193nm准分子激光光源系统。科益虹源已成功研制出多款高重频、窄线宽的激光光源工程样机并进入集成验证阶段，是国产光刻机光源领域最具实力的研发主体，填补了国内在该领域的空白。",
+      "team": "赵永晖（CEO，准分子激光技术领域资深专家）；公司核心研发团队来自中科院光电院/长光所等国家级光电技术研究机构，已完成国产ArF（193nm）准分子激光光源工程样机",
+      "round": "B轮",
+      "oneLiner": "国内领先的ArF/KrF准分子激光光源研发企业，推进光刻光源国产替代",
+      "landline": "010-56793049",
+      "mobile": "",
+      "email": "yangna@rslaser.net",
+      "progress": "未填写",
+      "meeting": "否",
+      "person": "",
+      "source": "校招专题页",
+      "sourceDate": "2022",
+      "url": "http://campus.51job.com/m/Rslaser2022/",
+      "note": "",
+      "evidence": "投递邮箱：yangna@rslaser.net；联系电话：010-56793049 转 6503；办公地点：北京市北京经济技术开发区融兴北一街19号院。",
+      "mappingSources": [
+        "260629_光刻机_Mapping.xlsx"
+      ],
+      "contactSources": [
+        "招聘联系信息汇总_20260630_v1.xlsx"
+      ],
+      "hasContact": true
+    },
+    {
+      "company": "拍频光电",
+      "industry": "光刻机",
+      "industries": [
+        "光刻机",
+        "电芯片"
+      ],
+      "companyType": "精密测量",
+      "intro": "拍频光电科技有限公司成立于2017年，总部位于上海，是一家专注于超精密光电位移测量与校准技术的高科技企业。公司主要研发和生产激光干涉仪、光栅尺、精密位移传感器等用于光刻机、精密机床和半导体设备的超高精度位置测量系统。拍频光电在双频激光干涉测量、纳米级位移传感等核心技术领域有深厚积累，产品定位替代进口同类产品，是国产光刻机精密测量系统供应链的重要参与者。",
+      "team": "激光拍频精密测量技术企业，公开创始人信息有限（IT桔子来源）",
+      "round": "A轮",
+      "oneLiner": "专注激光拍频精密测量技术，为光刻机提供亚纳米级位移测量与定位控制系统",
+      "landline": "021-61230550",
+      "mobile": "13681969494（服务热线，最早见于2022年官网）",
+      "email": "service@spoe.com.cn（官网公开邮箱）；zzp8101@163.com（张志平学术邮箱，复旦大学师资页）；2510057913@qq.com（工商登记邮箱，企名片/启信宝）",
+      "progress": "联系到CEO本人",
+      "meeting": "否",
+      "person": "",
+      "source": "行业平台店铺联系页",
+      "sourceDate": "2026-03-14",
+      "url": "https://www.oeshow.cn/concatme/1612",
+      "note": "行业平台光电汇页面，建议拨测/二次核验。",
+      "evidence": "上海拍频光电科技有限公司；联系方式 邮箱：service@spoe.com.cn；通信地址 上海市宝山区逸仙路3000号1号楼3楼。",
+      "mappingSources": [
+        "260629_光刻机_Mapping.xlsx"
+      ],
+      "contactSources": [
+        "招聘联系信息汇总_20260630_v1.xlsx"
+      ],
+      "hasContact": true
+    },
+    {
+      "company": "启尔机电（上海启尔机电）",
+      "industry": "光刻机",
+      "industries": [
+        "光刻机",
+        "电芯片"
+      ],
+      "companyType": "浸液系统",
+      "intro": "浙江启尔机电技术有限公司成立于2013年，总部位于浙江省杭州市临安区，前身为浙江大学流体动力与机电系统国家重点实验室的启尔团队。公司主要研发、生产和销售高端半导体装备超洁净流控系统及其关键零部件，其中最具代表性的是光刻机浸没头（Immersion Hood），这是ArF浸没式光刻机的核心部件之一。启尔机电在超高纯流体控制、污染控制、浸没流场稳定性等方面拥有核心技术，是国家02专项的承担单位之一，为国产浸没式光刻机的研发提供了关键支撑。",
+      "team": "傅新教授（创始人/首席科学家，浙江大学机械工程学院教授/博士生导师，流体动力与机电系统国家重点实验室启尔团队负责人，带领团队坚持逾15年基础研究和技术攻关，突破光刻机浸液系统设计制造关键技术）；陈文昱（法定代表人）；庞保平教授（董事，浙江科技大学集成电路高端装备学院执行院长）",
+      "round": "B轮",
+      "oneLiner": "国内首家光刻机浸液系统（Immersion System）研制企业，打破国外垄断",
+      "landline": "0571-61106566",
+      "mobile": "18506822967",
+      "email": "hr@cheertech.ltd",
+      "progress": "打错了",
+      "meeting": "否",
+      "person": "HR",
+      "source": "融资/公司信息页（未公开联系方式）",
+      "sourceDate": "2023-05-11",
+      "url": "https://mp.weixin.qq.com/s/7XYCyY0T3Uj8SaQD6RThYQ",
+      "note": "检索到启尔机电项目/公司信息，但未发现可核验电话或邮箱；高校就业办电话已排除。",
+      "evidence": "启尔机电项目页可确认公司与光刻机浸液系统方向，但未公开联系方式。",
+      "mappingSources": [
+        "260629_光刻机_Mapping.xlsx"
+      ],
+      "contactSources": [
+        "招聘联系信息汇总_20260630_v1.xlsx"
+      ],
+      "hasContact": true
+    },
+    {
+      "company": "晟联科（上海）半导体",
+      "industry": "交换机芯片",
+      "industries": [
+        "交换机芯片"
+      ],
+      "companyType": "SerDes/DSP IP设计",
+      "intro": "晟联科（上海）半导体有限公司成立于2022年，是一家高速互联IP与半导体芯片设计服务商，专注于基于DSP的高性能SerDes IP。公司产品包括PAM4 56G/112Gbps SerDes、PCIe 5.0/6.0、16G D2D（Die-to-Die）互联、IO Die、车载高速4~24G SerDes等高性能IP，并提供32G/16G UCIe及112G SerDes/PCIe 6.0 IP解决方案。基于TSMC、Samsung等先进工艺节点，产品广泛应用于HPC、AI加速、数据中心互联等场景。",
+      "team": "Harry Chan/陈继强（创始人&CEO，20+年硅谷系统架构与数字信号处理经验，纠错编码领域世界知名专家，IEEE论文单篇引用超1000次，约50项已授权/申请中专利）；Peter Kou/寇宇博士（联合创始人&CTO，25+年硅谷模拟混合信号与RF IC产品开发经验，ISSCC国际固态电路会议论文发表，10项已授权/申请中专利）；Danfeng Xu/徐丹丰（联合创始人&模拟副总裁）；公司2014年硅谷创立，2016年业界首次演示基于ADC/DSP的PAM4 56Gbps SerDes",
+      "round": "C轮",
+      "oneLiner": "半导体芯片IP设计公司，为加速算力提供基于DSP的高速SerDes IP，产品覆盖交换机芯片/光模块DSP/GPU互联",
+      "landline": "",
+      "mobile": "176 0123 1554（微信 asfgjh5201314）",
+      "email": "addy.sun@etopus.com（工商登记邮箱，来自爱企查）",
+      "progress": "转接语音留言",
+      "meeting": "否",
+      "person": "",
+      "source": "爱企查/工商信息 + 官网 etopus.com + 微信公众号",
+      "sourceDate": "46203",
+      "url": "https://aiqicha.baidu.com/company_basic_86571217765743",
+      "note": "工商邮箱为登记邮箱，非公开对外联系邮箱；官网仅提供美国硅谷联系方式；微信公众号存在但主要用于品牌宣传",
+      "evidence": "爱企查显示邮箱addy.sun@etopus.com；职友集确认微信公众号“晟联科半导体”；官网https://etopus.com仅列美国地址",
+      "mappingSources": [
+        "260629_交换机芯片_Mapping.xlsx"
+      ],
+      "contactSources": [
+        "招聘联系信息汇总_20260630_v1.xlsx"
+      ],
+      "hasContact": true
+    },
+    {
+      "company": "云合智网（Clounix）",
+      "industry": "交换机芯片",
+      "industries": [
+        "交换机芯片"
+      ],
+      "companyType": "交换芯片ASIC",
+      "intro": "云合智网（Clounix）成立于2020年，总部位于上海，是一家高新技术企业，专注于高端网络与通信芯片设计研发。公司在杭州、北京、南京、成都设立研发中心，汇聚全球顶尖技术人才，以「用芯赋能无限连接」为使命。核心产品为面向数据中心和云计算的高端以太网交换芯片，致力于打破高端交换芯片领域的海外垄断，提供从芯片到系统的端到端解决方案，助力数字基础设施建设。",
+      "team": "曹图强（创始人/董事长/CEO，美籍华人博士，前思科（Cisco）全球副总裁兼大中华区首席技术官，在网络交换芯片领域深耕20+年，2020年创办云合智网）；陈清华（联合创始人/CTO，前思科资深芯片架构师，拥有丰富的以太网交换芯片架构设计经验）",
+      "round": "A+轮（2025.2完成约10亿元新一轮）",
+      "oneLiner": "国内领先以太网交换机芯片研发商，面向数据中心/运营商/企业网，主打高性能可编程交换芯片",
+      "landline": "0571-83525792（杭州） / 400-8818-392（全国） / (021) 5038 7985（上海）",
+      "mobile": "",
+      "email": "info@clounix.com（官网） / hr@clounix.com（招聘邮箱）",
+      "progress": "不方便",
+      "meeting": "否",
+      "person": "王女士 / 倪靓靓（校园招聘联系人）",
+      "source": "官网 clounix.com.cn + 校园招聘页面 + 爱企查",
+      "sourceDate": "46203",
+      "url": "https://clounix.com.cn/ / https://campus.niuqizp.com/job-v8855z5nn.html / https://jdjyw.jlu.edu.cn/portal/company/details?id=321a44c76bfc47fab4aa1480a5b92e02",
+      "note": "官网公开了400电话和上海座机；校园招聘页面提供了杭州座机和HR邮箱；微信公众号存在但名称未在公开页面明确标注",
+      "evidence": "官网页脚“邮箱：info@clounix.com 咨询电话：400-8818-392 / (021) 5038 7985”；牛企直聘页面“联系人：王女士 应聘邮箱：hr@clounix.com 联系电话：0571-83525792 公司地址：浙江省杭州市萧山区经济技术开发区建设三路733号信息港五期一号楼202室”",
+      "mappingSources": [
+        "260629_交换机芯片_Mapping.xlsx"
+      ],
+      "contactSources": [
+        "招聘联系信息汇总_20260630_v1.xlsx"
+      ],
+      "hasContact": true
+    }
+  ],
+  "stats": {
+    "total": 25,
+    "withContact": 25,
+    "contactRate": 100,
+    "contacted": 21,
+    "meetings": 0,
+    "industries": {
+      "待识别": {
+        "total": 5,
+        "withContact": 5
+      },
+      "电芯片": {
+        "total": 11,
+        "withContact": 11
+      },
+      "光刻机": {
+        "total": 7,
+        "withContact": 7
+      },
+      "交换机芯片": {
+        "total": 2,
+        "withContact": 2
+      }
+    },
+    "sourceRows": 28
+  }
+}

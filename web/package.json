@@ -1,0 +1,9 @@
+{
+  "name": "hardtech-mapping-dashboard",
+  "private": true,
+  "version": "0.1.0",
+  "scripts": {
+    "dev": "python -m http.server 4173",
+    "build": "echo Static dashboard ready"
+  }
+}

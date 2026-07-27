@@ -1,0 +1,1999 @@
+{
+  "source": "公司联系进度统筹表_20260720.xlsx",
+  "source_date": "2026-07-20",
+  "rows": [
+    {
+      "company": "成都迈科科技有限公司",
+      "industry": "玻璃基板",
+      "industries": [
+        "玻璃基板"
+      ],
+      "companyType": "",
+      "intro": "成都迈科成立于2017年6月，是一个后摩尔时代三维封装基板提供商，主要产品包括三维集成转接板、IPD无源集成器件（AIP封装天线、毫米波滤波器、芯片电感等）和3D玻璃（传感器基板、折叠屏背板、电子烟雾化芯、原子钟碱金属气室等）。",
+      "team": "张继华，职务：创始人&董事长，介绍：张继华：电子科技大学教授，博士生导师。1998年毕业于兰州大学物理系，2004年毕业于中科院上海微系统与信息技术研究所获博士学位(师从王曦院士)。主要从事微系统关键材料与集成技术方向的教学和科研工作。先后作为项目负责人主持973重大基础研究子课题、国家自然科学基金、产学研重大专项及JWKJW、装发、科工局等科研项目30余项；在Carbon、Appl.Phys.Lett、Nanotechnology等SCI刊物上发表论文100余篇；会议邀请报告5次；获授权国家发明专利10余项。研究的三维集成玻璃转接板、IPD薄膜集成器件、脉冲电容器、微波介质陶瓷等已用于军用电子器件研制；在薄膜集成器件产业化关键技术上取得突破，2010-2015新增产值2.5亿元。2017年作为“功能材料与集成器件团队”核心成员获“全国创新争先奖牌”(仅次于国家最高科技奖的科技人才大奖)，2018年获四川省技术发明三等奖（排名第一）、重庆市自然科学三等奖。2017年作为创始人创立成都迈科科技有限公司，致力于领跑后摩尔时代集成电路基板与三维集成技术。",
+      "round": "",
+      "oneLiner": "后摩尔时代三维封装基板提供商",
+      "landline": "",
+      "mobile": "13981926334",
+      "email": "market_microtech@163.com",
+      "wechat": "",
+      "progress": "有接触/同事在跟",
+      "meeting": "未记录",
+      "person": "张继华",
+      "source": "玻璃基板Mapping_一级市场",
+      "sourceDate": "2026-07-20（统筹表）",
+      "url": "",
+      "note": "有接触，以已经有同事在接触为由拒绝进一步沟通",
+      "evidence": "有接触，以已经有同事在接触为由拒绝进一步沟通",
+      "mappingSources": [
+        "玻璃基板Mapping_一级市场"
+      ],
+      "contactSources": [
+        "玻璃基板Mapping_一级市场"
+      ],
+      "hasContact": true,
+      "rawContact": "电话: 13981926334\n邮箱: market_microtech@163.com"
+    },
+    {
+      "company": "Absolics",
+      "industry": "玻璃基板",
+      "industries": [
+        "玻璃基板"
+      ],
+      "companyType": "",
+      "intro": "Absolics位于佐治亚州的工厂将制造玻璃基板，可以将处理和存储芯片安装在一起。该材料减少了多芯片封装所需的空间，允许将更多芯片封装到单个器件中。Absolics有望成为世界上第一个大规模生产这种材料的公司。",
+      "team": "Jiho Kang（姜智浩），职务：CEO，介绍：Jiho Kang拥有15年半导体运营和技术经验，此前在SK hynix担任副总裁，2025年12月被SKC任命为Absolics CEO。母公司为韩国SK集团/SKC。",
+      "round": "",
+      "oneLiner": "半导体玻璃基板提供商",
+      "landline": "",
+      "mobile": "",
+      "email": "",
+      "wechat": "",
+      "progress": "未联系",
+      "meeting": "未记录",
+      "person": "未披露",
+      "source": "玻璃基板Mapping_一级市场",
+      "sourceDate": "2026-07-20（统筹表）",
+      "url": "",
+      "note": "19；原始联系方式字段：19",
+      "evidence": "19",
+      "mappingSources": [
+        "玻璃基板Mapping_一级市场"
+      ],
+      "contactSources": [
+        "玻璃基板Mapping_一级市场"
+      ],
+      "hasContact": false,
+      "rawContact": "19"
+    },
+    {
+      "company": "江苏苏钏科技有限公司",
+      "industry": "玻璃基板",
+      "industries": [
+        "玻璃基板"
+      ],
+      "companyType": "",
+      "intro": "江苏苏钏科技有限公司是中国第一家实现超薄柔性玻璃基板量产的企业，拥有全球领先的超薄柔性玻璃基板加工技术，核心团队来自于中国及韩国。并致力于成为世界超薄柔性玻璃基板行业的领军企业。",
+      "team": "苏志乐，职务：董事长&总经理，介绍：苏志乐，苏钏科技董事长&总经理。",
+      "round": "",
+      "oneLiner": "玻璃基板研发商",
+      "landline": "0513-81188111",
+      "mobile": "",
+      "email": "suchuan-tech@s-utg.com",
+      "wechat": "",
+      "progress": "业务不相关",
+      "meeting": "未记录",
+      "person": "苏志乐",
+      "source": "玻璃基板Mapping_一级市场",
+      "sourceDate": "2026-07-20（统筹表）",
+      "url": "",
+      "note": "非半导体，柔性显示屏",
+      "evidence": "非半导体，柔性显示屏",
+      "mappingSources": [
+        "玻璃基板Mapping_一级市场"
+      ],
+      "contactSources": [
+        "玻璃基板Mapping_一级市场"
+      ],
+      "hasContact": true,
+      "rawContact": "电话: 0513-81188111\n邮箱: suchuan-tech@s-utg.com"
+    },
+    {
+      "company": "苏州凯利昂光电科技有限公司",
+      "industry": "玻璃基板",
+      "industries": [
+        "玻璃基板"
+      ],
+      "companyType": "",
+      "intro": "苏州凯利昂光电科技有限公司主要经营研发、设计、生产、加工微电子用玻璃基板和光电特种玻璃薄化、镀膜，TFT-LCD、PDP、OLED、PED（含SED）显示屏材料制造，销售公司自产产品，提供产品售后服务和技术咨询及技术转让服务；自营和代理各类商品及技术的进出口业务。",
+      "team": "杨春雨，职务：董事长，介绍：杨春雨，凯利昂董事长。",
+      "round": "",
+      "oneLiner": "微电子用玻璃基板研发商",
+      "landline": "0512-82787905",
+      "mobile": "",
+      "email": "lb@jswuyang.com",
+      "wechat": "",
+      "progress": "未联系上",
+      "meeting": "未记录",
+      "person": "杨春雨",
+      "source": "玻璃基板Mapping_一级市场",
+      "sourceDate": "2026-07-20（统筹表）",
+      "url": "",
+      "note": "打不通",
+      "evidence": "打不通",
+      "mappingSources": [
+        "玻璃基板Mapping_一级市场"
+      ],
+      "contactSources": [
+        "玻璃基板Mapping_一级市场"
+      ],
+      "hasContact": true,
+      "rawContact": "电话: 0512-82787905\n邮箱: lb@jswuyang.com"
+    },
+    {
+      "company": "赛德半导体有限公司",
+      "industry": "玻璃基板",
+      "industries": [
+        "玻璃基板"
+      ],
+      "companyType": "",
+      "intro": "赛德半导体有限公司的主要产品为超薄玻璃（UTG，Ultra Thin Glass），其是柔性显示屏的上游基础材料。从产业链上找到「赛德」的位置，需要根据下游适配的屏幕尺寸提供超薄玻璃，然后由屏厂加工为显示模组，再交由终端厂应用在折叠手机、折叠笔电和柔性车载等领域。赛德超薄柔性玻璃（UTG）具备超薄、耐磨、透光性好、强度高、可弯折、回弹性好等特性，被认为是柔性折叠材料在新型显示应用上的重要发展方向。公司自主研发全套超薄柔性玻璃（UTG）生产工艺技术，一期项目已于2021年6月底具备量产能力。",
+      "team": "YOUN Hyouk Jun，职务：总经理&创始人&CEO，介绍：创始人兼CEO YOUN HYOUK JUN硕士毕业于首尔汉阳大学成套设备工程系，曾任职于SAMSUNG SEMES、苏州外延世电子材料有限公司、苏州伟仕泰克电子材料有限公司\n欧阳春炜，职务：董事长&创始人，介绍：欧阳春炜,男,1973年2月出生,中国国籍,无境外永久居留权,1991年9月至1995年6月,广东商学院经济学学士;1999年4月至2000年2月,加拿大证券学院学习;2003年9月至2006年6月,英国曼彻斯特大学工商管理硕士。1995年7月至1997年7月,任华新期货交易有限公司期货交易及销售代表;1997年7月至1999年3月,任招商局国际旅行社广州分社业务经理;2000年2月至2001年1月,任蒙特利尔银行电话银行经理;2001年1月至2005年1月,任加拿大帝国商业银行股票和期权交易员、理财顾问、分行行长;2005年2月至2006年10月,任渣打银行上海浦西支行行长,长江流域区域经理;2006年10月至2007年10月,任恒生银行副总裁;2007年10月至2010年4月,任法国兴业银行(中国)有限公司董事和中国区个人业务总监;2010年5月至2012年5月,任鼎昌(上海)股权投资管理合伙企业(有限合伙)执行事务合伙人;2011年6月至今,任上海高洁信息科技股份有限公司董事;2012年3月至今,任上海极元金融信息服务(集团)股份有限公司董事;2012年4月至今,任鼎昌(上海)投资管理有限公司监事;2012年5月至今,任上海德骏投资顾问有限公司执行董事;2012年6月至今,任上海艺隆投资管理合伙企业(有限合伙)执行事务合伙人委派代表;2012年9月至今,任上海德骏资产管理有限公司执行董事;2013年9月至今,任北京欧迅体育文化股份有限公司董事;2013年9月至今,任上海易销科技股份有限公司监事;2014年3月至今,任德骏达隆(上海)资产管理有限公司董事长;2014年5月至今,任苏州伟仕泰克电子科技股份有限公司董事;2014年8月至今,任厦门商中在线科技股份有限公司董事;2014年11月至今,任上海屹和投资管理合伙企业(有限合伙)执行事务合伙人委派代表;2015年3月至今,任北京绿色空间生物科技股份有限公司董事;2015年7月至今,任上海德骏滔利投资管理有限公司执行董事;2015年12月至今,任上海德骏离安资产管理有限公司执行董事。现任股份公司董事,任期三年。",
+      "round": "",
+      "oneLiner": "超薄柔性玻璃研发生产商",
+      "landline": "",
+      "mobile": "18067942299",
+      "email": "",
+      "wechat": "",
+      "progress": "业务不相关",
+      "meeting": "未记录",
+      "person": "未披露",
+      "source": "玻璃基板Mapping_一级市场",
+      "sourceDate": "2026-07-20（统筹表）",
+      "url": "",
+      "note": "非半导体，柔性显示屏",
+      "evidence": "非半导体，柔性显示屏",
+      "mappingSources": [
+        "玻璃基板Mapping_一级市场"
+      ],
+      "contactSources": [
+        "玻璃基板Mapping_一级市场"
+      ],
+      "hasContact": true,
+      "rawContact": "电话: 18067942299"
+    },
+    {
+      "company": "深圳市矩阵多元科技有限公司",
+      "industry": "玻璃基板",
+      "industries": [
+        "玻璃基板"
+      ],
+      "companyType": "",
+      "intro": "深圳市矩阵多元科技有限公司(矩阵科技)是一家专注于薄膜材料制备和高通量材料制备系统开发及应用的国家高新技术企业，公司主营设备包括科研型及生产型薄膜材料制备系统:脉冲激光沉积系统、磁控溅射系统、电子東蒸发系统、分子束外延系统等离子体增强化学气相沉积系统等矩阵科技团队成员来自加州大学伯克利分校以及全球五百强公司美国Applied Materials，Western Digital，东京电子和多所国家实验室，拥有数十年设备开发及材料研发经验。公司搭建的基于脉冲激光沉积技术及磁控溅射技术的高通量材料制备系统平台可一次性批量制备100种不同材料配方或不同工艺的材料，并可同时对多达100种材料样品进行快速自动化测试和筛选。相对于传统的一个个材料试错过程，此平台可大大缩短新材料研发周期降低研发成本，加速新材料的研发及应用",
+      "team": "张晓军，职务：董事长&创始合伙人，介绍：张晓军，深圳市矩阵多元科技有限公司董事长、创始合伙人。毕业于加州大学伯克利分校机械工程系，曾任美国应用材料、美国西部数据首席研发工程师。曾经在多家世界著名大学，国家实验室及公司从事材料和相关张晓军博士--设备的研发、包括美国Lavene Bekelev国家实验室、南京大学国体微结构国家实验室，美国应用材料和美国西部数据，目前在材料领域发表学术论文20多篇、拥有30多项中美专利、在西部数据和应用材料多次获得技术发明奖，曾获得伯克利工程学Anseino ohn Macchi奖学金。同时，担任ScentihcRepots等十多家材料学领域学术杂志的审稿人。曾入选2020年科技部创新人才推进计划科技创新创业人才。",
+      "round": "",
+      "oneLiner": "薄膜材料制备和高通量材料制备系统开发商",
+      "landline": "0755-86707697",
+      "mobile": "",
+      "email": "",
+      "wechat": "",
+      "progress": "待回复",
+      "meeting": "未记录",
+      "person": "张晓军",
+      "source": "玻璃基板Mapping_一级市场",
+      "sourceDate": "2026-07-20（统筹表）",
+      "url": "",
+      "note": "打了座机，等对方联系；",
+      "evidence": "打了座机，等对方联系；",
+      "mappingSources": [
+        "玻璃基板Mapping_一级市场"
+      ],
+      "contactSources": [
+        "玻璃基板Mapping_一级市场"
+      ],
+      "hasContact": true,
+      "rawContact": "电话: 0755-86707697"
+    },
+    {
+      "company": "天津巽霖科技有限公司",
+      "industry": "玻璃基板",
+      "industries": [
+        "玻璃基板"
+      ],
+      "companyType": "",
+      "intro": "天津巽霖科技有限公司成立于2023年9月，专业从事陶瓷和玻璃电子基板表面金属化，其自有的PVD沉积技术，开拓了覆铜的全新技术路线，于国内首次突破了精细电路用玻璃基板双面覆铜和高厚铜低温固态焊接覆铜技术，解决了覆铜玻璃基板在半导体向先进制程发展以及高清显示模组中的核心问题。",
+      "team": "甄真，职务：CEO，介绍：甄真是美国伊利诺伊大学材料学本科、清华大学材料学博士，2019年进入国家级材料研究院所工作，主攻气相沉积涂层工艺研究。\n甄洪滨，职务：董事长，介绍：甄洪滨毕业于清华大学，上世纪90年代在Electrolux工作时，就意识到涂层技术在机械核心部件中的重要地位：无论是刀具、模具还是零部件，发达国家已经将涂层广泛应用，而当时国内尚属空白。在这个认知驱动下，甄洪滨在2010年创立涂层技术公司Scienwood，其在涂层产业的积累为「巽霖科技」的技术研发提供了设备改造、工艺匹配等支持。",
+      "round": "",
+      "oneLiner": "陶瓷和玻璃电子基板表面金属化先进制造企业",
+      "landline": "",
+      "mobile": "18920310186",
+      "email": "",
+      "wechat": "",
+      "progress": "已加微信",
+      "meeting": "未记录",
+      "person": "甄真",
+      "source": "玻璃基板Mapping_一级市场",
+      "sourceDate": "2026-07-20（统筹表）",
+      "url": "",
+      "note": "13820987550 郑，加上微信",
+      "evidence": "13820987550 郑，加上微信",
+      "mappingSources": [
+        "玻璃基板Mapping_一级市场"
+      ],
+      "contactSources": [
+        "玻璃基板Mapping_一级市场"
+      ],
+      "hasContact": true,
+      "rawContact": "电话: 18920310186"
+    },
+    {
+      "company": "玻芯成（重庆）半导体科技有限公司",
+      "industry": "玻璃基板",
+      "industries": [
+        "玻璃基板"
+      ],
+      "companyType": "",
+      "intro": "玻芯成是一家专注于玻璃基高可靠性半导体产品及玻璃封装基板的研发、生产、销售的高科技企业，建设玻璃基半导体特色工艺线，充分发挥设备、材料、工艺整合优势，致力于提供高性能高密互联的玻璃封装基板、集成无源器件、微机电、光电共封器件及系统集成解决方案。产品主要面向工业控制、汽车电子、电力能源等领域。",
+      "team": "徐洪光，职务：董事长&总经理，介绍：徐洪光，玻芯成（重庆）半导体科技有限公司董事长&总经理。\n刘水华，职务：监事，介绍：刘水华，玻芯成（重庆）半导体科技有限公司监事。",
+      "round": "",
+      "oneLiner": "玻璃基板半导体产品研发生产商",
+      "landline": "023-72101066",
+      "mobile": "",
+      "email": "",
+      "wechat": "",
+      "progress": "待回复",
+      "meeting": "未记录",
+      "person": "徐洪光",
+      "source": "玻璃基板Mapping_一级市场",
+      "sourceDate": "2026-07-20（统筹表）",
+      "url": "",
+      "note": "打了座机，等对方联系",
+      "evidence": "打了座机，等对方联系",
+      "mappingSources": [
+        "玻璃基板Mapping_一级市场"
+      ],
+      "contactSources": [
+        "玻璃基板Mapping_一级市场"
+      ],
+      "hasContact": true,
+      "rawContact": "电话: 023-72101066"
+    },
+    {
+      "company": "广东佛智芯微电子有限公司",
+      "industry": "玻璃基板",
+      "industries": [
+        "玻璃基板"
+      ],
+      "companyType": "",
+      "intro": "广东佛智芯微电子有限公司是广东省半导体智能装备和系统集成创新中心承载单位，2018年12月经广东省工信厅正式认定为省级制造业创新中心，公司重点面向半导体智能装备创新发展的重大需求，汇聚中科院微电子所、广东工业大学等高校和科研院所的创新资源，依托省部共建精密电子制造技术与装备国家重点实验室、佛山市广工大数控装备研究院、华进半导体、中科四合、安捷利、上达电子、丰江微电子等单位共同组建。\n公司将汇聚广东省内外半导体装备龙头企业、科研院所、本地企业应用商，打通产业链上下游，建设以国产装备、材料为核心的大板级扇出型封装示范线。",
+      "team": "华显刚，职务：法定代表人，介绍：华显刚，广东佛智芯微电子技术研究有限公司法定代表人。公司由广工大研究院联合华进半导体等企业组建，FOPLP相关授权专利数量位居全球第4。",
+      "round": "",
+      "oneLiner": "半导体智能装备制造商",
+      "landline": "",
+      "mobile": "13798027719",
+      "email": "",
+      "wechat": "",
+      "progress": "业务不相关",
+      "meeting": "未记录",
+      "person": "华显刚",
+      "source": "玻璃基板Mapping_一级市场",
+      "sourceDate": "2026-07-20（统筹表）",
+      "url": "",
+      "note": "业务不相关",
+      "evidence": "业务不相关",
+      "mappingSources": [
+        "玻璃基板Mapping_一级市场"
+      ],
+      "contactSources": [
+        "玻璃基板Mapping_一级市场"
+      ],
+      "hasContact": true,
+      "rawContact": "电话: 13798027719"
+    },
+    {
+      "company": "长沙环晶芯科技有限责任公司",
+      "industry": "玻璃基板",
+      "industries": [
+        "玻璃基板"
+      ],
+      "companyType": "",
+      "intro": "长沙环晶芯科技有限责任公司成立于2025-05-29，专注于全球首创的半导体玻璃基板回收再利用技术。",
+      "team": "前华为工程师创业团队，介绍：环晶芯科技由前华为工程师创立，成立于2025年5月，首创先进封装临时键合载板无损分离技术，实现玻璃衬底回收复用。在无锡建设首条量产线。",
+      "round": "",
+      "oneLiner": "半导体玻璃基板回收利用技术研发商",
+      "landline": "",
+      "mobile": "13120412088",
+      "email": "",
+      "wechat": "",
+      "progress": "业务不相关",
+      "meeting": "未记录",
+      "person": "未披露",
+      "source": "玻璃基板Mapping_一级市场",
+      "sourceDate": "2026-07-20（统筹表）",
+      "url": "",
+      "note": "业务不相关",
+      "evidence": "业务不相关",
+      "mappingSources": [
+        "玻璃基板Mapping_一级市场"
+      ],
+      "contactSources": [
+        "玻璃基板Mapping_一级市场"
+      ],
+      "hasContact": true,
+      "rawContact": "电话: 13120412088"
+    },
+    {
+      "company": "厦门云天半导体科技有限公司",
+      "industry": "玻璃基板",
+      "industries": [
+        "玻璃基板"
+      ],
+      "companyType": "",
+      "intro": "厦门云天半导体科技有限公司是国内TGV（玻璃通孔）技术领域先行企业，专注玻璃基板先进封装，致力于通过TGV技术实现芯片间高密度互连，应用于AI芯片、HBM等先进封装场景。在国内玻璃基板TGV企业盘点中被列为核心企业。",
+      "team": "未公开，介绍：厦门云天半导体是国内TGV玻璃基板领域代表企业，国内率先突破TGV技术的厂商之一，打破海外厂商垄断。",
+      "round": "",
+      "oneLiner": "TGV玻璃基板及先进封装服务商",
+      "landline": "",
+      "mobile": "",
+      "email": "",
+      "wechat": "",
+      "progress": "待核实",
+      "meeting": "未记录",
+      "person": "未公开",
+      "source": "玻璃基板Mapping_一级市场",
+      "sourceDate": "2026-07-20（统筹表）",
+      "url": "",
+      "note": "下面都是封装为主，有TGV through glass via技术，需要核实是否需要联系；原始联系方式字段：19",
+      "evidence": "下面都是封装为主，有TGV through glass via技术，需要核实是否需要联系",
+      "mappingSources": [
+        "玻璃基板Mapping_一级市场"
+      ],
+      "contactSources": [
+        "玻璃基板Mapping_一级市场"
+      ],
+      "hasContact": false,
+      "rawContact": "19"
+    },
+    {
+      "company": "北京锐洁机器人科技有限公司",
+      "industry": "TCB封装",
+      "industries": [
+        "TCB封装"
+      ],
+      "companyType": "",
+      "intro": "由海外留学归国团队创办，集智能洁净机械手臂和半导体专用高端集成设备为研究、生产、销售为一体的国家高新技术企业，位于北京亦庄经济技术开发区。",
+      "team": "刘冬梅（经理/法定代表人）；刘广齐（执行董事）；王强（监事）；李云云（财务负责人）",
+      "round": "",
+      "oneLiner": "智能洁净机械手臂、半导体专用高端集成设备研发生产销售",
+      "landline": "010-53822086；010-56532123",
+      "mobile": "15110056533；18611126633；13321152839",
+      "email": "caiwu02@reje.com.cn；xingzheng@bj-jcw.com；caiwu@bj-jcw.com；xiaoshou@reje.com.cn",
+      "wechat": "",
+      "progress": "已联系上",
+      "meeting": "未记录",
+      "person": "未披露",
+      "source": "TCB公司联系信息汇总",
+      "sourceDate": "2026-07-20（统筹表）",
+      "url": "",
+      "note": "打座机联系上了，帮忙推联系方式",
+      "evidence": "打座机联系上了，帮忙推联系方式",
+      "mappingSources": [
+        "TCB公司联系信息汇总"
+      ],
+      "contactSources": [
+        "TCB公司联系信息汇总"
+      ],
+      "hasContact": true,
+      "rawContact": "电话: 15110056533；18611126633；13321152839；010-53822086\n座机: 010-56532123\n邮箱: caiwu02@reje.com.cn；xingzheng@bj-jcw.com；caiwu@bj-jcw.com；xiaoshou@reje.com.cn"
+    },
+    {
+      "company": "深圳市华芯半导体装备技术有限公司",
+      "industry": "TCB封装",
+      "industries": [
+        "TCB封装"
+      ],
+      "companyType": "",
+      "intro": "成立于2022-06-01，主要经营半导体器件专用设备制造、半导体分立器件制造、半导体器件专用设备销售，深圳市南山区高新技术企业。",
+      "team": "夏裕（执行董事/总经理，54.717%持股）；余焕丽（监事）",
+      "round": "",
+      "oneLiner": "半导体器件专用设备制造；半导体分立器件制造；半导体器件专用设备销售",
+      "landline": "",
+      "mobile": "18923839930",
+      "email": "2231590197@qq.com；xiayu@huakegufen.com",
+      "wechat": "电话: 18923839930\n座机: 18923839930\n邮箱: 2231590197@qq.com；xiayu@huakegufen.com",
+      "progress": "未联系上",
+      "meeting": "未记录",
+      "person": "未披露",
+      "source": "TCB公司联系信息汇总",
+      "sourceDate": "2026-07-20（统筹表）",
+      "url": "",
+      "note": "打不通；座机不需要",
+      "evidence": "打不通；座机不需要",
+      "mappingSources": [
+        "TCB公司联系信息汇总"
+      ],
+      "contactSources": [
+        "TCB公司联系信息汇总"
+      ],
+      "hasContact": true,
+      "rawContact": "电话: 18923839930\n座机: 18923839930\n邮箱: 2231590197@qq.com；xiayu@huakegufen.com"
+    },
+    {
+      "company": "上海御渡半导体科技有限公司",
+      "industry": "TCB封装",
+      "industries": [
+        "TCB封装"
+      ],
+      "companyType": "",
+      "intro": "由中科院和北科院发起，2014年12月成立于上海临港，致力于打造国内自主可控的半导体测试服务系统，存储芯片和系统级芯片测试领域已推出自主可控的国产中高端测试量产设备。",
+      "team": "朱小荣（董事长&总经理，24.1071%持股）；张东（董事）；吴华（董事）；栾年生（董事）；栾凌青（董事）；KAIXIONGHU（董事）；施晓毅（监事）；李怀建（监事）；Jerry Zhu（联系人）",
+      "round": "",
+      "oneLiner": "集成电路中高端测试设备研发设计、生产制造、销售和服务",
+      "landline": "021-20940020",
+      "mobile": "13788977401；13671566857",
+      "email": "marketing@ncatest.com；eddie.wang@testrong.net；lina.wang@ncatest.com；jinlan.han@ncatest.com",
+      "wechat": "",
+      "progress": "未联系上",
+      "meeting": "未记录",
+      "person": "未披露",
+      "source": "TCB公司联系信息汇总",
+      "sourceDate": "2026-07-20（统筹表）",
+      "url": "",
+      "note": "座机不需要；电话都打不通",
+      "evidence": "座机不需要；电话都打不通",
+      "mappingSources": [
+        "TCB公司联系信息汇总"
+      ],
+      "contactSources": [
+        "TCB公司联系信息汇总"
+      ],
+      "hasContact": true,
+      "rawContact": "电话: 13788977401；13671566857\n座机: 021-20940020\n邮箱: marketing@ncatest.com；eddie.wang@testrong.net；lina.wang@ncatest.com；jinlan.han@ncatest.com"
+    },
+    {
+      "company": "苏州领慧立芯科技有限公司",
+      "industry": "TCB封装",
+      "industries": [
+        "TCB封装"
+      ],
+      "companyType": "",
+      "intro": "专注于高性能模拟及混合信号芯片设计，致力于中高端数模混合产品的研发，关键指标对标业内领先水平，广泛应用于通讯设备、消费类电子、工业控制、医疗仪器和汽车电子等领域，清华系创业团队。",
+      "team": "卢立柱（董事长/创始人，清华大学微电子所18+年工控数模混合芯片设计经验，2020/2022年苏州姑苏/工业园区领军人才）；王汉卿（董事，11.8555%持股）；刘银才（董事，11.8555%持股）；薛旭林（董事）；刘飞（董事）；范理南（监事）",
+      "round": "",
+      "oneLiner": "高性能模拟及混合信号芯片设计（中高端数模混合产品、高精度信号链、定制化MCU）",
+      "landline": "0512-88888888；0512-62820988",
+      "mobile": "13371781155",
+      "email": "support@legendsemi.com",
+      "wechat": "",
+      "progress": "未联系上",
+      "meeting": "未记录",
+      "person": "未披露",
+      "source": "TCB公司联系信息汇总",
+      "sourceDate": "2026-07-20（统筹表）",
+      "url": "",
+      "note": "座机不需要；电话打不通",
+      "evidence": "座机不需要；电话打不通",
+      "mappingSources": [
+        "TCB公司联系信息汇总"
+      ],
+      "contactSources": [
+        "TCB公司联系信息汇总"
+      ],
+      "hasContact": true,
+      "rawContact": "电话: 13371781155；0512-88888888\n座机: 0512-62820988\n邮箱: support@legendsemi.com"
+    },
+    {
+      "company": "友机技术（上海）有限公司",
+      "industry": "TCB封装",
+      "industries": [
+        "TCB封装"
+      ],
+      "companyType": "",
+      "intro": "以机床智能化及工艺智能化技术为核心，由精密加工领域多年实践专家及国际顶尖的工业人工智能算法科学家发起成立，致力于建造基于机理工艺模型的高度智慧工艺优化及决策系统，实现泛机电化设备的智慧控制。",
+      "team": "江金根（创始人，42.2805%持股）；陈阳（执行董事&总经理）",
+      "round": "",
+      "oneLiner": "机床智能化及工艺智能化技术、IOM车间信息化软件、刀具管理软件、工厂数字化全局解决方案",
+      "landline": "",
+      "mobile": "18768153804；18616586348",
+      "email": "info@ujoin-tech.com",
+      "wechat": "",
+      "progress": "未联系上",
+      "meeting": "未记录",
+      "person": "未披露",
+      "source": "TCB公司联系信息汇总",
+      "sourceDate": "2026-07-20（统筹表）",
+      "url": "",
+      "note": "座机占线；电话都是语音留言",
+      "evidence": "座机占线；电话都是语音留言",
+      "mappingSources": [
+        "TCB公司联系信息汇总"
+      ],
+      "contactSources": [
+        "TCB公司联系信息汇总"
+      ],
+      "hasContact": true,
+      "rawContact": "电话: 18768153804；18616586348\n座机: 400-6319969\n邮箱: info@ujoin-tech.com"
+    },
+    {
+      "company": "化合积电",
+      "industry": "金刚石散热",
+      "industries": [
+        "金刚石散热"
+      ],
+      "companyType": "",
+      "intro": "化合积电是国内比较贴近半导体散热应用的金刚石材料公司，提供CVD金刚石热沉片、金刚石wafer和GaN-on-diamond技术，面向高功率半导体散热场景。",
+      "team": "化合积电联合创始人、CEO毕业于新加坡国立大学\n福建省第八批引进高层次创业创新人才（创业人才项目）\n厦门市引进高层次人才“双百计划”领军型创业人才\n世界 500 强企业 10 年管理经验\n主导集美大学半导体产业技术研究院建设，开展战略性、前瞻性、综合性科技创新以及产业化",
+      "round": "",
+      "oneLiner": "diamond heat sink, diamond wafer, GaN-on-diamond",
+      "landline": "0592-3756998",
+      "mobile": "13859969306",
+      "email": "sales@csmh-semi.com",
+      "wechat": "电话: 0592-3756998\n13859969306（微信同号）\n邮箱: sales@csmh-semi.com\n微信/公众号: 化合积电（客服）；微信公众号（官网二维码）",
+      "progress": "已加微信",
+      "meeting": "未记录",
+      "person": "未披露",
+      "source": "金刚石散热Mapping_一级市场",
+      "sourceDate": "2026-07-20（统筹表）",
+      "url": "",
+      "note": "加这个微信发送公司资料",
+      "evidence": "加这个微信发送公司资料",
+      "mappingSources": [
+        "金刚石散热Mapping_一级市场"
+      ],
+      "contactSources": [
+        "金刚石散热Mapping_一级市场"
+      ],
+      "hasContact": true,
+      "rawContact": "电话: 0592-3756998\n13859969306（微信同号）\n邮箱: sales@csmh-semi.com\n微信/公众号: 化合积电（客服）；微信公众号（官网二维码）"
+    },
+    {
+      "company": "海光智能",
+      "industry": "金刚石散热",
+      "industries": [
+        "金刚石散热"
+      ],
+      "companyType": "",
+      "intro": "海光智能专注于CVD金刚石片和热沉片的研发和生产，面向芯片散热应用。公司处于早期阶段，需要验证客户和量产能力。",
+      "team": "创始人：公开信息有限\n技术团队：来自材料科学和半导体领域",
+      "round": "",
+      "oneLiner": "CVD 金刚石片 / 热沉片",
+      "landline": "0757-28828553；0757-82583658；0757-82583659",
+      "mobile": "",
+      "email": "info@highlight-it.com；director@highlight-it.com",
+      "wechat": "",
+      "progress": "不联系",
+      "meeting": "未记录",
+      "person": "未披露",
+      "source": "金刚石散热Mapping_一级市场",
+      "sourceDate": "2026-07-20（统筹表）",
+      "url": "",
+      "note": "不用了",
+      "evidence": "不用了",
+      "mappingSources": [
+        "金刚石散热Mapping_一级市场"
+      ],
+      "contactSources": [
+        "金刚石散热Mapping_一级市场"
+      ],
+      "hasContact": true,
+      "rawContact": "电话: 工厂：0757-28828553\n总部：0757-82583658\n传真：0757-82583659\n邮箱: 国内：info@highlight-it.com\n海外：director@highlight-it.com"
+    },
+    {
+      "company": "Corintis",
+      "industry": "金刚石散热",
+      "industries": [
+        "金刚石散热"
+      ],
+      "companyType": "",
+      "intro": "Corintis是芯片级微流道冷却技术公司，提供direct-to-die cooling解决方案。如果液体能更靠近芯片热点，可能削弱对金刚石热扩散片的需求，是金刚石最强替代路线之一。",
+      "team": "创始人：来自EPFL（瑞士联邦理工）微流道研究团队\n技术团队：专注于芯片级微流道冷却技术",
+      "round": "",
+      "oneLiner": "芯片级微流道冷却技术",
+      "landline": "",
+      "mobile": "",
+      "email": "",
+      "wechat": "",
+      "progress": "未联系",
+      "meeting": "未记录",
+      "person": "未披露",
+      "source": "金刚石散热Mapping_一级市场",
+      "sourceDate": "2026-07-20（统筹表）",
+      "url": "",
+      "note": "19；原始联系方式字段：19",
+      "evidence": "19",
+      "mappingSources": [
+        "金刚石散热Mapping_一级市场"
+      ],
+      "contactSources": [
+        "金刚石散热Mapping_一级市场"
+      ],
+      "hasContact": false,
+      "rawContact": "19"
+    },
+    {
+      "company": "JetCool",
+      "industry": "金刚石散热",
+      "industries": [
+        "金刚石散热"
+      ],
+      "companyType": "",
+      "intro": "JetCool提供microconvective direct-to-chip cooling技术，直接面向处理器热点散热，和金刚石争夺近端散热价值。",
+      "team": "创始人：来自MIT微流道研究团队\n技术团队：专注于微对流直接芯片冷却技术",
+      "round": "",
+      "oneLiner": "microconvective direct-to-chip cooling",
+      "landline": "",
+      "mobile": "",
+      "email": "",
+      "wechat": "",
+      "progress": "未联系",
+      "meeting": "未记录",
+      "person": "未披露",
+      "source": "金刚石散热Mapping_一级市场",
+      "sourceDate": "2026-07-20（统筹表）",
+      "url": "",
+      "note": "19；原始联系方式字段：19",
+      "evidence": "19",
+      "mappingSources": [
+        "金刚石散热Mapping_一级市场"
+      ],
+      "contactSources": [
+        "金刚石散热Mapping_一级市场"
+      ],
+      "hasContact": false,
+      "rawContact": "19"
+    },
+    {
+      "company": "ZutaCore",
+      "industry": "金刚石散热",
+      "industries": [
+        "金刚石散热"
+      ],
+      "companyType": "",
+      "intro": "ZutaCore提供two-phase direct-to-chip cooling两相冷却技术，适合高热流密度AI服务器场景，是金刚石的重要替代路线。",
+      "team": "创始人：公开信息有限\n技术团队：来自数据中心冷却领域",
+      "round": "",
+      "oneLiner": "two-phase direct-to-chip cooling",
+      "landline": "",
+      "mobile": "",
+      "email": "",
+      "wechat": "",
+      "progress": "未联系",
+      "meeting": "未记录",
+      "person": "未披露",
+      "source": "金刚石散热Mapping_一级市场",
+      "sourceDate": "2026-07-20（统筹表）",
+      "url": "",
+      "note": "19；原始联系方式字段：19",
+      "evidence": "19",
+      "mappingSources": [
+        "金刚石散热Mapping_一级市场"
+      ],
+      "contactSources": [
+        "金刚石散热Mapping_一级市场"
+      ],
+      "hasContact": false,
+      "rawContact": "19"
+    },
+    {
+      "company": "Accelsius",
+      "industry": "金刚石散热",
+      "industries": [
+        "金刚石散热"
+      ],
+      "companyType": "",
+      "intro": "Accelsius是数据中心AI/HPC两相液冷公司，提供two-phase direct-to-chip cooling解决方案，适合高功率AI芯片散热。",
+      "team": "创始人：公开信息有限\n技术团队：来自数据中心冷却和HPC领域",
+      "round": "",
+      "oneLiner": "数据中心AI/HPC两相液冷",
+      "landline": "",
+      "mobile": "",
+      "email": "",
+      "wechat": "",
+      "progress": "未联系",
+      "meeting": "未记录",
+      "person": "未披露",
+      "source": "金刚石散热Mapping_一级市场",
+      "sourceDate": "2026-07-20（统筹表）",
+      "url": "",
+      "note": "19；原始联系方式字段：19",
+      "evidence": "19",
+      "mappingSources": [
+        "金刚石散热Mapping_一级市场"
+      ],
+      "contactSources": [
+        "金刚石散热Mapping_一级市场"
+      ],
+      "hasContact": false,
+      "rawContact": "19"
+    },
+    {
+      "company": "Element Six",
+      "industry": "金刚石散热",
+      "industries": [
+        "金刚石散热"
+      ],
+      "companyType": "",
+      "intro": "Element Six是De Beers旗下合成金刚石和超硬材料供应商，产品覆盖CVD金刚石、单晶/多晶金刚石及热管理/电子冷却应用。该公司更像成熟材料平台，不是典型早期一级市场标的，但适合作为海外金刚石热管理对标。",
+      "team": "CEO：Siobhan Duffy；技术销售/业务发展团队覆盖半导体、光电子和工业材料",
+      "round": "",
+      "oneLiner": "CVD金刚石、单晶/多晶金刚石材料与热管理应用",
+      "landline": "",
+      "mobile": "",
+      "email": "",
+      "wechat": "",
+      "progress": "未联系",
+      "meeting": "未记录",
+      "person": "未披露",
+      "source": "金刚石散热Mapping_一级市场",
+      "sourceDate": "2026-07-20（统筹表）",
+      "url": "",
+      "note": "19；原始联系方式字段：19",
+      "evidence": "19",
+      "mappingSources": [
+        "金刚石散热Mapping_一级市场"
+      ],
+      "contactSources": [
+        "金刚石散热Mapping_一级市场"
+      ],
+      "hasContact": false,
+      "rawContact": "19"
+    },
+    {
+      "company": "CoolIT Systems",
+      "industry": "金刚石散热",
+      "industries": [
+        "金刚石散热"
+      ],
+      "companyType": "",
+      "intro": "CoolIT Systems是数据中心直接液冷老牌供应商，产品覆盖冷板、CDU和机架级液冷，面向AI服务器与高密度HPC。该项目代表系统级液冷路线，对金刚石近芯片热扩散材料既有替代也有协同关系。",
+      "team": "管理团队：数据中心液冷与服务器OEM合作背景；公开创始团队信息有限",
+      "round": "",
+      "oneLiner": "AI/HPC服务器直接液冷解决方案",
+      "landline": "",
+      "mobile": "",
+      "email": "",
+      "wechat": "",
+      "progress": "未联系",
+      "meeting": "未记录",
+      "person": "未披露",
+      "source": "金刚石散热Mapping_一级市场",
+      "sourceDate": "2026-07-20（统筹表）",
+      "url": "",
+      "note": "19；原始联系方式字段：19",
+      "evidence": "19",
+      "mappingSources": [
+        "金刚石散热Mapping_一级市场"
+      ],
+      "contactSources": [
+        "金刚石散热Mapping_一级市场"
+      ],
+      "hasContact": false,
+      "rawContact": "19"
+    },
+    {
+      "company": "瑞为新材",
+      "industry": "金刚石散热",
+      "industries": [
+        "金刚石散热"
+      ],
+      "companyType": "",
+      "intro": "瑞为新材是国内金刚石-金属复合散热材料明确一级标的之一，已完成多轮融资，估值接近10亿元。核心看点在金刚石与铜/铝基体界面结合、工程化制备和军民两端客户验证。",
+      "team": "法定代表人王长瑞；南航国际创新港背景，团队聚焦金刚石/金属复合界面和批量制备",
+      "round": "",
+      "oneLiner": "金刚石-铜/铝复合散热材料，面向军工、通信和高功率芯片热管理",
+      "landline": "025-57600809",
+      "mobile": "15850664676",
+      "email": "shichangbuxiaowei@njrwxc.com",
+      "wechat": "电话: 025-57600809\n15850664676\n邮箱: shichangbuxiaowei@njrwxc.com",
+      "progress": "已加微信",
+      "meeting": "未记录",
+      "person": "未披露",
+      "source": "金刚石散热Mapping_一级市场",
+      "sourceDate": "2026-07-20（统筹表）",
+      "url": "",
+      "note": "加微信",
+      "evidence": "加微信",
+      "mappingSources": [
+        "金刚石散热Mapping_一级市场"
+      ],
+      "contactSources": [
+        "金刚石散热Mapping_一级市场"
+      ],
+      "hasContact": true,
+      "rawContact": "电话: 025-57600809\n15850664676\n邮箱: shichangbuxiaowei@njrwxc.com"
+    },
+    {
+      "company": "赛墨科技",
+      "industry": "金刚石散热",
+      "industries": [
+        "金刚石散热"
+      ],
+      "companyType": "",
+      "intro": "赛墨科技是中科院宁波材料所孵化的热管理复合材料公司，产品矩阵覆盖石墨/金属与金刚石/铜复合材料。其价值在于已具备多材料平台与头部客户导入可能性。",
+      "team": "中科院宁波材料所技术孵化背景，团队聚焦高导热复合材料与批量供货",
+      "round": "",
+      "oneLiner": "石墨-铝、石墨-铜和金刚石-铜复合热管理材料",
+      "landline": "0574-86306652",
+      "mobile": "15867205030；18858010406；18970337561",
+      "email": "mahongbing@nimte.ac.cn",
+      "wechat": "",
+      "progress": "已联系上",
+      "meeting": "未记录",
+      "person": "未披露",
+      "source": "金刚石散热Mapping_一级市场",
+      "sourceDate": "2026-07-20（统筹表）",
+      "url": "",
+      "note": "有同事在联系了，刘汉卿，有联系但是这一轮够呛；这一轮目前在交割；加微信",
+      "evidence": "有同事在联系了，刘汉卿，有联系但是这一轮够呛；这一轮目前在交割；加微信",
+      "mappingSources": [
+        "金刚石散热Mapping_一级市场"
+      ],
+      "contactSources": [
+        "金刚石散热Mapping_一级市场"
+      ],
+      "hasContact": true,
+      "rawContact": "电话: 0574-86306652\n薛总：15867205030\n马经理：18858010406\n高经理（市场部）：18970337561\n邮箱: mahongbing@nimte.ac.cn"
+    },
+    {
+      "company": "碳真芯材",
+      "industry": "金刚石散热",
+      "industries": [
+        "金刚石散热"
+      ],
+      "companyType": "",
+      "intro": "碳真芯材是哈工大体系孵化的早期金刚石铜散热片公司，公开资料显示已推进规模化、商业化应用。项目仍处早期窗口，需重点核实客户批量订单和成本曲线。",
+      "team": "哈尔滨工业大学、哈工大郑州研究院孵化团队",
+      "round": "",
+      "oneLiner": "金刚石铜复合散热片，面向高端消费电子、AI终端和半导体器件散热",
+      "landline": "",
+      "mobile": "",
+      "email": "zhaojiwen@core-diamond.com；liyicun@core-diamond.com",
+      "wechat": "",
+      "progress": "未联系",
+      "meeting": "未记录",
+      "person": "未披露",
+      "source": "金刚石散热Mapping_一级市场",
+      "sourceDate": "2026-07-20（统筹表）",
+      "url": "",
+      "note": "19",
+      "evidence": "19",
+      "mappingSources": [
+        "金刚石散热Mapping_一级市场"
+      ],
+      "contactSources": [
+        "金刚石散热Mapping_一级市场"
+      ],
+      "hasContact": true,
+      "rawContact": "邮箱: zhaojiwen@core-diamond.com\nliyicun@core-diamond.com"
+    },
+    {
+      "company": "博志金钻",
+      "industry": "金刚石散热",
+      "industries": [
+        "金刚石散热"
+      ],
+      "companyType": "",
+      "intro": "博志金钻是国内金刚石热沉和陶瓷热沉领域较清晰的一级市场标的，已完成多轮融资，并通过苏州/南通基地承接量产。其产品从传统陶瓷热沉延伸到金刚石铜和单晶金刚石热沉。",
+      "team": "西安交通大学材料学院表面课题组团队创办；法定代表人潘远志",
+      "round": "",
+      "oneLiner": "半导体热沉与先进封装散热材料供应商",
+      "landline": "",
+      "mobile": "17792060816；15715201195",
+      "email": "mhdeng@bzjztech.com；mhdeng@bzjztech163.com",
+      "wechat": "",
+      "progress": "可进一步沟通",
+      "meeting": "未记录",
+      "person": "未披露",
+      "source": "金刚石散热Mapping_一级市场",
+      "sourceDate": "2026-07-20（统筹表）",
+      "url": "",
+      "note": "这一轮额度差不多，可以进一步聊一下",
+      "evidence": "这一轮额度差不多，可以进一步聊一下",
+      "mappingSources": [
+        "金刚石散热Mapping_一级市场"
+      ],
+      "contactSources": [
+        "金刚石散热Mapping_一级市场"
+      ],
+      "hasContact": true,
+      "rawContact": "电话: 17792060816\n15715201195\n邮箱: mhdeng@bzjztech.com\n工商页另列：mhdeng@bzjztech163.com"
+    },
+    {
+      "company": "钻耐科思 / DiamNEX",
+      "industry": "金刚石散热",
+      "industries": [
+        "金刚石散热"
+      ],
+      "companyType": "",
+      "intro": "钻耐科思是港大孵化的金刚石薄膜早期公司，核心看点是边缘暴露剥离法降低金刚石薄膜制备难度，若能导入高功率AI芯片或射频器件，将直接切入近芯片热扩散环节。",
+      "team": "创始人褚智勤，香港大学电机与电子工程系副教授；香港大学孵化",
+      "round": "",
+      "oneLiner": "金刚石薄膜制备与高功率芯片近结散热",
+      "landline": "",
+      "mobile": "",
+      "email": "info@diamnex.com",
+      "wechat": "",
+      "progress": "未联系",
+      "meeting": "未记录",
+      "person": "未披露",
+      "source": "金刚石散热Mapping_一级市场",
+      "sourceDate": "2026-07-20（统筹表）",
+      "url": "",
+      "note": "19",
+      "evidence": "19",
+      "mappingSources": [
+        "金刚石散热Mapping_一级市场"
+      ],
+      "contactSources": [
+        "金刚石散热Mapping_一级市场"
+      ],
+      "hasContact": true,
+      "rawContact": "邮箱: info@diamnex.com"
+    },
+    {
+      "company": "新锋科技",
+      "industry": "金刚石散热",
+      "industries": [
+        "金刚石散热"
+      ],
+      "companyType": "",
+      "intro": "新锋科技具备较长CVD金刚石技术积累，当前不只做散热，业务横跨电极、光学、半导体和热学材料。作为平台型项目，需区分热管理收入占比与材料验证阶段。",
+      "team": "中南大学气相沉积技术与薄膜材料研究室技术积累，团队覆盖CVD薄膜材料",
+      "round": "",
+      "oneLiner": "大尺寸CVD金刚石和金刚石功能材料平台",
+      "landline": "0731-85380411；0731-82433110",
+      "mobile": "18108403506；15200870455",
+      "email": "",
+      "wechat": "电话: 18108403506\n0731-85380411\n0731-82433110\n15200870455（同微信；企事业科协页）",
+      "progress": "已加微信",
+      "meeting": "未记录",
+      "person": "未披露",
+      "source": "金刚石散热Mapping_一级市场",
+      "sourceDate": "2026-07-20（统筹表）",
+      "url": "",
+      "note": "加微信",
+      "evidence": "加微信",
+      "mappingSources": [
+        "金刚石散热Mapping_一级市场"
+      ],
+      "contactSources": [
+        "金刚石散热Mapping_一级市场"
+      ],
+      "hasContact": true,
+      "rawContact": "电话: 18108403506\n0731-85380411\n0731-82433110\n15200870455（同微信；企事业科协页）"
+    },
+    {
+      "company": "乾元芯钻",
+      "industry": "金刚石散热",
+      "industries": [
+        "金刚石散热"
+      ],
+      "companyType": "",
+      "intro": "乾元芯钻是黄河旋风与博志金钻合资平台，重点承接8英寸金刚石热沉片和金刚石铜复合材料产业化。其一级属性较弱，但对国内金刚石散热产能建设有跟踪价值。",
+      "team": "黄河旋风材料能力 + 博志金钻热沉/表面改性能力",
+      "round": "",
+      "oneLiner": "黄河旋风与博志金钻合资的金刚石热沉片产业化平台",
+      "landline": "0374-6108986",
+      "mobile": "17792060816",
+      "email": "hhxfzjb@hhxf.com；mhdeng@bzjztech.com",
+      "wechat": "",
+      "progress": "未联系",
+      "meeting": "未记录",
+      "person": "未披露",
+      "source": "金刚石散热Mapping_一级市场",
+      "sourceDate": "2026-07-20（统筹表）",
+      "url": "",
+      "note": "19",
+      "evidence": "19",
+      "mappingSources": [
+        "金刚石散热Mapping_一级市场"
+      ],
+      "contactSources": [
+        "金刚石散热Mapping_一级市场"
+      ],
+      "hasContact": true,
+      "rawContact": "电话: 黄河旋风：0374-6108986\n博志金钻：17792060816\n邮箱: 黄河旋风：hhxfzjb@hhxf.com\n博志金钻：mhdeng@bzjztech.com"
+    },
+    {
+      "company": "河南风优创材料技术有限公司",
+      "industry": "金刚石散热",
+      "industries": [
+        "金刚石散热"
+      ],
+      "companyType": "",
+      "intro": "河南风优创更接近黄河旋风内部产业化平台，非独立一级市场标的。公开资料显示其承担8英寸金刚石热沉片量产产线，需持续核实产能爬坡、良率和真实客户认证。",
+      "team": "黄河旋风产业化团队，依托超硬材料和MPCVD产线建设经验",
+      "round": "",
+      "oneLiner": "黄河旋风旗下金刚石热沉片和金刚石铜复合材料产业化主体",
+      "landline": "0374-6108986；0755-82591595",
+      "mobile": "15361490030",
+      "email": "hhxfzjb@hhxf.com；info@uniplasma.com；sales@uniplasma.com",
+      "wechat": "电话: 黄河旋风：0374-6108986\n优普莱总机：0755-82591595\n优普莱市场部：15361490030\n邮箱: 黄河旋风：hhxfzjb@hhxf.com\n优普莱：info@uniplasma.com\nsales@uniplasma.com\n微信/公众号: 优普莱微信公众号（官网二维码）",
+      "progress": "未联系",
+      "meeting": "未记录",
+      "person": "未披露",
+      "source": "金刚石散热Mapping_一级市场",
+      "sourceDate": "2026-07-20（统筹表）",
+      "url": "",
+      "note": "19",
+      "evidence": "19",
+      "mappingSources": [
+        "金刚石散热Mapping_一级市场"
+      ],
+      "contactSources": [
+        "金刚石散热Mapping_一级市场"
+      ],
+      "hasContact": true,
+      "rawContact": "电话: 黄河旋风：0374-6108986\n优普莱总机：0755-82591595\n优普莱市场部：15361490030\n邮箱: 黄河旋风：hhxfzjb@hhxf.com\n优普莱：info@uniplasma.com\nsales@uniplasma.com\n微信/公众号: 优普莱微信公众号（官网二维码）"
+    },
+    {
+      "company": "河南天璇半导体科技有限责任公司",
+      "industry": "金刚石散热",
+      "industries": [
+        "金刚石散热"
+      ],
+      "companyType": "",
+      "intro": "河南天璇半导体是四方达控股体系内项目，二级市场敞口更明显，一级市场独立性有限。可作为国内CVD金刚石热沉产能和客户验证的跟踪节点。",
+      "team": "四方达超硬材料团队，团队信息需进一步核实",
+      "round": "",
+      "oneLiner": "四方达体系内半导体金刚石材料和热管理项目",
+      "landline": "",
+      "mobile": "13623846870；13323820033",
+      "email": "zhangyuan@meraksemicon.com；guanyafeng@meraksemicon.com",
+      "wechat": "",
+      "progress": "已加微信",
+      "meeting": "未记录",
+      "person": "未披露",
+      "source": "金刚石散热Mapping_一级市场",
+      "sourceDate": "2026-07-20（统筹表）",
+      "url": "",
+      "note": "后续负责人无回复",
+      "evidence": "后续负责人无回复",
+      "mappingSources": [
+        "金刚石散热Mapping_一级市场"
+      ],
+      "contactSources": [
+        "金刚石散热Mapping_一级市场"
+      ],
+      "hasContact": true,
+      "rawContact": "电话: 13623846870\n13323820033（企查查商标页）\n邮箱: zhangyuan@meraksemicon.com\nguanyafeng@meraksemicon.com"
+    },
+    {
+      "company": "中科粉研",
+      "industry": "金刚石散热",
+      "industries": [
+        "金刚石散热"
+      ],
+      "companyType": "",
+      "intro": "中科粉研是河南超硬材料相关企业，若具备高品质金刚石粉体和表面改性能力，可作为金刚石铜复合材料上游候选。当前散热业务明确性低，建议列入待核实池。",
+      "team": "公开团队信息有限，需核实是否具备半导体热管理客户",
+      "round": "",
+      "oneLiner": "超硬材料粉体和金刚石材料，可能切入金刚石铜复合材料上游",
+      "landline": "",
+      "mobile": "15649072177；13598870818",
+      "email": "",
+      "wechat": "电话: 15649072177\n13598870818\n微信/公众号: 官方微信（国际超硬材料网商铺页二维码）",
+      "progress": "不联系",
+      "meeting": "未记录",
+      "person": "未披露",
+      "source": "金刚石散热Mapping_一级市场",
+      "sourceDate": "2026-07-20（统筹表）",
+      "url": "",
+      "note": "不合适",
+      "evidence": "不合适",
+      "mappingSources": [
+        "金刚石散热Mapping_一级市场"
+      ],
+      "contactSources": [
+        "金刚石散热Mapping_一级市场"
+      ],
+      "hasContact": true,
+      "rawContact": "电话: 15649072177\n13598870818\n微信/公众号: 官方微信（国际超硬材料网商铺页二维码）"
+    },
+    {
+      "company": "宁波晶钻科技股份有限公司",
+      "industry": "金刚石散热",
+      "industries": [
+        "金刚石散热"
+      ],
+      "companyType": "",
+      "intro": "宁波晶钻成立较早，不一定是典型早期一级市场项目，但在CVD金刚石材料和宁波材料生态中有跟踪意义。建议作为潜在热管理材料公司留档。",
+      "team": "公开团队信息有限，需确认当前业务重心和融资计划",
+      "round": "",
+      "oneLiner": "CVD金刚石与金刚石材料，可能面向热管理和半导体应用",
+      "landline": "0574-86689268；0574-86681159",
+      "mobile": "13515887660",
+      "email": "office@crysdiam.com",
+      "wechat": "",
+      "progress": "不联系",
+      "meeting": "未记录",
+      "person": "未披露",
+      "source": "金刚石散热Mapping_一级市场",
+      "sourceDate": "2026-07-20（统筹表）",
+      "url": "",
+      "note": "不合适",
+      "evidence": "不合适",
+      "mappingSources": [
+        "金刚石散热Mapping_一级市场"
+      ],
+      "contactSources": [
+        "金刚石散热Mapping_一级市场"
+      ],
+      "hasContact": true,
+      "rawContact": "电话: 0574-86689268\n13515887660\n传真：0574-86681159\n邮箱: office@crysdiam.com"
+    },
+    {
+      "company": "墨睿",
+      "industry": "石墨烯/导热材料",
+      "industries": [
+        "石墨烯/导热材料"
+      ],
+      "companyType": "",
+      "intro": "19",
+      "team": "19",
+      "round": "",
+      "oneLiner": "19",
+      "landline": "0870-8662889",
+      "mobile": "",
+      "email": "tanfang@ytmorion.com",
+      "wechat": "",
+      "progress": "未联系上",
+      "meeting": "未记录",
+      "person": "未披露",
+      "source": "招聘联系信息汇总_0619hlink",
+      "sourceDate": "2026-07-20（统筹表）",
+      "url": "",
+      "note": "没人接",
+      "evidence": "没人接",
+      "mappingSources": [
+        "招聘联系信息汇总_0619hlink"
+      ],
+      "contactSources": [
+        "招聘联系信息汇总_0619hlink"
+      ],
+      "hasContact": true,
+      "rawContact": "座机: 0870-8662889\n邮箱: tanfang@ytmorion.com"
+    },
+    {
+      "company": "常州富烯",
+      "industry": "石墨烯导热材料",
+      "industries": [
+        "石墨烯导热材料"
+      ],
+      "companyType": "",
+      "intro": "19",
+      "team": "19",
+      "round": "",
+      "oneLiner": "19",
+      "landline": "0519-68203318；0519-83637718-8673",
+      "mobile": "18861267966",
+      "email": "sales@fuxitech.com.cn",
+      "wechat": "",
+      "progress": "已发邮件",
+      "meeting": "未记录",
+      "person": "未披露",
+      "source": "招聘联系信息汇总_0619hlink",
+      "sourceDate": "2026-07-20（统筹表）",
+      "url": "",
+      "note": "发邮件（已经发送）",
+      "evidence": "发邮件（已经发送）",
+      "mappingSources": [
+        "招聘联系信息汇总_0619hlink"
+      ],
+      "contactSources": [
+        "招聘联系信息汇总_0619hlink"
+      ],
+      "hasContact": true,
+      "rawContact": "座机: 0519-68203318; 0519-83637718-8673\n手机: 18861267966\n邮箱: sales@fuxitech.com.cn"
+    },
+    {
+      "company": "云南中宣",
+      "industry": "液态金属",
+      "industries": [
+        "液态金属"
+      ],
+      "companyType": "",
+      "intro": "19",
+      "team": "19",
+      "round": "",
+      "oneLiner": "19",
+      "landline": "",
+      "mobile": "18687888567",
+      "email": "shuailun@foxmail.com",
+      "wechat": "",
+      "progress": "未联系上",
+      "meeting": "未记录",
+      "person": "未披露",
+      "source": "招聘联系信息汇总_0619hlink",
+      "sourceDate": "2026-07-20（统筹表）",
+      "url": "",
+      "note": "可以联系15087427337，没人接",
+      "evidence": "可以联系15087427337，没人接",
+      "mappingSources": [
+        "招聘联系信息汇总_0619hlink"
+      ],
+      "contactSources": [
+        "招聘联系信息汇总_0619hlink"
+      ],
+      "hasContact": true,
+      "rawContact": "手机: 18687888567\n邮箱: shuailun@foxmail.com"
+    },
+    {
+      "company": "云南中宣",
+      "industry": "液态金属",
+      "industries": [
+        "液态金属"
+      ],
+      "companyType": "",
+      "intro": "19",
+      "team": "19",
+      "round": "",
+      "oneLiner": "19",
+      "landline": "0874-7255399",
+      "mobile": "19188445347；13608859220",
+      "email": "fei.fan@zxliquidmetal.com",
+      "wechat": "",
+      "progress": "已加微信",
+      "meeting": "未记录",
+      "person": "未披露",
+      "source": "招聘联系信息汇总_0619hlink",
+      "sourceDate": "2026-07-20（统筹表）",
+      "url": "",
+      "note": "加微信：杨：1918845347；发邮件",
+      "evidence": "加微信：杨：1918845347；发邮件",
+      "mappingSources": [
+        "招聘联系信息汇总_0619hlink"
+      ],
+      "contactSources": [
+        "招聘联系信息汇总_0619hlink"
+      ],
+      "hasContact": true,
+      "rawContact": "座机: 0874-7255399\n手机: 19188445347; 13608859220\n邮箱: fei.fan@zxliquidmetal.com"
+    },
+    {
+      "company": "国科光领",
+      "industry": "光电/光通信",
+      "industries": [
+        "光电/光通信"
+      ],
+      "companyType": "",
+      "intro": "19",
+      "team": "19",
+      "round": "",
+      "oneLiner": "19",
+      "landline": "027-87002926",
+      "mobile": "13554126343",
+      "email": "hr@gk-photonlink.com",
+      "wechat": "",
+      "progress": "已联系",
+      "meeting": "未记录",
+      "person": "未披露",
+      "source": "招聘联系信息汇总_0619hlink",
+      "sourceDate": "2026-07-20（统筹表）",
+      "url": "",
+      "note": "座机没人接，手机转同事明天对接",
+      "evidence": "座机没人接，手机转同事明天对接",
+      "mappingSources": [
+        "招聘联系信息汇总_0619hlink"
+      ],
+      "contactSources": [
+        "招聘联系信息汇总_0619hlink"
+      ],
+      "hasContact": true,
+      "rawContact": "座机: 027-87002926\n手机: 13554126343\n邮箱: hr@gk-photonlink.com"
+    },
+    {
+      "company": "傲科光电（Aluksen）",
+      "industry": "电芯片",
+      "industries": [
+        "电芯片"
+      ],
+      "companyType": "",
+      "intro": "19",
+      "team": "19",
+      "round": "",
+      "oneLiner": "TIA/Driver/CDR芯片设计",
+      "landline": "0755-21003314；0755-21003314-8015",
+      "mobile": "",
+      "email": "sales@aluksen.com",
+      "wechat": "",
+      "progress": "已联系",
+      "meeting": "未记录",
+      "person": "未披露",
+      "source": "招聘联系信息汇总_电芯片",
+      "sourceDate": "2026-07-20（统筹表）",
+      "url": "",
+      "note": "要了我的联系方式",
+      "evidence": "要了我的联系方式",
+      "mappingSources": [
+        "招聘联系信息汇总_电芯片"
+      ],
+      "contactSources": [
+        "招聘联系信息汇总_电芯片"
+      ],
+      "hasContact": true,
+      "rawContact": "座机: 0755-21003314; 0755-21003314-8015\n邮箱: sales@aluksen.com"
+    },
+    {
+      "company": "成都英思嘉半导体（InSiGa）",
+      "industry": "电芯片",
+      "industries": [
+        "电芯片"
+      ],
+      "companyType": "",
+      "intro": "19",
+      "team": "19",
+      "round": "",
+      "oneLiner": "TIA/Driver/CDR芯片设计",
+      "landline": "",
+      "mobile": "13320816992",
+      "email": "karen.zhuo@insigatech.com",
+      "wechat": "",
+      "progress": "被拒绝",
+      "meeting": "未记录",
+      "person": "未披露",
+      "source": "招聘联系信息汇总_电芯片",
+      "sourceDate": "2026-07-20（统筹表）",
+      "url": "",
+      "note": "联系方式是对的，但是拒绝了",
+      "evidence": "联系方式是对的，但是拒绝了",
+      "mappingSources": [
+        "招聘联系信息汇总_电芯片"
+      ],
+      "contactSources": [
+        "招聘联系信息汇总_电芯片"
+      ],
+      "hasContact": true,
+      "rawContact": "手机: 13320816992\n邮箱: karen.zhuo@insigatech.com"
+    },
+    {
+      "company": "飞昂创新科技（Wingcomm）",
+      "industry": "电芯片",
+      "industries": [
+        "电芯片"
+      ],
+      "companyType": "",
+      "intro": "19",
+      "team": "19",
+      "round": "",
+      "oneLiner": "TIA/Driver/CDR芯片设计",
+      "landline": "0513-51011000",
+      "mobile": "",
+      "email": "info@wingcomm.com",
+      "wechat": "",
+      "progress": "无联系方式",
+      "meeting": "未记录",
+      "person": "未披露",
+      "source": "招聘联系信息汇总_电芯片",
+      "sourceDate": "2026-07-20（统筹表）",
+      "url": "",
+      "note": "无联系方式",
+      "evidence": "无联系方式",
+      "mappingSources": [
+        "招聘联系信息汇总_电芯片"
+      ],
+      "contactSources": [
+        "招聘联系信息汇总_电芯片"
+      ],
+      "hasContact": true,
+      "rawContact": "座机: 0513-51011000\n邮箱: info@wingcomm.com"
+    },
+    {
+      "company": "光梓信息",
+      "industry": "电芯片",
+      "industries": [
+        "电芯片"
+      ],
+      "companyType": "",
+      "intro": "19",
+      "team": "19",
+      "round": "",
+      "oneLiner": "TIA/Driver/CDR芯片设计",
+      "landline": "",
+      "mobile": "",
+      "email": "may.cao@photonic-tech.com",
+      "wechat": "",
+      "progress": "未联系",
+      "meeting": "未记录",
+      "person": "未披露",
+      "source": "招聘联系信息汇总_电芯片",
+      "sourceDate": "2026-07-20（统筹表）",
+      "url": "",
+      "note": "19",
+      "evidence": "19",
+      "mappingSources": [
+        "招聘联系信息汇总_电芯片"
+      ],
+      "contactSources": [
+        "招聘联系信息汇总_电芯片"
+      ],
+      "hasContact": true,
+      "rawContact": "邮箱: may.cao@photonic-tech.com"
+    },
+    {
+      "company": "杭州芯耘光电科技",
+      "industry": "电芯片",
+      "industries": [
+        "电芯片"
+      ],
+      "companyType": "",
+      "intro": "19",
+      "team": "19",
+      "round": "",
+      "oneLiner": "TIA/Driver/CDR芯片设计",
+      "landline": "",
+      "mobile": "18007121166",
+      "email": "chaolong.liu@xy-technology.com",
+      "wechat": "",
+      "progress": "未联系上",
+      "meeting": "未记录",
+      "person": "未披露",
+      "source": "招聘联系信息汇总_电芯片",
+      "sourceDate": "2026-07-20（统筹表）",
+      "url": "",
+      "note": "打错了",
+      "evidence": "打错了",
+      "mappingSources": [
+        "招聘联系信息汇总_电芯片"
+      ],
+      "contactSources": [
+        "招聘联系信息汇总_电芯片"
+      ],
+      "hasContact": true,
+      "rawContact": "手机: 18007121166\n邮箱: chaolong.liu@xy-technology.com"
+    },
+    {
+      "company": "巨风半导体",
+      "industry": "电芯片",
+      "industries": [
+        "电芯片"
+      ],
+      "companyType": "",
+      "intro": "19",
+      "team": "19",
+      "round": "",
+      "oneLiner": "TIA/Driver/CDR芯片设计",
+      "landline": "020-89888457",
+      "mobile": "",
+      "email": "",
+      "wechat": "",
+      "progress": "未联系上",
+      "meeting": "未记录",
+      "person": "未披露",
+      "source": "招聘联系信息汇总_电芯片",
+      "sourceDate": "2026-07-20（统筹表）",
+      "url": "",
+      "note": "打错了",
+      "evidence": "打错了",
+      "mappingSources": [
+        "招聘联系信息汇总_电芯片"
+      ],
+      "contactSources": [
+        "招聘联系信息汇总_电芯片"
+      ],
+      "hasContact": true,
+      "rawContact": "座机: 020-89888457"
+    },
+    {
+      "company": "玏芯科技",
+      "industry": "电芯片",
+      "industries": [
+        "电芯片"
+      ],
+      "companyType": "",
+      "intro": "19",
+      "team": "19",
+      "round": "",
+      "oneLiner": "TIA/Driver/CDR芯片设计",
+      "landline": "",
+      "mobile": "",
+      "email": "HR@luxictech.com；Sales@luxictech.com",
+      "wechat": "",
+      "progress": "未联系上",
+      "meeting": "未记录",
+      "person": "未披露",
+      "source": "招聘联系信息汇总_电芯片",
+      "sourceDate": "2026-07-20（统筹表）",
+      "url": "",
+      "note": "没人接",
+      "evidence": "没人接",
+      "mappingSources": [
+        "招聘联系信息汇总_电芯片"
+      ],
+      "contactSources": [
+        "招聘联系信息汇总_电芯片"
+      ],
+      "hasContact": true,
+      "rawContact": "座机: +86-0512-6299-7081\n邮箱: HR@luxictech.com; Sales@luxictech.com"
+    },
+    {
+      "company": "米硅科技（Milicons）",
+      "industry": "电芯片",
+      "industries": [
+        "电芯片"
+      ],
+      "companyType": "",
+      "intro": "19",
+      "team": "19",
+      "round": "",
+      "oneLiner": "TIA/Driver/CDR芯片设计",
+      "landline": "021-50393078",
+      "mobile": "13735469551；15021746417",
+      "email": "sales@minisilicon.com；marketing@minisilicon.com；hr@minisilicon.com",
+      "wechat": "",
+      "progress": "未联系上",
+      "meeting": "未记录",
+      "person": "未披露",
+      "source": "招聘联系信息汇总_电芯片",
+      "sourceDate": "2026-07-20（统筹表）",
+      "url": "",
+      "note": "给的电话是空号",
+      "evidence": "给的电话是空号",
+      "mappingSources": [
+        "招聘联系信息汇总_电芯片"
+      ],
+      "contactSources": [
+        "招聘联系信息汇总_电芯片"
+      ],
+      "hasContact": true,
+      "rawContact": "座机: 021-50393078\n手机: 13735469551（15021746417）\n邮箱: sales@minisilicon.com; marketing@minisilicon.com; hr@minisilicon.com"
+    },
+    {
+      "company": "厦门亿芯源半导体（EOChip）",
+      "industry": "电芯片",
+      "industries": [
+        "电芯片"
+      ],
+      "companyType": "",
+      "intro": "19",
+      "team": "19",
+      "round": "",
+      "oneLiner": "TIA/Driver/CDR芯片设计",
+      "landline": "0592-5612908",
+      "mobile": "",
+      "email": "",
+      "wechat": "",
+      "progress": "未联系上",
+      "meeting": "未记录",
+      "person": "未披露",
+      "source": "招聘联系信息汇总_电芯片",
+      "sourceDate": "2026-07-20（统筹表）",
+      "url": "",
+      "note": "没人接",
+      "evidence": "没人接",
+      "mappingSources": [
+        "招聘联系信息汇总_电芯片"
+      ],
+      "contactSources": [
+        "招聘联系信息汇总_电芯片"
+      ],
+      "hasContact": true,
+      "rawContact": "座机: 0592-5612908"
+    },
+    {
+      "company": "芯波微电子",
+      "industry": "电芯片",
+      "industries": [
+        "电芯片"
+      ],
+      "companyType": "",
+      "intro": "19",
+      "team": "19",
+      "round": "",
+      "oneLiner": "TIA/Driver/CDR芯片设计",
+      "landline": "",
+      "mobile": "",
+      "email": "hr@sibroad.com；sale@sibroad.com",
+      "wechat": "",
+      "progress": "未联系",
+      "meeting": "未记录",
+      "person": "未披露",
+      "source": "招聘联系信息汇总_电芯片",
+      "sourceDate": "2026-07-20（统筹表）",
+      "url": "",
+      "note": "19",
+      "evidence": "19",
+      "mappingSources": [
+        "招聘联系信息汇总_电芯片"
+      ],
+      "contactSources": [
+        "招聘联系信息汇总_电芯片"
+      ],
+      "hasContact": true,
+      "rawContact": "邮箱: hr@sibroad.com; sale@sibroad.com"
+    },
+    {
+      "company": "知芯半导体",
+      "industry": "电芯片",
+      "industries": [
+        "电芯片"
+      ],
+      "companyType": "",
+      "intro": "19",
+      "team": "19",
+      "round": "",
+      "oneLiner": "TIA/Driver/CDR芯片设计",
+      "landline": "021-60959032",
+      "mobile": "",
+      "email": "tangyingying@semiedu.com.cn",
+      "wechat": "座机: 021-60959032\n手机: 个人求职：David 180-4999-5953（同微信）；  Lisa158-2145-5847（同微信）企业合作：Jessiee 182-2132-1820（同微信）\n邮箱: tangyingying@semiedu.com.cn",
+      "progress": "未联系上",
+      "meeting": "未记录",
+      "person": "未披露",
+      "source": "招聘联系信息汇总_电芯片",
+      "sourceDate": "2026-07-20（统筹表）",
+      "url": "",
+      "note": "空号",
+      "evidence": "空号",
+      "mappingSources": [
+        "招聘联系信息汇总_电芯片"
+      ],
+      "contactSources": [
+        "招聘联系信息汇总_电芯片"
+      ],
+      "hasContact": true,
+      "rawContact": "座机: 021-60959032\n手机: 个人求职：David 180-4999-5953（同微信）；  Lisa158-2145-5847（同微信）企业合作：Jessiee 182-2132-1820（同微信）\n邮箱: tangyingying@semiedu.com.cn"
+    },
+    {
+      "company": "晟联科（上海）半导体",
+      "industry": "交换机芯片",
+      "industries": [
+        "交换机芯片"
+      ],
+      "companyType": "",
+      "intro": "19",
+      "team": "19",
+      "round": "",
+      "oneLiner": "SerDes/DSP IP设计",
+      "landline": "",
+      "mobile": "",
+      "email": "addy.sun@etopus.com",
+      "wechat": "手机: 176 0123 1554（微信 asfgjh5201314）\n邮箱: addy.sun@etopus.com（工商登记邮箱，来自爱企查）",
+      "progress": "未联系上",
+      "meeting": "未记录",
+      "person": "未披露",
+      "source": "招聘联系信息汇总_交换机芯片",
+      "sourceDate": "2026-07-20（统筹表）",
+      "url": "",
+      "note": "转接语音留言",
+      "evidence": "转接语音留言",
+      "mappingSources": [
+        "招聘联系信息汇总_交换机芯片"
+      ],
+      "contactSources": [
+        "招聘联系信息汇总_交换机芯片"
+      ],
+      "hasContact": true,
+      "rawContact": "手机: 176 0123 1554（微信 asfgjh5201314）\n邮箱: addy.sun@etopus.com（工商登记邮箱，来自爱企查）"
+    },
+    {
+      "company": "云合智网（Clounix）",
+      "industry": "交换机芯片",
+      "industries": [
+        "交换机芯片"
+      ],
+      "companyType": "",
+      "intro": "19",
+      "team": "19",
+      "round": "",
+      "oneLiner": "SerDes/DSP IP设计",
+      "landline": "0571-83525792",
+      "mobile": "",
+      "email": "info@clounix.com；hr@clounix.com",
+      "wechat": "",
+      "progress": "被拒绝",
+      "meeting": "未记录",
+      "person": "未披露",
+      "source": "招聘联系信息汇总_交换机芯片",
+      "sourceDate": "2026-07-20（统筹表）",
+      "url": "",
+      "note": "不方便",
+      "evidence": "不方便",
+      "mappingSources": [
+        "招聘联系信息汇总_交换机芯片"
+      ],
+      "contactSources": [
+        "招聘联系信息汇总_交换机芯片"
+      ],
+      "hasContact": true,
+      "rawContact": "座机: 0571-83525792（杭州） / 400-8818-392（全国） / (021) 5038 7985（上海）\n邮箱: info@clounix.com（官网） / hr@clounix.com（招聘邮箱）"
+    },
+    {
+      "company": "恒拓微电子",
+      "industry": "光刻机",
+      "industries": [
+        "光刻机"
+      ],
+      "companyType": "",
+      "intro": "19",
+      "team": "19",
+      "round": "",
+      "oneLiner": "19",
+      "landline": "029-82668077",
+      "mobile": "",
+      "email": "",
+      "wechat": "",
+      "progress": "未联系上",
+      "meeting": "未记录",
+      "person": "未披露",
+      "source": "招聘联系信息汇总_光刻机",
+      "sourceDate": "2026-07-20（统筹表）",
+      "url": "",
+      "note": "打不通",
+      "evidence": "打不通",
+      "mappingSources": [
+        "招聘联系信息汇总_光刻机"
+      ],
+      "contactSources": [
+        "招聘联系信息汇总_光刻机"
+      ],
+      "hasContact": true,
+      "rawContact": "座机: 029-82668077"
+    },
+    {
+      "company": "鸿源鼎芯",
+      "industry": "光刻机",
+      "industries": [
+        "光刻机"
+      ],
+      "companyType": "",
+      "intro": "19",
+      "team": "19",
+      "round": "",
+      "oneLiner": "19",
+      "landline": "",
+      "mobile": "13880445510",
+      "email": "13880445510@qq.com",
+      "wechat": "手机: 13880445510\n邮箱: 13880445510@qq.com",
+      "progress": "无融资计划",
+      "meeting": "未记录",
+      "person": "未披露",
+      "source": "招聘联系信息汇总_光刻机",
+      "sourceDate": "2026-07-20（统筹表）",
+      "url": "",
+      "note": "没有融资计划",
+      "evidence": "没有融资计划",
+      "mappingSources": [
+        "招聘联系信息汇总_光刻机"
+      ],
+      "contactSources": [
+        "招聘联系信息汇总_光刻机"
+      ],
+      "hasContact": true,
+      "rawContact": "手机: 13880445510\n邮箱: 13880445510@qq.com"
+    },
+    {
+      "company": "国科精密（中科国科精密）",
+      "industry": "光刻机",
+      "industries": [
+        "光刻机"
+      ],
+      "companyType": "",
+      "intro": "19",
+      "team": "19",
+      "round": "",
+      "oneLiner": "19",
+      "landline": "0431-86708095",
+      "mobile": "17386886963",
+      "email": "",
+      "wechat": "",
+      "progress": "未联系上",
+      "meeting": "未记录",
+      "person": "未披露",
+      "source": "招聘联系信息汇总_光刻机",
+      "sourceDate": "2026-07-20（统筹表）",
+      "url": "",
+      "note": "空号",
+      "evidence": "空号",
+      "mappingSources": [
+        "招聘联系信息汇总_光刻机"
+      ],
+      "contactSources": [
+        "招聘联系信息汇总_光刻机"
+      ],
+      "hasContact": true,
+      "rawContact": "座机: 0431-86708095\n手机: 17386886963"
+    },
+    {
+      "company": "国望光学",
+      "industry": "光刻机",
+      "industries": [
+        "光刻机"
+      ],
+      "companyType": "",
+      "intro": "19",
+      "team": "19",
+      "round": "",
+      "oneLiner": "19",
+      "landline": "0431-86708095",
+      "mobile": "17386886963",
+      "email": "",
+      "wechat": "",
+      "progress": "未联系上",
+      "meeting": "未记录",
+      "person": "未披露",
+      "source": "招聘联系信息汇总_光刻机",
+      "sourceDate": "2026-07-20（统筹表）",
+      "url": "",
+      "note": "空号",
+      "evidence": "空号",
+      "mappingSources": [
+        "招聘联系信息汇总_光刻机"
+      ],
+      "contactSources": [
+        "招聘联系信息汇总_光刻机"
+      ],
+      "hasContact": true,
+      "rawContact": "座机: 0431-86708095\n手机: 17386886963"
+    },
+    {
+      "company": "启尔机电（上海启尔机电）",
+      "industry": "光刻机",
+      "industries": [
+        "光刻机"
+      ],
+      "companyType": "",
+      "intro": "19",
+      "team": "19",
+      "round": "",
+      "oneLiner": "19",
+      "landline": "0571-61106566",
+      "mobile": "18506822967",
+      "email": "hr@cheertech.ltd",
+      "wechat": "",
+      "progress": "未联系上",
+      "meeting": "未记录",
+      "person": "未披露",
+      "source": "招聘联系信息汇总_光刻机",
+      "sourceDate": "2026-07-20（统筹表）",
+      "url": "",
+      "note": "打错了",
+      "evidence": "打错了",
+      "mappingSources": [
+        "招聘联系信息汇总_光刻机"
+      ],
+      "contactSources": [
+        "招聘联系信息汇总_光刻机"
+      ],
+      "hasContact": true,
+      "rawContact": "座机: 0571-61106566\n手机: 18506822967\n邮箱: hr@cheertech.ltd"
+    },
+    {
+      "company": "拍频光电",
+      "industry": "光刻机",
+      "industries": [
+        "光刻机"
+      ],
+      "companyType": "",
+      "intro": "19",
+      "team": "19",
+      "round": "",
+      "oneLiner": "19",
+      "landline": "021-61230550",
+      "mobile": "13681969494",
+      "email": "service@spoe.com.cn；zzp8101@163.com；2510057913@qq.com",
+      "wechat": "座机: 021-61230550\n手机: 13681969494（服务热线，最早见于2022年官网）\n邮箱: service@spoe.com.cn（官网公开邮箱）；zzp8101@163.com（张志平学术邮箱，复旦大学师资页）；2510057913@qq.com（工商登记邮箱，企名片/启信宝）",
+      "progress": "已联系上",
+      "meeting": "未记录",
+      "person": "未披露",
+      "source": "招聘联系信息汇总_光刻机",
+      "sourceDate": "2026-07-20（统筹表）",
+      "url": "",
+      "note": "联系到CEO本人",
+      "evidence": "联系到CEO本人",
+      "mappingSources": [
+        "招聘联系信息汇总_光刻机"
+      ],
+      "contactSources": [
+        "招聘联系信息汇总_光刻机"
+      ],
+      "hasContact": true,
+      "rawContact": "座机: 021-61230550\n手机: 13681969494（服务热线，最早见于2022年官网）\n邮箱: service@spoe.com.cn（官网公开邮箱）；zzp8101@163.com（张志平学术邮箱，复旦大学师资页）；2510057913@qq.com（工商登记邮箱，企名片/启信宝）"
+    },
+    {
+      "company": "梅威斯电气技术（上海）有限公司 / Matrix Power Technologies",
+      "industry": "算力电源",
+      "industries": [
+        "算力电源"
+      ],
+      "companyType": "",
+      "intro": "梅威斯是华为系电源班底创业的AIDC算力电源公司，创始人李小华曾任华为网络能源部北美区副总裁，带领华为团队作为OCP组织电源架构主导方，为Google、Meta设计全球首个基于54V直流和锂电池架构的分布式OCP数据中心电源。公司构建了从当前到未来的完整AIDC全栈电源解决方案，是国内少数深度参与OCP电源架构设计的团队。在手订单近亿元，正积极推进与Google、Meta等北美互联网巨头的算力电源合作。",
+      "team": "李小华（创始人/CEO，前华为网络能源部北美区副总裁，主导设计Google/Meta全球首个54V DC+锂电池分布式OCP数据中心电源）<br>赵浩、李昂、丁军军、蒋航天、李梅龙（管理团队）<br>CTO（前华为数字能源模块电源子业务高管）<br>技术总监（前台达技术主管，22年电源行业经验）<br>核心团队来自华为、台达、艾默生、Eltek、Tyco等",
+      "round": "",
+      "oneLiner": "AIDC算力电源全栈解决方案，覆盖54VDC机柜内电源到±400V/800V HVDC柜外电源，再到固态变压器（SST）前沿技术",
+      "landline": "",
+      "mobile": "18602191288；18621948268；15800382971；13189076530；13916388768",
+      "email": "Sales@matrix-mpt.com；info@matrixpower.com；Jiangli.Ren@matrix-mpt.com；Susan.Lee@matrix-mpt.com",
+      "wechat": "电话: 400-151-0204（中国热线）<br>(401) 567-7700（美国总部）18602191288 — 占线正忙\n18621948268 — 空号\n15800382971 — 转接语音留言\n13189076530 — 空号\n13916388768 — 接入后 call failed\n邮箱: Sales@matrix-mpt.com（全球通用）<br>info@matrixpower.com（美国）<br>Jiangli.Ren@matrix-mpt.com（工商登记邮箱）；Susan.Lee@matrix-mpt.com\n微信/公众号: 梅威斯电气（官网微信公众号二维码）",
+      "progress": "已联系",
+      "meeting": "未记录",
+      "person": "占线正忙",
+      "source": "公司联系方式_20260710",
+      "sourceDate": "2026-07-20（统筹表）",
+      "url": "",
+      "note": "手机号全都打不通，打了18918766093，已退休，推了电话；本轮结束了，有人在对接，不透露更多信息，让我别打了",
+      "evidence": "手机号全都打不通，打了18918766093，已退休，推了电话；本轮结束了，有人在对接，不透露更多信息，让我别打了",
+      "mappingSources": [
+        "公司联系方式_20260710"
+      ],
+      "contactSources": [
+        "公司联系方式_20260710"
+      ],
+      "hasContact": true,
+      "rawContact": "电话: 400-151-0204（中国热线）<br>(401) 567-7700（美国总部）18602191288 — 占线正忙\n18621948268 — 空号\n15800382971 — 转接语音留言\n13189076530 — 空号\n13916388768 — 接入后 call failed\n邮箱: Sales@matrix-mpt.com（全球通用）<br>info@matrixpower.com（美国）<br>Jiangli.Ren@matrix-mpt.com（工商登记邮箱）；Susan.Lee@matrix-mpt.com\n微信/公众号: 梅威斯电气（官网微信公众号二维码）"
+    },
+    {
+      "company": "皇虎测试科技（深圳）有限公司 / KingTiger Testing",
+      "industry": "DRAM测试设备",
+      "industries": [
+        "DRAM测试设备"
+      ],
+      "companyType": "",
+      "intro": "皇虎测试是DRAM内存测试设备国产替代先锋，拥有内存完全老炼化专利技术和内存容错修复技术，100%测试装备知识产权。已进入长江存储、长鑫存储等头部客户供应链，与中科曙光共建联合实验室。服务华为、中兴、中国移动、记忆科技、江波龙等80余家客户。",
+      "team": "赖俊生（创始人/董事长，加拿大归国）<br>技术团队来自半导体测试领域<br>与中科曙光共建内存测试联合实验室",
+      "round": "",
+      "oneLiner": "DRAM内存高速测试设备（ATE/SLT）、老化测试、测试服务，面向存储芯片国产替代",
+      "landline": "0755-26030200",
+      "mobile": "13332987727",
+      "email": "sales@kingtigertest.com；Inquiry@kingtigertest.com；recruit@kingtigertest.com",
+      "wechat": "电话: 0755-26030200 | 13332987727 |\n邮箱: sales@kingtigertest.com（商务）<br>Inquiry@kingtigertest.com（售后咨询）<br>recruit@kingtigertest.com（招聘）\n微信/公众号: 皇虎测试KingTiger（官方公众号）",
+      "progress": "已联系",
+      "meeting": "未记录",
+      "person": "未披露",
+      "source": "公司联系方式_20260710",
+      "sourceDate": "2026-07-20（统筹表）",
+      "url": "",
+      "note": "只有座机能打通，转接投资部同事等联系",
+      "evidence": "只有座机能打通，转接投资部同事等联系",
+      "mappingSources": [
+        "公司联系方式_20260710"
+      ],
+      "contactSources": [
+        "公司联系方式_20260710"
+      ],
+      "hasContact": true,
+      "rawContact": "电话: 0755-26030200 | 13332987727 |\n邮箱: sales@kingtigertest.com（商务）<br>Inquiry@kingtigertest.com（售后咨询）<br>recruit@kingtigertest.com（招聘）\n微信/公众号: 皇虎测试KingTiger（官方公众号）"
+    },
+    {
+      "company": "杭州华昇迈科技有限公司",
+      "industry": "高端光源/激光器",
+      "industries": [
+        "高端光源/激光器"
+      ],
+      "companyType": "",
+      "intro": "杭州华昇迈科技有限公司成立于2024年12月，注册地位于杭州市钱塘区河庄街道，是一家专注于高端光源及激光器研发制造的初创企业。公司开展高端光源项目建设，业务涵盖固体/气体激光器研发、精密光学产品装配调试等，正在快速组建技术团队。",
+      "team": "吕成伟（法定代表人/创始人） 吕经理（项目负责人） 熊先生/齐先生/陈女士/张先生（招聘负责人，猎聘/BOSS直聘）",
+      "round": "",
+      "oneLiner": "高端光源及激光器研发制造，面向工业加工、科研、医疗等领域",
+      "landline": "",
+      "mobile": "18571654654",
+      "email": "bus@hsm-tech.cn",
+      "wechat": "电话: 185-7165-4654（吕经理，环评公示） 企名片登记：18571654654\n邮箱: <bus@hsm-tech.cn>（企业邮箱）\n微信/公众号: 未找到官方公众号",
+      "progress": "待回复",
+      "meeting": "未记录",
+      "person": "未披露",
+      "source": "公司联系方式_20260710",
+      "sourceDate": "2026-07-20（统筹表）",
+      "url": "",
+      "note": "联系方式正确，等开会结束致电，已经发短信",
+      "evidence": "联系方式正确，等开会结束致电，已经发短信",
+      "mappingSources": [
+        "公司联系方式_20260710"
+      ],
+      "contactSources": [
+        "公司联系方式_20260710"
+      ],
+      "hasContact": true,
+      "rawContact": "电话: 185-7165-4654（吕经理，环评公示） 企名片登记：18571654654\n邮箱: <bus@hsm-tech.cn>（企业邮箱）\n微信/公众号: 未找到官方公众号"
+    }
+  ],
+  "stats": {
+    "total": 62,
+    "with_contact": 54,
+    "contact_rate": 87,
+    "contacted": 22,
+    "meetings": 0,
+    "excluded_secondary": 0
+  },
+  "excluded_secondary": []
+}

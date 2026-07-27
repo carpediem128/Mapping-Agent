@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>硬科技投资 Mapping 看板</title>
+    <link rel="stylesheet" href="./styles.css?v=20260714" />
+  </head>
+  <body>
+    <main class="shell">
+      <div class="app-frame">
+        <aside class="sidebar">
+          <div class="brand">
+            <span class="brand-mark">IM</span>
+            <div><strong>Investment<br />Mapping</strong><small>Hardtech Desk</small></div>
+          </div>
+          <nav class="side-nav" aria-label="看板导航">
+            <a class="active" href="#overview" data-view="overview"><span>01</span>概览</a>
+            <a href="#hotspots" data-view="hotspots"><span>02</span>二级热点</a>
+            <a href="#industries" data-view="industries"><span>03</span>行业统计</a>
+            <a href="#contacts" data-view="contacts"><span>04</span>联系总表</a>
+            <a href="#mappings" data-view="mappings"><span>05</span>主题 Mapping</a>
+            <a href="#imports" data-view="imports"><span>06</span>导入与配置</a>
+          </nav>
+          <div class="sidebar-divider"></div>
+          <div class="sidebar-heading"><span>主题索引</span><small id="sidebar-topic-count">0</small></div>
+          <div id="sidebar-topic-list" class="sidebar-topic-list"></div>
+        </aside>
+
+        <div class="main-column">
+          <header class="topbar" id="topbar">
+            <div>
+              <p class="eyebrow">Investment Mapping Agent</p>
+              <h1>硬科技投资看板</h1>
+              <p class="subtitle">从二级市场热点到细分主题、一级项目与 BD 跟进</p>
+            </div>
+            <div class="run-meta"><span id="run-id">未加载</span><span id="generated-at">-</span></div>
+          </header>
+
+          <section class="metrics" aria-label="核心指标">
+            <article><span>二级热点</span><strong id="metric-hotspots">0</strong><small>结构化 Top20</small></article>
+            <article><span>赛道 Mapping</span><strong id="metric-mappings">0</strong><small>分赛道文件</small></article>
+            <article><span>细分主题</span><strong id="metric-topics">0</strong><small>主题级标签</small></article>
+            <article><span>项目总量</span><strong id="metric-rows">0</strong><small>BD 总表行数</small></article>
+            <article><span>联系覆盖率</span><strong id="metric-contact-rate">0%</strong><small>按 BD 总表统计</small></article>
+          </section>
+
+          <section class="view-panel active" data-view="overview" id="overview">
+            <div class="panel overview-panel">
+              <div class="panel-head"><div><div class="section-kicker">01 / WORKSPACE</div><h2>研究工作台</h2><p>从左侧选择环节，当前页面只展示对应工作内容。</p></div><span class="status-tag" id="overview-status">运行状态</span></div>
+              <div class="overview-grid">
+                <div><div class="column-label">当前运行</div><div class="overview-run"><strong id="overview-run-id">-</strong><span id="overview-run-time">-</span></div></div>
+                <div><div class="column-label">热点入口</div><div id="overview-hotspots" class="overview-list"></div></div>
+                <div><div class="column-label">主题入口</div><div id="overview-topics" class="overview-list"></div></div>
+              </div>
+            </div>
+            <div class="panel">
+              <div class="panel-head"><div><h2>流程状态</h2><p>本次 Agent 运行的四个 PRD 环节。</p></div></div>
+              <div class="stage-grid" id="stage-grid"></div>
+            </div>
+            <div class="panel compact-panel">
+              <div class="panel-head"><div><h2>结构化产出</h2><p>热点和 BD 统计在看板内查看，Excel 作为交付文件保留。</p></div></div>
+              <div class="file-list" id="report-list"></div>
+            </div>
+          </section>
+
+          <section class="view-panel" data-view="hotspots" id="hotspots">
+            <div class="panel">
+              <div class="panel-head"><div><div class="section-kicker">02 / SECONDARY MARKET</div><h2>二级市场热点</h2><p id="market-summary">-</p></div><span class="status-tag" id="hotspot-status">未加载</span></div>
+              <div class="hotspot-layout"><div class="subpanel"><h3>重点赛道排名</h3><div id="hotspot-bars" class="rank-list"></div></div><div class="subpanel"><h3>Top10 重点标的与逻辑</h3><div id="hotspot-details" class="detail-list"></div></div></div>
+              <div class="table-wrap"><table><thead><tr><th>排名</th><th>赛道</th><th>涨跌幅</th><th>上涨家数 / 成分股</th><th>主力资金</th><th>热度</th><th>参考标的</th></tr></thead><tbody id="hotspot-table-body"></tbody></table></div><div class="subpanel news-panel"><h3>财经新闻信源</h3><div id="market-news" class="news-list"></div></div><div class="table-wrap secondary-data-panel"><h3>重点标的资料</h3><table><thead><tr><th>标的</th><th>关联赛道</th><th>最新价</th><th>市值</th><th>PE/PB</th><th>财务/主营构成</th></tr></thead><tbody id="secondary-market-body"></tbody></table></div>
+            </div>
+          </section>
+
+          <section class="view-panel" data-view="industries" id="industries">
+            <div class="panel">
+              <div class="panel-head"><div><div class="section-kicker">03 / INDUSTRY VIEW</div><h2>行业维度统计</h2><p>按二级热点所属行业汇总热点数量、项目数量与联系方式覆盖。</p></div></div>
+              <div class="industry-layout"><div class="subpanel"><h3>项目量与联系覆盖</h3><div id="industry-bars" class="industry-list"></div></div></div><div class="industry-table-row table-wrap"><table><thead><tr><th>行业</th><th>热点</th><th>项目</th><th>有联系方式</th><th>覆盖率</th></tr></thead><tbody id="industry-table-body"></tbody></table></div>
+            </div>
+          </section>
+
+          <section class="view-panel" data-view="contacts" id="contacts">
+            <div class="panel">
+              <div class="panel-head"><div><div class="section-kicker">04 / BD PIPELINE</div><h2>联系总表</h2><p id="contact-source">-</p></div></div>
+              <div class="contact-metrics"><div><span>公司数</span><strong id="contact-rows">0</strong></div><div><span>有联系方式</span><strong id="contact-found">0</strong></div><div><span>覆盖率</span><strong id="contact-rate">0%</strong></div><div><span>已联系</span><strong id="contacted-count">0</strong></div><div><span>已约见</span><strong id="meeting-count">0</strong></div></div>
+              <div class="contact-layout"><div class="table-wrap"><h3>分行业覆盖</h3><table><thead><tr><th>赛道</th><th>项目</th><th>有联系方式</th><th>覆盖率</th></tr></thead><tbody id="contact-sector-body"></tbody></table></div><div class="table-wrap"><h3>BD 总表预览</h3><table><thead><tr><th>赛道</th><th>公司</th><th>联系方式</th><th>联系进展</th></tr></thead><tbody id="contact-preview-body"></tbody></table></div>
+              </div>
+              <div class="contact-progress-section">
+                <div class="section-head-row"><div><h3>联系进度明细</h3><p>以招聘联系信息汇总表为主记录，Mapping 仅补充公司研究字段；同一公司多条进展会合并保留。</p></div><span class="status-tag" id="contact-progress-count">0 家</span></div>
+                <div class="contact-filter-row">
+                  <label>行业<select id="contact-industry-filter"><option value="">全部行业</option></select></label>
+                  <label>联系进展<select id="contact-progress-filter"><option value="">全部状态</option></select></label>
+                  <label class="contact-search">搜索<input id="contact-progress-search" type="search" placeholder="公司 / 联系人 / 电话 / 邮箱" /></label>
+                </div>
+                <div class="table-wrap contact-progress-table"><table><thead><tr><th>行业</th><th>公司名称</th><th>联系进展</th><th>是否约见</th><th>公司类型</th><th>公司简介</th><th>团队信息</th><th>融资轮次</th><th>一句话业务</th><th>座机电话</th><th>手机</th><th>邮箱</th><th>联系人</th><th>来源渠道</th><th>信源时间</th><th>链接</th></tr></thead><tbody id="contact-progress-body"></tbody></table></div>
+              </div>            </div>
+          </section>
+
+          <section class="view-panel" data-view="mappings" id="mappings">
+            <div class="panel">
+              <div class="panel-head"><div><div class="section-kicker">05 / PRIMARY MARKET</div><h2>主题 Mapping</h2><p>先选赛道，再点细分主题；项目预览会按主题关键词筛选。</p></div><label class="search"><span>搜索</span><input id="mapping-search" type="search" placeholder="赛道 / 主题 / 公司" /></label></div>
+              <div class="mapping-workbench">
+                <div class="mapping-sector-column"><div class="column-label">赛道</div><div id="mapping-sector-list" class="mapping-sector-list"></div></div>
+                <div class="topic-column">
+                  <div class="topic-toolbar"><div><div class="column-label">细分主题</div><div id="topic-breadcrumb" class="topic-breadcrumb">请选择赛道</div></div><a id="topic-download" class="outline-link" href="#" download>下载赛道 Excel</a></div>
+                  <div id="topic-tags" class="topic-tags"></div>
+                  <div id="topic-detail" class="topic-detail-panel"></div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <section class="view-panel" data-view="imports" id="imports">
+            <div class="panel">
+              <div class="panel-head"><div><div class="section-kicker">06 / INGESTION</div><h2>导入已完成 Mapping</h2><p>上传一个或多个 XLSX，自动进入联系方式和 BD 汇总环节。</p></div><span class="status-tag" id="glm-status">GLM：检查中</span></div>
+              <form id="import-form" class="import-form">
+                <label class="file-drop" for="mapping-files"><strong>选择 Mapping Excel</strong><span>支持多选，文件名建议保留 Mapping 标识</span><input id="mapping-files" type="file" accept=".xlsx" multiple /></label>
+                <button class="primary-button" type="submit">导入并运行联系方式 / BD</button>
+              </form>
+              <div id="import-status" class="import-status">尚未上传文件</div><div class="progress-track"><i id="import-progress-bar"></i></div>
+              <div id="import-result" class="import-result"></div>
+            </div>
+            <div class="panel">
+              <div class="panel-head"><div><h2>GLM 配置</h2><p>密钥只从本机环境变量读取，不写入网页或静态文件。</p></div></div>
+              <div class="config-grid"><div><span>API 地址</span><strong id="glm-base-url">-</strong></div><div><span>模型</span><strong id="glm-model">-</strong></div><div><span>环境变量</span><strong id="glm-api-env">GLM_API_KEY</strong></div><div><span>状态</span><strong id="glm-configured">未配置</strong></div></div>
+            </div>
+          </section>
+        </div>
+      </div>
+    </main>
+    <script src="./app.js?v=20260715"></script>
+  </body>
+</html>
+
+
+
+
+
+
+

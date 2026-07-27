@@ -1,0 +1,11 @@
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.venv/
+venv/
+.env
+runs/
+web/artifacts/
+web/data/free_storage_backups/
+*.log
