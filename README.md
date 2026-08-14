@@ -1,160 +1,91 @@
 ﻿# Hardtech Investment Agent
 
-本项目根据《一二级联动热点赛道挖掘Agent 执行PRD》搭建，用于把“二级市场热点识别 -> 一级项目 Mapping -> 联系方式获取 -> BD 跟进总表”拆成可替换的本地模块。
+硬科技投资 Mapping 看板，把以下工作串成一个本地工作流：
 
-## 目录结构
+`二级市场热点 -> 一级市场 Mapping -> 联系方式 -> BD 跟进`
+
+当前仓库为私有项目，适合本地研究和团队内部使用。
+
+## 当前能力
+
+- 二级市场热点：AKShare 行情、板块、成分股、财务、主营构成和新闻接口。
+- 一级市场 Mapping：导入已有 `.xlsx`，保留原始项目行和主题标签。
+- 一级市场与二级市场：在看板中分为两个独立页面。
+- 联系方式：支持企名片数据、公开网页和招聘信息补充。
+- 联系进度：支持行业、状态和关键词筛选，并记录信源时间、链接和证据。
+- 异步导入：上传后返回 `job_id`，后台执行联系方式和 BD 汇总。
+- GLM：用于文本、表格结构化和字段整理，密钥只从环境变量读取。
+- 存储：默认使用本地 SQLite、JSON 和 Excel；多人协作可切换 PostgreSQL。
+
+## 启动看板
+
+在仓库目录执行：
+
+```powershell
+pip install -r requirements.txt
+python -m web_server_split_progress_v3
+```
+
+浏览器打开：<http://127.0.0.1:4173/>
+
+不要直接双击 `web/index.html`，需要通过 HTTP 服务访问。
+
+## 导入 Mapping
+
+1. 打开看板左侧的“导入与配置”。
+2. 选择一个或多个 `.xlsx` 文件。
+3. 等待后台任务完成。
+4. 在一级市场 Mapping、二级市场 Mapping 和联系总表中查看结果。
+
+推荐使用两个 Sheet：`一级市场`、`二级市场`。系统会保留原始 Sheet、文件名、首列标签和项目字段。
+
+## GLM 配置
+
+```powershell
+$env:GLM_API_KEY = "your-api-key"
+python -m web_server_split_progress_v3
+```
+
+配置文件：`config/default_config.json`
+
+接口：`POST /api/llm/complete-json`
+
+## 目录说明
 
 ```text
-hardtech_investment_agent/
-  agent/                  # 可执行 agent 源码
-    stages/               # 四个 PRD 环节，每个环节可拆卸替换
-    sources/              # 数据源适配器：行情、网页、联系方式等
-    io/                   # Excel/Markdown 读写
-    cli.py                # 命令行入口
-    pipeline.py           # 串联四阶段工作流
-  config/
-    default_config.json   # 默认配置、行业过滤词、列名、外部爬虫路径
-  data/input/             # 放企名片导出 Excel 等输入文件
-  docs/
-    PRD_EXECUTION_MAP.md  # PRD 要求与代码模块对应关系
-  runs/                   # 每次执行生成的文件，按日期/run_id 分开
-  run_agent.py            # Windows 下最简单的启动脚本
+agent/                 四个 PRD 阶段和数据源适配器
+config/                行业、列名、AKShare、GLM 配置
+data/input/            输入 Excel
+docs/                  PRD 映射、使用指南和数据存储说明
+runs/                  每次执行的产出
+web/                   看板页面、JSON 数据和下载文件
+run_agent.py           命令行入口
+web_server_*.py        不同运行模式的本地服务入口
 ```
 
-## 快速运行
-
-先只跑一个结构化演示，不联网、不需要企名片文件：
+## 命令行工作流
 
 ```powershell
-python hardtech_investment_agent\run_agent.py run --date 20260711 --offline-demo
+# 离线演示
+python run_agent.py run --date 20260711 --offline-demo
+
+# 导入企名片 Excel
+python run_agent.py run --date 20260711 --qmp-excel "C:\path\企名片导出.xlsx"
+
+# 单独补联系方式
+python run_agent.py contacts --date 20260711 --mapping-dir "runs\20260711_xxxxxx\mappings"
 ```
 
-接入企名片导出 Excel 后运行：
+## 数据和限制
 
-```powershell
-python hardtech_investment_agent\run_agent.py run `
-  --date 20260711 `
-  --qmp-excel "C:\path\企名片导出.xlsx"
-```
+- 当前看板数据保存在 `web/data/`，运行产出保存在 `runs/`。
+- AKShare、招聘网站和公开网页可能受网络、登录、验证码、频率限制或字段变化影响。
+- 无法核验的联系方式会留空，不会自动编造。
+- Vercel 适合托管静态看板；在线上传、登录和多人编辑需要后端服务或 PostgreSQL。
 
-只补联系方式：
+更多细节见：
 
-```powershell
-python hardtech_investment_agent\run_agent.py contacts `
-  --date 20260711 `
-  --mapping-dir "hardtech_investment_agent\runs\20260711_xxxxxx\mappings"
-```
-
-只合并 BD 总表：
-
-```powershell
-python hardtech_investment_agent\run_agent.py merge `
-  --date 20260711 `
-  --mapping-dir "hardtech_investment_agent\runs\20260711_xxxxxx\mappings"
-```
-
-## 四个阶段
-
-1. `agent/stages/hotspot.py`
-   - 目标：生成 `YYYYMMDD-二级市场热点列表.md`
-   - 负责二级市场热点赛道识别、硬科技过滤、Top20/Top10 输出。
-
-2. `agent/stages/mapping.py`
-   - 目标：为每个赛道生成 `YYMMDD_赛道名称_Mapping.xlsx`
-   - 读取企名片 Excel，按赛道关键词做初筛，输出 PRD 要求的 12 列。
-
-3. `agent/stages/contacts.py`
-   - 目标：补齐每个 Mapping 表的 `联系方式` 列。
-   - 默认优先加载 `config/default_config.json` 中的 `external_contact_crawler_path`，也就是你提供的 `contact_crawler_sources.py`。如果加载失败，会使用内置轻量联系方式抓取器。
-
-4. `agent/stages/bd_followup.py`
-   - 目标：生成 `YYYYMMDD-硬科技项目总表-BD跟进.xlsx`
-   - 合并所有分赛道 Mapping 表，添加 `是否联系上`、`是否已约见` 两列，默认值为 `否`。
-
-## 输入输出分离
-
-- 输入文件放在：`data/input/`
-- 执行代码放在：`agent/`
-- 配置放在：`config/`
-- 每次运行结果放在：`runs/YYYYMMDD_HHMMSS/`
-
-这样后续你可以只替换某个环节，比如换掉联系方式爬虫，不影响前面热点和 Mapping 模块。
-
-## 注意
-
-当前版本是本地 agent 骨架，已经把 PRD 的流程、文件命名、列名、自检和模块边界落地。真实行情和平台数据会受 API token、登录态、验证码、网站 403 限制影响；找不到联系方式时会留空，不会编造。
-
-
-
-## 网站看板
-
-把某一次运行结果导出到静态网站：
-
-```powershell
-python hardtech_investment_agent\run_agent.py export-web `
-  --run-dir "hardtech_investment_agent\runs\20260711_150439"
-```
-
-本地预览不要直接双击 `index.html`，请用 HTTP 服务打开：
-
-```powershell
-python -m http.server 4173 -d hardtech_investment_agent\web
-```
-
-浏览器访问：
-
-```text
-http://127.0.0.1:4173/
-```
-
-如果要给同事一起看，可以把 `hardtech_investment_agent/web` 作为 Vercel 项目根目录托管。Vercel 适合这个版本，因为当前看板是静态站：`index.html` 读取 `data/site_data.json`，并提供 `artifacts/` 下的 Excel 和报告下载。后续如果要加登录、在线上传、多人编辑或数据库，需要再升级成带后端/API 的版本。
-
-## 本地上传已完成 Mapping
-
-启动带上传接口的看板：
-
-    python hardtech_investment_agent\web_server.py
-
-然后访问 http://127.0.0.1:4173/，在左侧“导入与配置”中选择一个或多个 XLSX Mapping。系统会把文件保存到独立的 runs/import... 目录，自动执行联系方式补齐和 BD 总表汇总，并刷新网页数据。
-
-GLM 配置位于 config/default_config.json。默认读取环境变量 GLM_API_KEY，未配置时不会调用 API：
-
-    $env:GLM_API_KEY = "your-api-key"
-    python hardtech_investment_agent\web_server.py
-
-
-
-
-## 异步导入与数据源
-
-网页上传现在采用后台任务模式：
-
-1. 在“导入与配置”选择一个或多个 `.xlsx`。
-2. 接口立即返回 `job_id`，网页每秒轮询 `/api/import-jobs/{job_id}`。
-3. 联系方式阶段按公司更新进度，完成后自动生成 BD 总表和看板数据。
-4. 每家公司的证据片段、信源时间、链接、来源计数和失败原因保存于本次运行的 `reports/contact_evidence.json`。
-
-行情默认优先使用 AKShare，不需要 Tushare Token：
-
-```powershell
-pip install -r hardtech_investment_agent\requirements.txt
-python hardtech_investment_agent\web_server.py
-```
-
-配置位于 `config/default_config.json` 的 `market_data` 区块。当前优先尝试 `stock_board_concept_name_em`；财经新闻尝试 AKShare 新闻接口，若公开接口不可用，会在运行状态中记录错误，并由公开财经媒体爬虫补充。正式投研使用前，应对新闻和行情的时间、口径及授权范围做二次核验。
-
-### AKShare Mapping 字段覆盖
-
-二级市场热点阶段按上限采集并写入 JSON：
-
-- 板块：`stock_board_concept_name_em`
-- 板块成分股：`stock_board_concept_cons_em`
-- 实时行情与市值：`stock_zh_a_spot_em`
-- 近 45 日历史行情：`stock_zh_a_hist`
-- 公司资料：`stock_individual_info_em`
-- 财务指标：`stock_financial_analysis_indicator`
-- 主营构成：`stock_zygc_em`
-- 个股新闻：`stock_news_em`
-- 财经内容精选：`stock_news_main_cx`
-
-每次默认最多采集 8 个重点上市公司，历史行情可通过 `include_history` 开关关闭。单个接口失败不会让整次运行失败，错误会写入 `market_source.detail.errors` 或 `news_source.errors`。这些接口和字段以 AKShare 官方股票数据文档为准。
+- `docs/PRD_EXECUTION_MAP.md`
+- `docs/USER_GUIDE.md`
+- `docs/MARKET_DATA_REFRESH.md`
+- `docs/DATABASE_WORKFLOW.md`
