@@ -408,6 +408,7 @@ function renderReports(reports) {
 }
 
 function renderSidebarTopics(mappings) {
+  if (!el("sidebar-topic-count") || !el("sidebar-topic-list")) return;
   const topics = [];
   mappings.forEach((mapping) => {
     (mapping.topics || []).forEach((topic) => {

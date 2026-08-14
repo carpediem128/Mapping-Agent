@@ -48,14 +48,31 @@
     $(k + "-detail").innerHTML = "<div class=\"topic-detail-head\"><div><div class=\"topic-overline\">\u9879\u76ee\u603b\u89c8</div><h3>" + esc(chosen.title) + "</h3><p>\u5305\u542b\u516c\u53f8\u3001\u4e1a\u52a1\u3001\u6280\u672f\u3001\u878d\u8d44\u548c\u56e2\u961f\u7b49\u7814\u7a76\u5b57\u6bb5\u3002</p></div><strong class=\"topic-count\">" + chosen.rows.length + "<small>\u4e2a\u9879\u76ee</small></strong></div><div class=\"topic-meta\"><span>\u8d5b\u9053\uff1a" + esc(chosen.title) + "</span><span>\u5e02\u573a\u5c42\u7ea7\uff1a" + level + "</span><span>\u6765\u6e90\uff1a\u5df2\u5bfc\u5165\u7814\u7a76\u6587\u4ef6</span></div><div class=\"topic-preview-title\">\u9879\u76ee\u660e\u7ec6</div>" + table(chosen.source, chosen.rows);
   }
   function nav() {
-    var n = document.querySelector(".side-nav"), old = n && n.querySelector('a[data-view="mappings"]'); if (!old) return;
-    old.dataset.view = "primary-mappings"; old.dataset.split = "primary-mappings"; old.href = "#primary-mappings"; old.innerHTML = "<span>05</span>\u4e00\u7ea7\u5e02\u573a Mapping";
-    var two = old.cloneNode(true); two.dataset.view = "secondary-mappings"; two.dataset.split = "secondary-mappings"; two.href = "#secondary-mappings"; two.innerHTML = "<span>06</span>\u4e8c\u7ea7\u5e02\u573a Mapping"; old.parentNode.insertBefore(two, old.nextSibling);
-    var imp = n.querySelector('a[data-view="imports"]'); if (imp) { imp.innerHTML = "<span>07</span>\u5bfc\u5165\u4e0e\u914d\u7f6e"; }
-    document.querySelectorAll(".sidebar-divider, .sidebar-heading, #sidebar-topic-list").forEach(function (x) { x.remove(); });
-    n.querySelectorAll("a[data-split]").forEach(function (link) { link.addEventListener("click", function (event) { event.preventDefault(); show(link.dataset.split); }); });
-  }
-  function show(view) { document.querySelectorAll(".view-panel").forEach(function (p) { p.classList.toggle("active", p.dataset.view === view); }); document.querySelectorAll("a[data-split]").forEach(function (a) { a.classList.toggle("active", a.dataset.split === view); }); history.replaceState(null, "", "#" + view); }
+    var n = document.querySelector(".side-nav");
+    if (!n) return;
+    var one = n.querySelector('a[data-view="primary-mappings"]') || n.querySelector('a[data-view="mappings"]');
+    if (!one) return;
+    one.dataset.view = "primary-mappings";
+    one.dataset.split = "primary-mappings";
+    one.href = "#primary-mappings";
+    var two = n.querySelector('a[data-view="secondary-mappings"]');
+    if (!two) {
+      two = one.cloneNode(true);
+      two.dataset.view = "secondary-mappings";
+      two.dataset.split = "secondary-mappings";
+      two.href = "#secondary-mappings";
+      two.innerHTML = "<span>06</span>二级市场 Mapping";
+      one.parentNode.insertBefore(two, one.nextSibling);
+    }
+    var imp = n.querySelector('a[data-view="imports"]');
+    if (imp) imp.innerHTML = "<span>07</span>导入与配置";
+    n.querySelectorAll("a[data-split]").forEach(function (link) {
+      link.addEventListener("click", function (event) {
+        event.preventDefault();
+        show(link.dataset.split);
+      });
+    });
+  }  function show(view) { document.querySelectorAll(".view-panel").forEach(function (p) { p.classList.toggle("active", p.dataset.view === view); }); document.querySelectorAll("a[data-split]").forEach(function (a) { a.classList.toggle("active", a.dataset.split === view); }); history.replaceState(null, "", "#" + view); }
   function setup() {
     var old = document.getElementById("mappings"); if (!old) return;
     var one = panel(P), two = panel(S); old.replaceWith(one, two); nav(); var requested = location.hash.replace("#", ""); show(requested === "secondary-mappings" ? "secondary-mappings" : requested === "primary-mappings" || requested === "mappings" ? "primary-mappings" : requested || "overview");
