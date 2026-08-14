@@ -1,4 +1,4 @@
-﻿# Hardtech Investment Agent
+# Hardtech Investment Agent
 
 硬科技投资 Mapping 看板，把以下工作串成一个本地工作流：
 
@@ -23,7 +23,7 @@
 
 ```powershell
 pip install -r requirements.txt
-python -m web_server_split_progress_v3
+python -m web_server_v1
 ```
 
 浏览器打开：<http://127.0.0.1:4173/>
@@ -43,7 +43,7 @@ python -m web_server_split_progress_v3
 
 ```powershell
 $env:GLM_API_KEY = "your-api-key"
-python -m web_server_split_progress_v3
+python -m web_server_v1
 ```
 
 配置文件：`config/default_config.json`
@@ -60,7 +60,8 @@ docs/                  PRD 映射、使用指南和数据存储说明
 runs/                  每次执行的产出
 web/                   看板页面、JSON 数据和下载文件
 run_agent.py           命令行入口
-web_server_*.py        不同运行模式的本地服务入口
+web_server_v1.py        正式看板启动入口
+web_server_*.py        v1 调用的后台依赖模块
 ```
 
 ## 命令行工作流

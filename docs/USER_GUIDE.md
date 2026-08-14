@@ -6,7 +6,7 @@
 
 ```powershell
 cd "C:\Users\Carpe diem\Documents\New project\hardtech_investment_agent"
-python -m web_server_llm_fixed
+python -m web_server_v1
 ```
 
 浏览器访问：<http://127.0.0.1:4173/>
@@ -93,7 +93,7 @@ AKShare 用于公开行情、财务摘要等市场数据；财经新闻和招聘
 
 ## 7. 故障排查
 
-- 页面打不开：确认终端仍在运行 `python -m web_server_llm_fixed`，然后刷新 <http://127.0.0.1:4173/>。
+- 页面打不开：确认终端仍在运行 `python -m web_server_v1`，然后刷新 <http://127.0.0.1:4173/>。
 - 端口占用：结束旧的 Python 服务，或设置 `$env:MAPPING_PORT=4174` 后用新端口启动。
 - GLM 未配置：在当前启动服务的终端设置 `$env:GLM_API_KEY="你的密钥"`，再重启服务。
 - GLM 返回 502：检查密钥额度、网络和模型权限；看板本身的 Excel/SQLite 功能不依赖 GLM。
