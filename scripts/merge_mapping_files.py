@@ -10,6 +10,8 @@ from typing import Any
 
 from openpyxl import load_workbook
 
+from agent.json_utils import dumps_json
+
 
 ROOT = Path(__file__).resolve().parents[1]
 WEB_DIR = ROOT / "web"
@@ -138,7 +140,7 @@ def merge_mapping_files(paths: list[str | Path], run_id: str | None = None) -> d
     sources = [item for item in existing.get("sources", []) if item.get("source_file") not in source_files] + all_sources
     records = [item for item in existing.get("records", []) if item.get("source_file") not in source_files] + all_records
     source_payload = {"generated_at": datetime.now().isoformat(timespec="seconds"), "source_count": len({item["source_file"] for item in sources}), "sheet_count": len(sources), "record_count": len(records), "sources": sources, "records": records}
-    SOURCE_PATH.write_text(json.dumps(source_payload, ensure_ascii=False, indent=2), encoding="utf-8")
+    SOURCE_PATH.write_text(dumps_json(source_payload, ensure_ascii=False, indent=2), encoding="utf-8")
 
     artifact_dir = WEB_DIR / "artifacts" / (run_id or f"mapping_import_{datetime.now().strftime('%Y%m%d_%H%M%S')}") / "mappings"
     artifact_dir.mkdir(parents=True, exist_ok=True)
@@ -156,7 +158,7 @@ def merge_mapping_files(paths: list[str | Path], run_id: str | None = None) -> d
     site.setdefault("stats", {})["mapping_count"] = len(mappings)
     site["stats"]["mapping_rows"] = sum(int(item.get("row_count") or 0) for item in mappings)
     site["reference_workbooks"] = {"source_count": source_payload["source_count"], "sheet_count": source_payload["sheet_count"], "record_count": source_payload["record_count"], "sources": sources}
-    serialized = json.dumps(site, ensure_ascii=False, indent=2)
+    serialized = dumps_json(site, ensure_ascii=False, indent=2)
     SITE_PATH.write_text(serialized, encoding="utf-8")
     (DATA_DIR / "site_data.js").write_text("window.__MAPPING_SITE_DATA__ = " + serialized + "\n", encoding="utf-8")
     return {"source_files": [path.name for path in input_paths], "sheets": len(all_sources), "records_added": len(all_records), "database": _upsert_db(all_sources, all_records), "run_id": run_id or ""}

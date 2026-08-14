@@ -6,6 +6,7 @@ from datetime import datetime
 from pathlib import Path
 from typing import Any
 
+from agent.json_utils import dumps_json
 from agent.settings import ROOT, load_config
 from agent.sources.akshare import AKShareClient
 from agent.web_export import _build_industry_stats
@@ -125,7 +126,7 @@ def main() -> None:
     stats = data.setdefault("stats", {})
     stats["hotspot_count"] = len(top20)
     stats["industry_count"] = len(data["industry_stats"])
-    serialized = json.dumps(data, ensure_ascii=False, indent=2)
+    serialized = dumps_json(data, ensure_ascii=False, indent=2)
     data_path.write_text(serialized, encoding="utf-8")
     (ROOT / "web" / "data" / "site_data.js").write_text("window.__MAPPING_SITE_DATA__ = " + serialized + "\n", encoding="utf-8")
     print(json.dumps({

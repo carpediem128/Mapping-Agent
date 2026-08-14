@@ -8,6 +8,7 @@ from typing import Any
 
 from openpyxl import load_workbook
 
+from agent.json_utils import dumps_json
 from agent.settings import ROOT
 from agent.sources.market import DEMO_SUBTOPICS
 
@@ -58,7 +59,7 @@ def export_run_to_web(run_dir: Path, web_dir: Path | None = None) -> dict[str, A
         },
     }
 
-    serialized = json.dumps(payload, ensure_ascii=False, indent=2)
+    serialized = dumps_json(payload, ensure_ascii=False, indent=2)
     (data_dir / "site_data.json").write_text(serialized, encoding="utf-8")
     (data_dir / "site_data.js").write_text(
         "window.__MAPPING_SITE_DATA__ = " + serialized + "\n",

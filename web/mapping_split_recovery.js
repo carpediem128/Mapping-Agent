@@ -2,6 +2,7 @@
   "use strict";
   var P = "\u4e00\u7ea7\u5e02\u573a", S = "\u4e8c\u7ea7\u5e02\u573a", C = "\u516c\u53f8\u540d\u79f0";
   var data, sourceData, selected = { primary: "", secondary: "" }, queries = { primary: "", secondary: "" };
+  var initialView = String(window.__dashboardInitialRoute || location.hash).replace("#", "");
   var $ = function (id) { return document.getElementById(id); };
   var clean = function (v) { return String(v == null ? "" : v).trim(); };
   var esc = function (v) { return clean(v).replaceAll("&", "&amp;").replaceAll("<", "&lt;").replaceAll(">", "&gt;").replaceAll('"', "&quot;").replaceAll("'", "&#039;"); };
@@ -75,8 +76,8 @@
   }  function show(view) { document.querySelectorAll(".view-panel").forEach(function (p) { p.classList.toggle("active", p.dataset.view === view); }); document.querySelectorAll("a[data-split]").forEach(function (a) { a.classList.toggle("active", a.dataset.split === view); }); history.replaceState(null, "", "#" + view); }
   function setup() {
     var old = document.getElementById("mappings"); if (!old) return;
-    var one = panel(P), two = panel(S); old.replaceWith(one, two); nav(); var requested = location.hash.replace("#", ""); show(requested === "secondary-mappings" ? "secondary-mappings" : requested === "primary-mappings" || requested === "mappings" ? "primary-mappings" : requested || "overview");
+    var one = panel(P), two = panel(S); old.replaceWith(one, two); nav(); var current = location.hash.replace("#", ""), requested = /^(primary-mappings|secondary-mappings|mappings)$/.test(initialView) ? initialView : current; show(requested === "secondary-mappings" ? "secondary-mappings" : requested === "primary-mappings" || requested === "mappings" ? "primary-mappings" : requested || "overview");
     [P, S].forEach(function (level) { var k = key(level), search = $(k + "-search"); if (search) search.addEventListener("input", function () { queries[k] = clean(search.value).toLowerCase(); render(level); }); render(level); });
   }
-  Promise.all([fetch("./data/site_data.json?split=" + Date.now(), { cache: "no-store" }).then(function (r) { return r.json(); }), fetch("./data/mapping_sources.json?split=" + Date.now(), { cache: "no-store" }).then(function (r) { return r.json(); })]).then(function (v) { data = v[0]; sourceData = v[1]; window.setTimeout(setup, 500); });
+  Promise.all([fetch("./data/site_data.json?split=" + Date.now(), { cache: "no-store" }).then(function (r) { return r.json(); }), fetch("./data/mapping_sources.json?split=" + Date.now(), { cache: "no-store" }).then(function (r) { return r.json(); })]).then(function (v) { data = v[0]; sourceData = v[1]; window.setTimeout(setup, 500); }).catch(function (error) { console.error("Failed to load Mapping data", error); });
 }());

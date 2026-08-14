@@ -79,7 +79,12 @@ function setupNavigation() {
     });
   });
   const requested = window.location.hash.replace("#", "");
-  showView(document.querySelector('.view-panel[data-view="' + requested + '"]') ? requested : "overview");
+  const dynamicMappingRoute = requested === "primary-mappings" || requested === "secondary-mappings" || requested === "mappings";
+  if (document.querySelector('.view-panel[data-view="' + requested + '"]')) {
+    showView(requested);
+  } else if (!dynamicMappingRoute) {
+    showView("overview");
+  }
 }
 
 function showView(view) {

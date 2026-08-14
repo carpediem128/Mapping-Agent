@@ -5,6 +5,8 @@ import sqlite3
 from datetime import datetime
 from pathlib import Path
 
+from agent.json_utils import dumps_json
+
 
 ROOT = Path(__file__).resolve().parents[1]
 DATA_DIR = ROOT / "web" / "data"
@@ -20,7 +22,7 @@ def main() -> None:
     source["source_count"] = len({item.get("source_file") for item in source["sources"]})
     source["sheet_count"] = len(source["sources"])
     source["record_count"] = len(source["records"])
-    source_path.write_text(json.dumps(source, ensure_ascii=False, indent=2), encoding="utf-8")
+    source_path.write_text(dumps_json(source, ensure_ascii=False, indent=2), encoding="utf-8")
 
     site_path = DATA_DIR / "site_data.json"
     site = json.loads(site_path.read_text(encoding="utf-8"))
@@ -29,7 +31,7 @@ def main() -> None:
     site.setdefault("stats", {})["mapping_count"] = len(site["mappings"])
     site["stats"]["mapping_rows"] = sum(int(item.get("row_count") or 0) for item in site["mappings"])
     site["reference_workbooks"] = {"source_count": source["source_count"], "sheet_count": source["sheet_count"], "record_count": source["record_count"], "sources": source["sources"]}
-    serialized = json.dumps(site, ensure_ascii=False, indent=2)
+    serialized = dumps_json(site, ensure_ascii=False, indent=2)
     site_path.write_text(serialized, encoding="utf-8")
     (DATA_DIR / "site_data.js").write_text("window.__MAPPING_SITE_DATA__ = " + serialized + "\n", encoding="utf-8")
 
