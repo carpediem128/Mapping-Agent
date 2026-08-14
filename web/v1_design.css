@@ -760,3 +760,10 @@ th, td {
   .view-panel { padding: 0 14px 20px; }
   .panel { padding: 21px 18px 24px; }
 }
+/* Keep the four primary destinations visually distinct from the workflow tools. */
+.workflow-divider {
+  display: block !important;
+  height: 1px;
+  margin: 17px 14px 10px;
+  background: rgba(255, 255, 255, .14);
+}
