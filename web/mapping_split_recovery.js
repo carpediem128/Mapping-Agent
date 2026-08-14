@@ -28,7 +28,7 @@
   }
   function overview(target, chosen) {
     var list = summaries(), max = Math.max.apply(null, list.map(function (x) { return x.primary; }).concat([1]));
-    target.innerHTML = "<div class=\"mapping-topic-overview-head\"><div><div class=\"column-label\">\u4e3b\u9898\u6982\u89c8</div><p>\u5df2\u8986\u76d6\u8d5b\u9053\u53ca\u4e00\u7ea7\u9879\u76ee\u6570\u91cf</p></div><span class=\"status-tag\">" + list.length + " \u4e2a\u8d5b\u9053</span></div><div class=\"mapping-topic-overview-grid\">" + list.map(function (x) { return "<button type=\"button\" class=\"mapping-topic-card" + (x.name === chosen ? " active" : "") + " data-theme=\"" + esc(x.name) + "\"><strong>" + esc(x.name) + "</strong><small>\u4e00\u7ea7 " + x.primary + " \u4e2a · \u4e8c\u7ea7 " + x.secondary + " \u5bb6</small></button>"; }).join("") + "</div><div class=\"mapping-coverage-chart\">" + list.map(function (x) { return "<div class=\"mapping-coverage-row\"><strong>" + esc(x.name) + "</strong><div class=\"mapping-coverage-track\"><i style=\"width:" + Math.round(x.primary / max * 100) + "%\"></i></div><span>" + x.primary + " \u4e2a</span></div>"; }).join("") + "</div>";
+    target.innerHTML = "<div class=\"mapping-topic-overview-head\"><div><div class=\"column-label\">\u4e3b\u9898\u6982\u89c8</div><p>\u5df2\u8986\u76d6\u8d5b\u9053\u53ca\u4e00\u7ea7\u9879\u76ee\u6570\u91cf</p></div><span class=\"status-tag\">" + list.length + " \u4e2a\u8d5b\u9053</span></div><div class=\"mapping-topic-overview-grid\">" + list.map(function (x) { return "<button type=\"button\" class=\"mapping-topic-card" + (x.name === chosen ? " active" : "") + "\" data-theme=\"" + esc(x.name) + "\"><strong>" + esc(x.name) + "</strong><small>\u4e00\u7ea7 " + x.primary + " \u4e2a · \u4e8c\u7ea7 " + x.secondary + " \u5bb6</small></button>"; }).join("") + "</div><div class=\"mapping-coverage-chart\">" + list.map(function (x) { return "<div class=\"mapping-coverage-row\"><strong>" + esc(x.name) + "</strong><div class=\"mapping-coverage-track\"><i style=\"width:" + Math.round(x.primary / max * 100) + "%\"></i></div><span>" + x.primary + " \u4e2a</span></div>"; }).join("") + "</div>";
   }
   function panel(level) {
     var k = key(level), title = level === P ? "\u4e00\u7ea7\u5e02\u573a Mapping" : "\u4e8c\u7ea7\u5e02\u573a Mapping", id = k + "-mappings", section = document.createElement("section");
@@ -41,12 +41,25 @@
     if (!entries.length) { list.innerHTML = "<div class=\"mapping-raw-empty\">\u6682\u65e0\u5df2\u5b8c\u6210\u7684\u8d5b\u9053\u3002</div>"; return; }
     if (!entries.some(function (e) { return e.title === selected[k]; })) selected[k] = entries[0].title;
     var chosen = entries.find(function (e) { return e.title === selected[k]; }) || entries[0];
-    list.innerHTML = entries.map(function (e) { return "<button type=\"button\" class=\"mapping-sector-card" + (e.title === chosen.title ? " active" : "") + " data-title=\"" + esc(e.title) + "\"><span><strong>" + esc(e.title) + "</strong><small>" + e.rows.length + " \u4e2a\u9879\u76ee</small></span></button>"; }).join("");
+    list.innerHTML = entries.map(function (e) { return "<button type=\"button\" class=\"mapping-sector-card" + (e.title === chosen.title ? " active" : "") + "\" data-title=\"" + esc(e.title) + "\"><span><strong>" + esc(e.title) + "</strong><small>" + e.rows.length + " \u4e2a\u9879\u76ee</small></span></button>"; }).join("");
     list.querySelectorAll("[data-title]").forEach(function (b) { b.addEventListener("click", function () { selected[k] = b.dataset.title || ""; render(level); }); });
     overview($(k + "-overview"), chosen.title);
     $(k + "-crumb").textContent = chosen.title + " · " + level;
     if (chosen.item.url) $(k + "-download").href = "./" + encodeURI(chosen.item.url);
     $(k + "-detail").innerHTML = "<div class=\"topic-detail-head\"><div><div class=\"topic-overline\">\u9879\u76ee\u603b\u89c8</div><h3>" + esc(chosen.title) + "</h3><p>\u5305\u542b\u516c\u53f8\u3001\u4e1a\u52a1\u3001\u6280\u672f\u3001\u878d\u8d44\u548c\u56e2\u961f\u7b49\u7814\u7a76\u5b57\u6bb5\u3002</p></div><strong class=\"topic-count\">" + chosen.rows.length + "<small>\u4e2a\u9879\u76ee</small></strong></div><div class=\"topic-meta\"><span>\u8d5b\u9053\uff1a" + esc(chosen.title) + "</span><span>\u5e02\u573a\u5c42\u7ea7\uff1a" + level + "</span><span>\u6765\u6e90\uff1a\u5df2\u5bfc\u5165\u7814\u7a76\u6587\u4ef6</span></div><div class=\"topic-preview-title\">\u9879\u76ee\u660e\u7ec6</div>" + table(chosen.source, chosen.rows);
+  }
+  function bindSectorSwitching(level) {
+    var k = key(level), section = $(k + "-mappings");
+    if (!section || section.dataset.sectorSwitchBound) return;
+    section.dataset.sectorSwitchBound = "true";
+    section.addEventListener("click", function (event) {
+      var card = event.target.closest(".mapping-topic-card[data-theme], .mapping-sector-card[data-title]");
+      if (!card || !section.contains(card)) return;
+      var title = clean(card.dataset.theme || card.dataset.title);
+      if (!title || title === selected[k]) return;
+      selected[k] = title;
+      render(level);
+    });
   }
   function nav() {
     var n = document.querySelector(".side-nav");
@@ -77,7 +90,7 @@
   function setup() {
     var old = document.getElementById("mappings"); if (!old) return;
     var one = panel(P), two = panel(S); old.replaceWith(one, two); nav(); var current = location.hash.replace("#", ""), requested = /^(primary-mappings|secondary-mappings|mappings)$/.test(initialView) ? initialView : current; show(requested === "secondary-mappings" ? "secondary-mappings" : requested === "primary-mappings" || requested === "mappings" ? "primary-mappings" : requested || "overview");
-    [P, S].forEach(function (level) { var k = key(level), search = $(k + "-search"); if (search) search.addEventListener("input", function () { queries[k] = clean(search.value).toLowerCase(); render(level); }); render(level); });
+    [P, S].forEach(function (level) { var k = key(level), search = $(k + "-search"); bindSectorSwitching(level); if (search) search.addEventListener("input", function () { queries[k] = clean(search.value).toLowerCase(); render(level); }); render(level); });
   }
   Promise.all([fetch("./data/site_data.json?split=" + Date.now(), { cache: "no-store" }).then(function (r) { return r.json(); }), fetch("./data/mapping_sources.json?split=" + Date.now(), { cache: "no-store" }).then(function (r) { return r.json(); })]).then(function (v) { data = v[0]; sourceData = v[1]; window.setTimeout(setup, 500); }).catch(function (error) { console.error("Failed to load Mapping data", error); });
 }());
