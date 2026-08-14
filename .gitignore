@@ -9,3 +9,12 @@ runs/
 web/artifacts/
 web/data/free_storage_backups/
 *.log
+
+# Local credentials and machine-specific configuration
+.env.*
+!.env.postgres.example
+config/local_config.json
+config/*secret*.json
+secrets/
+*.pem
+*.key

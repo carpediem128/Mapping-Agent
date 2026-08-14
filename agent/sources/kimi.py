@@ -1,4 +1,4 @@
-﻿from __future__ import annotations
+from __future__ import annotations
 
 import json
 import os
@@ -26,13 +26,13 @@ class KimiClient:
     def from_config(cls, config: dict[str, Any]) -> "KimiClient | None":
         settings = config.get("kimi", {}) or {}
         env_name = str(settings.get("api_key_env") or "KIMI_API_KEY")
-        api_key = str(settings.get("api_key") or os.getenv(env_name) or "").strip()
+        api_key = str(os.getenv(env_name) or "").strip()
         if not api_key or settings.get("enabled", True) is False:
             return None
         return cls(
             base_url=str(settings.get("base_url") or "https://api.moonshot.cn/v1").rstrip("/"),
             api_key=api_key,
-            model=str(settings.get("model") or "kimi-k2-0711-preview"),
+            model=str(os.getenv(str(settings.get("model_env") or "KIMI_MODEL")) or settings.get("model") or "kimi-k2-0711-preview"),
             timeout_seconds=int(settings.get("timeout_seconds") or 60),
         )
 
@@ -40,12 +40,13 @@ class KimiClient:
     def status(config: dict[str, Any]) -> dict[str, Any]:
         settings = config.get("kimi", {}) or {}
         env_name = str(settings.get("api_key_env") or "KIMI_API_KEY")
-        configured = bool(str(settings.get("api_key") or os.getenv(env_name) or "").strip())
+        configured = bool(str(os.getenv(env_name) or "").strip())
         return {
             "provider": "kimi",
             "enabled": bool(settings.get("enabled", True)),
             "configured": configured,
-            "model": str(settings.get("model") or "kimi-k2-0711-preview"),
+            "model": str(os.getenv(str(settings.get("model_env") or "KIMI_MODEL")) or settings.get("model") or "kimi-k2-0711-preview"),
+            "model_env": str(settings.get("model_env") or "KIMI_MODEL"),
             "base_url": str(settings.get("base_url") or "https://api.moonshot.cn/v1"),
             "api_key_env": env_name,
         }

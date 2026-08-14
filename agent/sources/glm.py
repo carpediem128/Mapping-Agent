@@ -1,4 +1,4 @@
-﻿from __future__ import annotations
+from __future__ import annotations
 
 import json
 import os
@@ -21,13 +21,13 @@ class GLMClient:
     def from_config(cls, config: dict[str, Any]) -> "GLMClient | None":
         settings = config.get("glm", {}) or {}
         env_name = str(settings.get("api_key_env") or "GLM_API_KEY")
-        api_key = str(settings.get("api_key") or os.getenv(env_name) or "").strip()
+        api_key = str(os.getenv(env_name) or "").strip()
         if not api_key or settings.get("enabled", True) is False:
             return None
         return cls(
             base_url=str(settings.get("base_url") or "https://open.bigmodel.cn/api/paas/v4").rstrip("/"),
             api_key=api_key,
-            model=str(settings.get("model") or "glm-4.5"),
+            model=str(os.getenv(str(settings.get("model_env") or "GLM_MODEL")) or settings.get("model") or "glm-4.5"),
             timeout_seconds=int(settings.get("timeout_seconds") or 60),
         )
 
@@ -35,12 +35,13 @@ class GLMClient:
     def status(config: dict[str, Any]) -> dict[str, Any]:
         settings = config.get("glm", {}) or {}
         env_name = str(settings.get("api_key_env") or "GLM_API_KEY")
-        configured = bool(str(settings.get("api_key") or os.getenv(env_name) or "").strip())
+        configured = bool(str(os.getenv(env_name) or "").strip())
         return {
             "provider": "glm",
             "enabled": bool(settings.get("enabled", True)),
             "configured": configured,
-            "model": str(settings.get("model") or "glm-4.5"),
+            "model": str(os.getenv(str(settings.get("model_env") or "GLM_MODEL")) or settings.get("model") or "glm-4.5"),
+            "model_env": str(settings.get("model_env") or "GLM_MODEL"),
             "base_url": str(settings.get("base_url") or "https://open.bigmodel.cn/api/paas/v4"),
             "api_key_env": env_name,
         }

@@ -112,6 +112,7 @@
     "glm":  {
                  "enabled":  true,
                  "api_key_env":  "GLM_API_KEY",
+                 "model_env":  "GLM_MODEL",
                  "base_url":  "https://open.bigmodel.cn/api/paas/v4",
                  "model":  "glm-4.5",
                  "timeout_seconds":  60

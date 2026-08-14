@@ -1,68 +1,138 @@
 # Hardtech Investment Agent
 
-硬科技投资 Mapping 看板，把以下工作串成一个本地工作流：
+面向硬科技投资研究的 Mapping 看板，覆盖：
 
-`二级市场热点 -> 一级市场 Mapping -> 联系方式 -> BD 跟进`
+`二级市场热点 -> 行业统计 -> 一级市场 Mapping -> 二级市场 Mapping -> 联系方式与 BD 跟进`
 
-当前仓库为私有项目，适合本地研究和团队内部使用。
+项目默认使用本地 SQLite、JSON 和 Excel，可直接在 Windows 本地运行。浏览已经导入的看板数据不需要大模型 API Key；只有调用大模型整理文本或表格时才需要配置 GLM。
 
-## 当前能力
+## 功能入口
 
-- 二级市场热点：AKShare 行情、板块、成分股、财务、主营构成和新闻接口。
-- 一级市场 Mapping：导入已有 `.xlsx`，保留原始项目行和主题标签。
-- 一级市场与二级市场：在看板中分为两个独立页面。
-- 联系方式：支持企名片数据、公开网页和招聘信息补充。
-- 联系进度：支持行业、状态和关键词筛选，并记录信源时间、链接和证据。
-- 异步导入：上传后返回 `job_id`，后台执行联系方式和 BD 汇总。
-- GLM：用于文本、表格结构化和字段整理，密钥只从环境变量读取。
-- 存储：默认使用本地 SQLite、JSON 和 Excel；多人协作可切换 PostgreSQL。
+看板左侧包含七个固定入口：
 
-## 启动看板
+1. 概览
+2. 二级热点
+3. 行业统计
+4. 联系总表
+5. 一级市场 Mapping
+6. 二级市场 Mapping
+7. 导入与配置
 
-在仓库目录执行：
+支持上传已经完成的 Mapping Excel，并按原始一级市场、二级市场 Sheet 展示项目；也支持行情刷新、联系方式汇总和 GLM 结构化处理。
+
+## 本地启动
+
+在仓库根目录执行：
 
 ```powershell
 pip install -r requirements.txt
 python -m web_server_v1
 ```
 
-浏览器打开：<http://127.0.0.1:4173/>
+浏览器打开：
 
-不要直接双击 `web/index.html`，需要通过 HTTP 服务访问。
+```text
+http://127.0.0.1:4173/
+```
 
-## 导入 Mapping
+不要直接双击 `web/index.html`。上传、数据库和接口功能需要通过 Python HTTP 服务运行。
 
-1. 打开看板左侧的“导入与配置”。
-2. 选择一个或多个 `.xlsx` 文件。
-3. 等待后台任务完成。
-4. 在一级市场 Mapping、二级市场 Mapping 和联系总表中查看结果。
+## API Key 安全原则
 
-推荐使用两个 Sheet：`一级市场`、`二级市场`。系统会保留原始 Sheet、文件名、首列标签和项目字段。
+仓库不包含任何真实 API Key。代码只从操作系统环境变量读取密钥，不会从 `config/default_config.json`、网页、JSON 数据或 Excel 中读取明文 Key。
 
-## GLM 配置
+请遵守以下规则：
+
+- 不要把真实 Key 写入 README、配置文件、代码或 Excel。
+- 不要把 Key 放进 `web/` 目录或任何前端 JavaScript。
+- 不要提交 `.env`、`config/local_config.json`、`secrets/`、`.pem` 或 `.key` 文件。
+- 每位使用者应配置自己的 Key；交付给同事或老板时只交付代码。
+- 如果 Key 曾出现在聊天、邮件、截图或提交历史中，应立即在供应商控制台撤销并重新生成。
+
+## 配置 GLM Key
+
+### 方式一：仅当前 PowerShell 窗口生效
 
 ```powershell
-$env:GLM_API_KEY = "your-api-key"
+$env:GLM_API_KEY = "在这里填入使用者自己的 Key"
 python -m web_server_v1
 ```
 
-配置文件：`config/default_config.json`
+关闭该 PowerShell 窗口后，环境变量会失效。
 
-接口：`POST /api/llm/complete-json`
+### 方式二：保存到当前 Windows 用户
 
-## 目录说明
-
-```text
-agent/                 四个 PRD 阶段和数据源适配器
-config/                行业、列名、AKShare、GLM 配置
-data/input/            输入 Excel
-docs/                  PRD 映射、使用指南和数据存储说明
-runs/                  每次执行的产出
-web/                   看板页面、JSON 数据和下载文件
-run_agent.py           命令行入口
-web_server_v1.py        正式看板启动入口（唯一公开启动文件）
-server/                  v1 调用的后台服务模块（内部实现）
+```powershell
+[Environment]::SetEnvironmentVariable(
+  "GLM_API_KEY",
+  "在这里填入使用者自己的 Key",
+  "User"
+)
 ```
+
+设置后重新打开 PowerShell，再运行：
+
+```powershell
+python -m web_server_v1
+```
+
+### Linux 或 macOS
+
+```bash
+export GLM_API_KEY="在这里填入使用者自己的 Key"
+python -m web_server_v1
+```
+
+部署到服务器时，请在服务器或托管平台的 Secret / Environment Variables 页面添加 `GLM_API_KEY`。不要把 Key 写入 GitHub 仓库，也不要使用会暴露到浏览器端的公开环境变量名称。
+
+## 修改 GLM 模型
+
+默认模型位于 [`config/default_config.json`](config/default_config.json)：
+
+```json
+{
+  "glm": {
+    "enabled": true,
+    "api_key_env": "GLM_API_KEY",
+    "model_env": "GLM_MODEL",
+    "base_url": "https://open.bigmodel.cn/api/paas/v4",
+    "model": "glm-4.5",
+    "timeout_seconds": 60
+  }
+}
+```
+
+有两种修改方式：
+
+1. 临时切换模型，不修改仓库文件：
+
+```powershell
+$env:GLM_MODEL = "需要使用的模型名称"
+python -m web_server_v1
+```
+
+2. 修改默认模型：编辑 `config/default_config.json` 中的 `glm.model`。
+
+`GLM_MODEL` 环境变量的优先级高于配置文件。若更换兼容服务地址，修改 `glm.base_url`；密钥仍通过 `glm.api_key_env` 指定的环境变量读取。
+
+## 检查配置状态
+
+以下命令只显示是否已配置、模型名和接口地址，不会打印 Key：
+
+```powershell
+python -c "from agent.settings import load_config; from agent.sources.glm import GLMClient; print(GLMClient.status(load_config()))"
+```
+
+也可以打开看板的“导入与配置”页面查看 GLM 状态。
+
+## 导入 Mapping Excel
+
+1. 打开“导入与配置”。
+2. 选择一个或多个 `.xlsx` 文件。
+3. 等待后台任务完成。
+4. 在“一级市场 Mapping”“二级市场 Mapping”和“联系总表”查看结果。
+
+推荐工作簿包含 `一级市场` 和 `二级市场` 两个 Sheet。系统会保留原始文件名、Sheet、首列标签和项目字段。
 
 ## 命令行工作流
 
@@ -71,22 +141,38 @@ server/                  v1 调用的后台服务模块（内部实现）
 python run_agent.py run --date 20260711 --offline-demo
 
 # 导入企名片 Excel
-python run_agent.py run --date 20260711 --qmp-excel "C:\path\企名片导出.xlsx"
+python run_agent.py run --date 20260711 --qmp-excel "C:/path/企名片导出.xlsx"
 
-# 单独补联系方式
-python run_agent.py contacts --date 20260711 --mapping-dir "runs\20260711_xxxxxx\mappings"
+# 单独补充联系方式
+python run_agent.py contacts --date 20260711 --mapping-dir "runs/20260711_xxxxxx/mappings"
 ```
 
-## 数据和限制
+## 目录结构
+
+```text
+agent/                 Agent 流程、模型客户端和数据源适配器
+config/                行业、AKShare 与模型配置，不存放真实 Key
+data/input/            待处理 Excel
+docs/                  PRD、用户指南和数据库说明
+runs/                  每次执行产生的临时结果，默认不提交
+scripts/               Mapping 导入、行情刷新和数据维护脚本
+server/                后端接口与任务处理模块
+web/                   看板页面和已导出的展示数据
+run_agent.py           命令行入口
+web_server_v1.py       正式看板启动入口
+```
+
+## 数据与限制
 
 - 当前看板数据保存在 `web/data/`，运行产出保存在 `runs/`。
 - AKShare、招聘网站和公开网页可能受网络、登录、验证码、频率限制或字段变化影响。
-- 无法核验的联系方式会留空，不会自动编造。
-- Vercel 适合托管静态看板；在线上传、登录和多人编辑需要后端服务或 PostgreSQL。
+- 无法核验的联系方式应留空，不自动编造。
+- Vercel 适合托管静态页面；在线上传、数据库写入、定时任务和私密 API 调用需要单独的后端服务。
+- 多人协作可继续使用 SQLite 文件，也可以按 `docs/POSTGRES_SETUP.md` 切换 PostgreSQL。
 
-更多细节见：
+更多说明：
 
-- `docs/PRD_EXECUTION_MAP.md`
 - `docs/USER_GUIDE.md`
+- `docs/PRD_EXECUTION_MAP.md`
 - `docs/MARKET_DATA_REFRESH.md`
 - `docs/DATABASE_WORKFLOW.md`
