@@ -16,7 +16,7 @@ from agent.sources.akshare import AKShareClient
 from agent.sources.glm import GLMClient
 from agent.utils.fs import create_run_dir
 from agent.web_export import export_run_to_web
-from web_server import JOBS, JOBS_LOCK, MappingDashboardHandler, _now, _update_job
+from server.web_server import JOBS, JOBS_LOCK, MappingDashboardHandler, _now, _update_job
 
 
 WEB_DIR = ROOT / "web"

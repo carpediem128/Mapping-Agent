@@ -1,0 +1,66 @@
+﻿:root {
+  --bg: #edf2f5;
+  --panel: #ffffff;
+  --ink: #08182f;
+  --text: #1d2d42;
+  --muted: #6a788a;
+  --line: #dce5eb;
+  --accent: #48b8ae;
+  --accent-strong: #237b77;
+  --accent-soft: #e3f3f0;
+  --warm: #b98236;
+  --warm-soft: #fff4df;
+  --shadow: 0 14px 34px rgba(13, 29, 51, .07);
+}
+body { background: #edf2f5; color: var(--text); }
+.shell { width: min(1540px, calc(100% - 34px)); padding: 18px 0 48px; }
+.app-frame { grid-template-columns: 248px minmax(0, 1fr); gap: 20px; }
+.sidebar { top: 18px; min-height: calc(100vh - 36px); border: 1px solid #25364d; border-radius: 16px; padding: 22px 14px; background: #0d1a2e; box-shadow: 0 18px 42px rgba(7, 20, 39, .18); }
+.brand { padding: 4px 9px 22px; border-bottom-color: rgba(255,255,255,.13); }
+.brand-mark { width: 42px; height: 42px; border-radius: 12px; border-color: #50c6bb; color: #82e1d8; font-size: 13px; }
+.brand strong { font-size: 15px; line-height: 1.15; }
+.brand small { margin-top: 6px; font-size: 11px; }
+.side-nav { gap: 7px; padding: 22px 0; }
+.side-nav a { min-height: 43px; border-radius: 9px; padding: 0 11px; color: #aebdce; font-size: 13px; }
+.side-nav a:hover, .side-nav a.active { background: #203249; color: #fff; }
+.side-nav a.active { box-shadow: inset 3px 0 0 #63d1c5; }
+.side-nav a span { color: #71849a; font-size: 11px; }
+.side-nav a.active span { color: #82e1d8; }
+.topbar { min-height: 190px; margin-bottom: 18px; border: 1px solid #21334d; border-radius: 16px; padding: 38px 40px; background: #101e35; box-shadow: 0 18px 42px rgba(7, 20, 39, .18); }
+.eyebrow { margin-bottom: 12px; color: #6bd2c6; font-size: 12px; letter-spacing: .08em; }
+h1 { margin-bottom: 10px; color: #f7fbff; font-size: clamp(34px, 3.3vw, 48px); font-weight: 750; letter-spacing: 0; }
+.subtitle { color: #b7c4d4; font-size: 15px; }
+.run-meta { gap: 5px; color: #a9b8c9; font-size: 12px; }
+.metrics { gap: 14px; margin: -45px 28px 22px; position: relative; z-index: 2; }
+.metrics article { min-height: 116px; border: 1px solid #e0e8ee; border-top: 3px solid #73c8bd; border-radius: 12px; padding: 17px 18px; background: #fff; box-shadow: 0 12px 28px rgba(18, 35, 57, .08); }
+.metrics article:nth-child(5) { border-top-color: #d3a261; }
+.metrics strong { font-size: 34px; }
+.metrics span { font-size: 12px; }
+.panel { margin-top: 18px; border: 1px solid #e0e8ee; border-radius: 14px; padding: 26px; background: #fff; box-shadow: var(--shadow); }
+.panel-head { margin-bottom: 20px; }
+.panel-head h2 { font-size: 27px; font-weight: 750; }
+.section-kicker { color: var(--accent-strong); font-size: 12px; letter-spacing: .04em; }
+.search input { height: 42px; border-radius: 10px; padding: 0 13px; background: #fbfdfe; }
+.status-tag { padding: 7px 12px; border-radius: 999px; background: var(--warm-soft); color: var(--warm); font-size: 12px; }
+.mapping-topic-card { min-height: 84px; border-radius: 12px; border-color: #e1e9ef; padding: 14px 15px; background: #fbfdfe; }
+.mapping-topic-card:hover, .mapping-topic-card.active { border-color: #5bbdb3; background: #e7f5f2; box-shadow: 0 7px 18px rgba(44, 129, 122, .10); }
+.mapping-topic-card strong { font-size: 14px; }
+.mapping-coverage-row { grid-template-columns: 130px minmax(0, 1fr) 58px; gap: 12px; font-size: 12px; }
+.mapping-coverage-track { height: 9px; background: #edf1f4; }
+.mapping-coverage-track i { background: #69bbb2; }
+.mapping-sector-card { border-radius: 10px; padding: 12px; background: #fbfdfe; }
+.mapping-sector-card strong { font-size: 13px; }
+.mapping-sector-card:hover { border-color: #67c1b8; background: #f2fbf9; }
+.mapping-sector-card.active { border-color: #4daaa2; background: #e3f3f0; box-shadow: inset 4px 0 0 #3b9b94; }
+.mapping-progress-chart { padding-top: 16px; }
+.mapping-progress-bar { width: 38px; border-radius: 7px 7px 3px 3px; }
+.mapping-progress-contacted { background: #277f7a; }
+.mapping-progress-item strong { font-size: 12px; }
+.outline-link { border-radius: 9px; padding: 8px 12px; }
+.contact-metrics > div { border-left-width: 4px; padding-left: 12px; }
+.contact-filter-row select, .contact-search input { height: 40px; border-radius: 9px; background: #fbfdfe; }
+.contact-v1-pagination button { border-radius: 8px; padding: 7px 11px; }
+.table-wrap { border-radius: 10px; }
+th { background: #f5f8fa; }
+@media (max-width: 1040px) { .app-frame { grid-template-columns: 210px minmax(0, 1fr); } .metrics { margin-left: 18px; margin-right: 18px; } }
+@media (max-width: 820px) { .shell { width: min(100% - 20px, 1540px); } .metrics { margin: 0 0 16px; } .topbar { min-height: 0; padding: 28px 24px 58px; } .panel { padding: 20px; } }

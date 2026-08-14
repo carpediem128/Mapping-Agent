@@ -6,8 +6,8 @@ from functools import partial
 from http.server import ThreadingHTTPServer
 from urllib.parse import urlparse
 
-import web_server_daily
-import web_server_product_fast as base
+from server import web_server_daily
+from server import web_server_product_fast as base
 from agent.settings import ROOT
 
 
@@ -18,7 +18,7 @@ class V1DashboardHandler(base.ProductFastDashboardHandler):
         if urlparse(self.path).path == "/":
             html = (ROOT / "web" / "index.html").read_text(encoding="utf-8")
             marker = '<script src="./app.js?v=20260715"></script>'
-            injected = ('<link rel="stylesheet" href="./mapping_ui_fix.css?v=v1"><link rel="stylesheet" href="./mapping_split.css?v=v1"><link rel="stylesheet" href="./mapping_progress.css?v=v1"><link rel="stylesheet" href="./contact_v1.css?v=v1"><script src="./mapping_split_recovery.js?v=v1"></script><script src="./mapping_split_navigation_fix.js?v=v1"></script><script src="./mapping_progress_interactions_v3.js?v=v1"></script><script src="./mapping_v1_interactions.js?v=v1"></script><script src="./contact_v1.js?v=v1"></script><script src="./hotspot_freshness_live.js?v=v1"></script>')
+            injected = ('<link rel="stylesheet" href="./v1_design.css?v=v1"><link rel="stylesheet" href="./mapping_ui_fix.css?v=v1"><link rel="stylesheet" href="./mapping_split.css?v=v1"><link rel="stylesheet" href="./mapping_progress.css?v=v1"><link rel="stylesheet" href="./contact_v1.css?v=v1"><script src="./mapping_split_recovery.js?v=v1"></script><script src="./mapping_split_navigation_fix.js?v=v1"></script><script src="./mapping_progress_interactions_v3.js?v=v1"></script><script src="./mapping_v1_interactions.js?v=v1"></script><script src="./contact_v1.js?v=v1"></script><script src="./hotspot_freshness_live.js?v=v1"></script>')
             body = html.replace(marker, marker + injected).encode("utf-8")
             self.send_response(200)
             self.send_header("Content-Type", "text/html; charset=utf-8")

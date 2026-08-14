@@ -6,7 +6,7 @@ from functools import partial
 from http.server import ThreadingHTTPServer
 from urllib.parse import urlparse
 
-import web_server_db as database_server
+from server import web_server_db as database_server
 from agent import mapping_db_pg
 from agent.settings import load_config
 from agent.sources.glm import GLMClient

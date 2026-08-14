@@ -60,8 +60,8 @@ docs/                  PRD 映射、使用指南和数据存储说明
 runs/                  每次执行的产出
 web/                   看板页面、JSON 数据和下载文件
 run_agent.py           命令行入口
-web_server_v1.py        正式看板启动入口
-web_server_*.py        v1 调用的后台依赖模块
+web_server_v1.py        正式看板启动入口（唯一公开启动文件）
+server/                  v1 调用的后台服务模块（内部实现）
 ```
 
 ## 命令行工作流

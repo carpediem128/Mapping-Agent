@@ -2,7 +2,7 @@ from __future__ import annotations
 
 import os
 
-import web_server_db
+from server import web_server_db
 from agent import mapping_db_pg
 
 

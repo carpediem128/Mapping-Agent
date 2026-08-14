@@ -10,8 +10,8 @@ from http.server import ThreadingHTTPServer
 from pathlib import Path
 from urllib.parse import urlparse
 
-import web_server_db
-import web_server_product_fixed as base
+from server import web_server_db
+from server import web_server_product_fixed as base
 from agent.models import RunContext
 from agent.pipeline import InvestmentPipeline
 from agent.settings import ROOT, load_config
@@ -78,7 +78,7 @@ class ProductFastDashboardHandler(base.ProductDashboardHandler):
 
 
 def run_server(port: int = 4173) -> None:
-    import web_server_customer
+    from server import web_server_customer
 
     threading.Thread(target=web_server_customer.base._refresh_when_stale, daemon=True).start()
     handler = partial(ProductFastDashboardHandler, directory=str(ROOT / "web"))
