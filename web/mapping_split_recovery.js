@@ -52,7 +52,7 @@
     old.dataset.view = "primary-mappings"; old.dataset.split = "primary-mappings"; old.href = "#primary-mappings"; old.innerHTML = "<span>05</span>\u4e00\u7ea7\u5e02\u573a Mapping";
     var two = old.cloneNode(true); two.dataset.view = "secondary-mappings"; two.dataset.split = "secondary-mappings"; two.href = "#secondary-mappings"; two.innerHTML = "<span>06</span>\u4e8c\u7ea7\u5e02\u573a Mapping"; old.parentNode.insertBefore(two, old.nextSibling);
     var imp = n.querySelector('a[data-view="imports"]'); if (imp) { imp.innerHTML = "<span>07</span>\u5bfc\u5165\u4e0e\u914d\u7f6e"; }
-    document.querySelectorAll(".sidebar-heading, #sidebar-topic-list").forEach(function (x) { x.remove(); });
+    document.querySelectorAll(".sidebar-divider, .sidebar-heading, #sidebar-topic-list").forEach(function (x) { x.remove(); });
     n.querySelectorAll("a[data-split]").forEach(function (link) { link.addEventListener("click", function (event) { event.preventDefault(); show(link.dataset.split); }); });
   }
   function show(view) { document.querySelectorAll(".view-panel").forEach(function (p) { p.classList.toggle("active", p.dataset.view === view); }); document.querySelectorAll("a[data-split]").forEach(function (a) { a.classList.toggle("active", a.dataset.split === view); }); history.replaceState(null, "", "#" + view); }

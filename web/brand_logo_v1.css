@@ -1,0 +1,48 @@
+/* Brand-only refinement layered over the known-good v1 interface. */
+.brand {
+  gap: 12px;
+  padding-top: 5px;
+  padding-bottom: 20px;
+}
+
+.brand-mark {
+  position: relative;
+  width: 44px;
+  height: 44px;
+  flex: 0 0 44px;
+  overflow: hidden;
+  border: 0;
+  border-radius: 0;
+  background: #40cfc1;
+  color: transparent;
+  clip-path: polygon(24% 2%, 76% 2%, 98% 24%, 98% 76%, 76% 98%, 24% 98%, 2% 76%, 2% 24%);
+}
+
+.brand-mark::before {
+  position: absolute;
+  inset: 2px;
+  content: "";
+  background: #132334;
+  clip-path: inherit;
+}
+
+.brand-mark::after {
+  position: absolute;
+  inset: 0;
+  display: grid;
+  place-items: center;
+  content: "IM";
+  color: #73e3d8;
+  font-size: 14px;
+  font-weight: 800;
+  letter-spacing: 0;
+}
+
+.brand strong {
+  font-size: 13px;
+  line-height: 1.18;
+}
+
+.brand small {
+  margin-top: 5px;
+}
