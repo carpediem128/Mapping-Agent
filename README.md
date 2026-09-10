@@ -41,7 +41,7 @@
 在仓库根目录执行：
 
 ```powershell
-pip install -r requirements.txt
+python -m pip install -r requirements.txt
 python -m web_server_v1
 ```
 
@@ -190,6 +190,18 @@ web_server_v1.py       正式看板启动入口
 
 - `docs/USER_GUIDE.md`
 - `docs/PRD_EXECUTION_MAP.md`
-- `docs/PRD_V1_1.md`：当前产品流程、交付格式和验收边界。
+- `docs/PRD_V1_1.md`：已更新至 v1.2，包含产品流程、API、Agent 编排、上传下载、SQLite/JSON、语义处理、行情刷新和技术边界。
+
+### 行情刷新排查
+
+使用 Python 3.12（当前 multipart 上传依赖 cgi），建议为项目建立独立虚拟环境。必须使用启动网站的同一个 Python 安装依赖，不要混用系统 pip。
+
+```powershell
+python -m pip install --upgrade -r requirements.txt
+python -c "import akshare; print(akshare.__version__)"
+python -m scripts.refresh_market_data_enhanced
+```
+
+服务存活时每30分钟检查刷新；关闭电脑不会继续运行。周期采集日志在 `runs/market_refresh/`。采集时间与日线核验日期分开；未知日期不以当天替代。备用数据和缺失字段按实际返回展示，不保证免费源持续可用。
 - `docs/MARKET_DATA_REFRESH.md`
 - `docs/DATABASE_WORKFLOW.md`

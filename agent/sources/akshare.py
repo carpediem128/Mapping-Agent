@@ -19,6 +19,8 @@ class AKShareClient:
 
     def __post_init__(self) -> None:
         self.secondary_data: list[dict[str, Any]] = []
+        self.concept_constituents = {}
+        self.board_available = True
         self.last_news_meta: dict[str, Any] = {}
 
     @classmethod
@@ -117,6 +119,7 @@ class AKShareClient:
                 rows.append({
                     "rank": len(rows) + 1,
                     "name": name,
+                    "board_code": str(record.get("板块代码") or ""),
                     "topic_type": "概念",
                     "primary_industry": _industry_for(name, concept_keywords),
                     "topic_tags": _topic_tags(name, concept_keywords),
@@ -133,7 +136,11 @@ class AKShareClient:
             for index, item in enumerate(rows[:20], start=1):
                 item["rank"] = index
             rows = rows[:20]
-            detail_meta = self._collect_company_details(ak, rows)
+            self.board_available = frame is not None and len(frame) > 0
+            from agent.market_runtime import verify_market_date
+            date_meta = verify_market_date(ak, rows if self.board_available else [])
+            detail_meta = self._collect_company_details(ak, rows) if rows else {}
+            detail_meta["date_verification"] = date_meta
             return rows, {"status": "ok", "provider": "akshare", "endpoint": "stock_board_concept_name_em", "fund_flow_endpoint": "stock_fund_flow_concept", "raw_rows": int(len(source_records)), "matched_rows": len(rows), "board_rows": int(len(frame)) if frame is not None else 0, "fund_rows": len(fund_records), "fund_error": fund_error, "board_error": board_error, "detail": detail_meta}
         except Exception as exc:  # noqa: BLE001 - fall back to explicit demo status.
             return [], {"status": "error", "provider": "akshare", "endpoint": "stock_board_concept_name_em", "error": f"{type(exc).__name__}: {exc}"}
@@ -229,7 +236,7 @@ class AKShareClient:
                     prefix = "sh" if code.startswith("6") else "bj" if code.startswith(("4", "8", "9")) else "sz"
                     try:
                         daily = ak.stock_zh_a_daily(symbol=f"{prefix}{code}", start_date=(datetime.now() - timedelta(days=45)).strftime("%Y%m%d"), end_date=datetime.now().strftime("%Y%m%d"), adjust="")
-                        latest = _frame_records(daily, limit=2)
+                        latest = _frame_records(daily.tail(2), limit=2)
                         if latest:
                             last = latest[-1]
                             shares = _number(last.get("outstanding_share"), 0)
@@ -264,7 +271,12 @@ class AKShareClient:
                 board = str(hotspot.get("name") or "")
                 candidates: list[dict[str, Any]] = []
                 try:
-                    candidates = _frame_records(ak.stock_board_concept_cons_em(symbol=board), limit=3)
+                    if not self.board_available:
+                        raise RuntimeError("概念行情端点不可用，本轮跳过重复的成分股请求")
+                    frame = ak.stock_board_concept_cons_em(symbol=hotspot.get("board_code") or board)
+                    frame = frame.sort_values("涨跌幅", ascending=False)
+                    candidates = _frame_records(frame, limit=3)
+                    self.concept_constituents[board] = candidates
                 except Exception as exc:
                     errors.append(f"stock_board_concept_cons_em({board}): {type(exc).__name__}: {exc}")
                 if candidates:

@@ -33,7 +33,8 @@ class V1DashboardHandler(ResearchRoutes, base.ProductFastDashboardHandler):
 
 
 def run_server(port: int = 4173) -> None:
-    threading.Thread(target=web_server_daily._refresh_when_stale, daemon=True).start()
+    from agent.market_runtime import refresh_loop
+    threading.Thread(target=refresh_loop, daemon=True).start()
     server = ThreadingHTTPServer(("127.0.0.1", port), partial(V1DashboardHandler, directory=str(ROOT / "web")))
     print(f"Hardtech Mapping v1: http://127.0.0.1:{port}/")
     try:

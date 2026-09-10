@@ -33,14 +33,16 @@ def _leader_text(row: dict[str, Any]) -> str:
     return f"{name}（{code}）|板块领涨标的" if code else f"{name}|板块领涨标的"
 
 
-def enrich_leaders(ak: Any, hotspots: list[dict[str, Any]], errors: list[str]) -> None:
+def enrich_leaders(ak: Any, hotspots: list[dict[str, Any]], errors: list[str], cached=None) -> None:
     for hotspot in hotspots:
         board = str(hotspot.get("name") or "").strip()
         if not board:
             continue
         try:
-            frame = ak.stock_board_concept_cons_em(symbol=board)
-            records = frame.to_dict("records") if hasattr(frame, "to_dict") else []
+            records = (cached or {}).get(board, [])
+            if not records:
+                frame = ak.stock_board_concept_cons_em(symbol=hotspot.get("board_code") or board)
+                records = frame.to_dict("records") if hasattr(frame, "to_dict") else []
             change_keys = ("涨跌幅", "涨跌幅(%)", "涨跌")
             records.sort(key=lambda row: max((_number(row.get(key), -999) for key in change_keys), default=-999), reverse=True)
             leaders = [_leader_text(row) for row in records[:3]]
@@ -83,6 +85,8 @@ def enrich_financials(ak: Any, secondary_data: list[dict[str, Any]], errors: lis
 
 
 def main() -> None:
+    from agent.market_runtime import limit_request_timeouts
+    limit_request_timeouts()
     config = load_config()
     client = AKShareClient.from_config(config)
     rows, market_meta = client.fetch_hotspots(
@@ -93,22 +97,30 @@ def main() -> None:
     errors: list[str] = []
     try:
         import akshare as ak
-        enrich_leaders(ak, rows, errors)
+        if client.board_available:
+            enrich_leaders(ak, rows, errors, client.concept_constituents)
+        else:
+            errors.append("概念行情端点不可用，领涨标的仅保留备用资金流接口返回结果")
         financial_meta = enrich_financials(ak, client.secondary_data, errors)
     except Exception as exc:  # noqa: BLE001
         financial_meta = {"endpoint": "stock_financial_abstract_ths", "enriched_companies": 0, "attempted_companies": len(client.secondary_data)}
         errors.append(f"akshare_enrichment: {type(exc).__name__}: {exc}")
     symbols = [str(item.get("code") or "") for item in client.secondary_data]
     news, news_meta = client.fetch_news(symbols=symbols)
-    date = datetime.now().strftime("%Y%m%d")
+    date_meta = (market_meta.get("detail") or {}).get("date_verification", {})
+    date = date_meta.get("date", "")
     top20 = rows[:20]
     detail = market_meta.setdefault("detail", {})
     detail["financial"] = financial_meta
     detail["leader_count"] = 3
     detail["enrichment_errors"] = errors[:30]
+    market_meta["endpoint"] = "stock_board_concept_name_em" if market_meta.get("board_rows") else "stock_fund_flow_concept"
+    market_meta["status"] = "partial" if market_meta.get("board_error") or market_meta.get("fund_error") or errors or detail.get("errors") else market_meta.get("status", "error")
     hotspots = {
         "date": date,
-        "market_summary": f"AKShare 实时行情已采集：原始 {market_meta.get('raw_rows', 0)} 个，硬科技匹配 {len(top20)} 个；每个赛道展示前三领涨标的。",
+        "collected_at": datetime.now().astimezone().isoformat(timespec="seconds"),
+        "date_verification": date_meta,
+        "market_summary": f"AKShare 已采集：原始 {market_meta.get('raw_rows', 0)} 个概念，硬科技匹配 {len(top20)} 个；领涨标的按接口可用结果展示，最多三家。",
         "data_status": "akshare_ok" if rows else "error",
         "market_source": market_meta,
         "news_source": news_meta,
@@ -121,12 +133,13 @@ def main() -> None:
     data_path = ROOT / "web" / "data" / "site_data.json"
     data = json.loads(data_path.read_text(encoding="utf-8"))
     if not rows and (data.get('hotspots') or {}).get('top20'):
-        data['market_refresh_error'] = {'at': datetime.now().isoformat(timespec='seconds'), 'message': '行情接口未返回数据，保留上次快照', 'detail': errors[:10]}
+        data['market_refresh_error'] = {'at': datetime.now().isoformat(timespec='seconds'), 'message': '行情接口未返回数据，保留上次快照', 'detail': [market_meta.get('error', ''), *errors[:10]], 'market_source': market_meta}
         serialized = dumps_json(data, ensure_ascii=False, indent=2)
         data_path.write_text(serialized, encoding='utf-8')
         (ROOT / 'web' / 'data' / 'site_data.js').write_text('window.__MAPPING_SITE_DATA__ = ' + serialized + '\n', encoding='utf-8')
         return
     data["generated_at"] = datetime.now().isoformat(timespec="seconds")
+    data.pop("market_refresh_error", None)
     data["hotspots"] = hotspots
     data["industry_stats"] = _build_industry_stats({"top20": top20}, data.get("mappings", []))
     stats = data.setdefault("stats", {})
