@@ -31,6 +31,8 @@ def read_sheet_as_dicts(path: Path, sheet_name: str | None = None) -> list[dict[
     out: list[dict[str, Any]] = []
     for row in rows[1:]:
         item = {headers[i]: row[i] if i < len(row) else "" for i in range(len(headers)) if headers[i]}
+        if str(row[0] or '').startswith('备注：') and not item.get('公司名称'):
+            continue
         if any(str(v or "").strip() for v in item.values()):
             out.append(item)
     wb.close()

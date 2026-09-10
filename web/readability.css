@@ -1,0 +1,25 @@
+/* Shared reading sizes; preserve the existing seven-page layout. */
+body{font-size:15px;line-height:1.6;font-family:Inter,"PingFang SC","Microsoft YaHei",sans-serif;letter-spacing:0}
+.view-panel p,.view-panel label,.view-panel input,.view-panel select{font-size:15px}
+.view-panel small,.metrics small,.mapping-topic-card small,.mapping-sector-card small,.topic-meta,.muted{font-size:14px;color:#526475;line-height:1.6}
+.view-panel th,.view-panel td{font-size:14px;line-height:1.6}
+.mapping-topic-card strong,.mapping-sector-card strong{font-size:17px}
+.panel-head h2{font-size:29px}
+.subtitle{font-size:17px;color:#d1dce7}
+.run-meta{font-size:13px;color:#d1dce7}
+.search{min-width:0;max-width:100%}
+.panel-head>*{min-width:0}
+#research-desk{padding:18px 22px;background:#edf7f5;border-bottom:2px solid #287c75;font-size:16px;box-shadow:0 3px 12px #183d3512}
+#research-desk .research-controls{gap:16px}
+#research-desk .research-controls>strong{font-size:20px;font-weight:750;color:#155d56;white-space:nowrap}
+#research-desk input{height:48px;padding:11px 14px;font-size:16px;border-color:#93b8b3;box-sizing:border-box}
+#research-desk input::placeholder{color:#586e73;opacity:1}
+#research-desk button{min-height:46px;font-size:15px;font-weight:600}
+#research-form>button{background:#126c61;color:#fff;border-color:#126c61;padding:10px 22px;box-shadow:0 2px 4px #126c6120}
+#research-form>button:hover{background:#095a50}
+#research-desk input:focus-visible,#research-desk button:focus-visible{outline:3px solid #d09d43;outline-offset:2px}
+#research-live{font-size:14px;color:#425d61;line-height:1.5}
+#research-desk .research-job{font-size:15px}
+#research-desk .research-job small{font-size:14px;color:#526475}
+#research-desk th,#research-desk td{font-size:14px}
+@media(max-width:700px){#research-desk{padding:12px}#research-desk .research-controls{gap:10px}#research-desk .research-controls>strong{font-size:18px}#research-form>button{padding:10px 14px}#research-live{flex-basis:100%;max-width:100%}}

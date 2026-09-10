@@ -21,8 +21,16 @@ class ExportTests(unittest.TestCase):
             for sheet in wb:
                 self.assertEqual([c.value for c in sheet[1]],columns)
                 self.assertEqual(sheet.max_column,12)
-                self.assertIn('https://example.com/round',sheet['B2'].comment.text)
+                self.assertEqual(sheet.max_row, 3)
+                self.assertTrue(sheet['A3'].value.startswith('备注：'))
+                self.assertEqual(sheet.auto_filter.ref, 'A1:L2')
+                self.assertFalse(any(cell.comment for row in sheet for cell in row))
             wb.close()
+            from scripts.merge_mapping_files import read_workbook
+            from agent.io.excel import read_sheet_as_dicts
+            _, records = read_workbook(path)
+            self.assertEqual(len(records), 2)
+            self.assertEqual(len(read_sheet_as_dicts(path)), 1)
 
     def test_old_chinese_date_is_not_current_proof(self):
         row={'公司名称':'Example','融资时间':'2020年','字段证据':json.dumps({'上市状态':['S1']})}

@@ -57,6 +57,8 @@ def read_workbook(path: Path) -> tuple[list[dict[str, Any]], list[dict[str, Any]
                 continue
             topic = fields.get(headers[0], "")
             company = company_value(fields)
+            if not company and topic.startswith('备注：'):
+                continue
             records.append({
                 "id": f"{label}|{worksheet.title}|{row_number}",
                 "source_label": label,
