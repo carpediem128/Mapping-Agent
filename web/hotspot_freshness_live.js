@@ -21,7 +21,7 @@
       var fresh = date >= expected && hotspots.data_status === "akshare_ok";
       var status = document.getElementById("hotspot-status");
       var summary = document.getElementById("market-summary");
-      if (status) status.textContent = fresh ? "AKShare 已接入 · 数据日 " + dateText : "AKShare 正在刷新 · 当前缓存 " + dateText;
+      if (status) status.textContent = fresh ? "AKShare 已接入 · 数据日 " + dateText : (data.market_refresh_error ? "行情刷新失败 · 历史快照 " : "AKShare 正在刷新 · 当前缓存 ") + dateText;
       if (summary && fresh) summary.textContent = (hotspots.market_summary || "暂无大盘概况") + " · 数据日：" + dateText + " · 看板生成：" + String(data.generated_at || "").replace("T", " ");
       if (fresh && reloadWhenFresh) {
         window.location.reload();

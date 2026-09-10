@@ -120,6 +120,12 @@ def main() -> None:
     }
     data_path = ROOT / "web" / "data" / "site_data.json"
     data = json.loads(data_path.read_text(encoding="utf-8"))
+    if not rows and (data.get('hotspots') or {}).get('top20'):
+        data['market_refresh_error'] = {'at': datetime.now().isoformat(timespec='seconds'), 'message': '行情接口未返回数据，保留上次快照', 'detail': errors[:10]}
+        serialized = dumps_json(data, ensure_ascii=False, indent=2)
+        data_path.write_text(serialized, encoding='utf-8')
+        (ROOT / 'web' / 'data' / 'site_data.js').write_text('window.__MAPPING_SITE_DATA__ = ' + serialized + '\n', encoding='utf-8')
+        return
     data["generated_at"] = datetime.now().isoformat(timespec="seconds")
     data["hotspots"] = hotspots
     data["industry_stats"] = _build_industry_stats({"top20": top20}, data.get("mappings", []))
