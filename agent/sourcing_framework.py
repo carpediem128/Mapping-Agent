@@ -1,4 +1,5 @@
 """Deterministic discovery coverage for evidence-led deal sourcing."""
+import json
 
 PATHS = (
     ('bom', 'BOM价值量', 'BOM 成本拆解 高价值 零部件 供应商', True),
@@ -15,10 +16,67 @@ PATHS = (
     ('cluster', '产业集群', '展商名单 行业协会 产业园 重点项目', False),
 )
 
+INVESTMENT_FIELDS = ['细分赛道', '技术路线', '主要客户', '市占率', '收入/利润',
+                     '产能/良率', '当前估值', '股东结构', '行业变化', '投资逻辑', '待验证问题']
+
+
+def execution_report(plan, evidence, query_log, errors, companies):
+    """Audit actual searches and field citations, not the existence of a plan."""
+    failed = {item['query'] for item in errors}
+    coverage = []
+    for path in plan['discovery_paths']:
+        ids = [sid for sid, s in evidence.items()
+               if path['query'] in s.get('queries', [s.get('query')])]
+        coverage.append({**path, 'executed': path['query'] in query_log,
+                         'failed': path['query'] in failed, 'source_ids': ids,
+                         'source_count': len(ids)})
+    records = []
+    for row in companies:
+        citations = row.get('字段证据', '{}')
+        citations = json.loads(citations) if isinstance(citations, str) else citations
+        used = {sid for ids in citations.values() for sid in ids if sid in evidence}
+        records.append({'公司名称': row['公司名称'],
+                        '发现路径': [p['name'] for p in coverage if used.intersection(p['source_ids'])],
+                        '字段证据': citations,
+                        '缺失字段': [f for f in INVESTMENT_FIELDS if not row.get(f)],
+                        '投资吸引力': '待判断', '交易可行性': '待判断',
+                        '优先级': '待人工评估'})
+    return {'coverage': coverage, 'companies': records,
+            'all_paths_executed': all(p['executed'] for p in coverage),
+            'uncovered_paths': [p['name'] for p in coverage if not p['source_count']],
+            'policy': '路径有来源不代表证据独立或覆盖充分；二维判断需人工确认。'}
+
 
 def discovery_paths(topic):
     return [{'id': key, 'name': name, 'priority': priority,
              'query': f'{topic} {terms}'} for key, name, terms, priority in PATHS]
+
+
+def select_candidates(candidates, evidence, plan, limit=30):
+    """Round-robin paths so funding-heavy results cannot consume the shortlist budget."""
+    valid = []
+    for candidate in candidates:
+        if not isinstance(candidate, dict) or not isinstance(candidate.get('name'), str):
+            continue
+        ids = candidate.get('source_ids', [])
+        if isinstance(ids, list) and any(sid in evidence for sid in ids):
+            valid.append(candidate)
+    groups = []
+    for path in plan['discovery_paths']:
+        groups.append([c for c in valid if any(path['query'] in evidence[sid].get('queries', [evidence[sid].get('query')])
+                                               for sid in c['source_ids'] if sid in evidence)])
+    groups.append(valid)
+    selected = []
+    while any(groups) and len(selected) < limit:
+        for group in groups:
+            while group:
+                name = group.pop(0)['name'].strip()
+                if name and name not in selected:
+                    selected.append(name)
+                    break
+            if len(selected) >= limit:
+                break
+    return selected
 
 
 def enrich_plan(topic, plan):

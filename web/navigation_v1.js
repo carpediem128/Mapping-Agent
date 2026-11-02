@@ -30,6 +30,10 @@
     });
 
     pendingRoute = "";
+    var sidebar = document.querySelector('.sidebar');
+    if (sidebar) sidebar.classList.remove('mobile-open');
+    var menu = document.querySelector('.workspace-menu');
+    if (menu) menu.setAttribute('aria-expanded', 'false');
     if (updateHistory && window.location.hash !== "#" + route) {
       history.pushState(null, "", "#" + route);
     }

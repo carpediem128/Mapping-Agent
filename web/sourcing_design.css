@@ -1,0 +1,64 @@
+/* Quiet research workspace: colour is reserved for selection, status and data. */
+body{background:#f5f6f7;font-size:15px;letter-spacing:0}
+#topbar{background:#fff!important;color:#183335!important;padding:24px 32px!important;min-height:0!important;border-bottom:1px solid #dce3e5}
+#topbar::before,#topbar::after{display:none!important}
+#topbar h1{font-size:30px!important;color:#183335!important;letter-spacing:0!important}
+#topbar .subtitle,#topbar .run-meta{color:#5b6f73!important}
+.metrics{margin-top:0!important;padding-top:20px!important;gap:12px!important}
+.metrics article{border:1px solid #dce3e5!important;border-radius:6px!important;box-shadow:none!important;padding:18px!important}
+.metrics article::before{display:none!important}
+.metrics strong{font-size:30px!important}
+.sidebar{background:#19282a!important;border-radius:0!important;box-shadow:none!important}
+.app-frame{box-shadow:none!important;background:#eef3f2!important}
+.sidebar{background:#eef3f2!important;border-right:1px solid #dce3e5!important}
+.sidebar .brand,.sidebar .brand strong,.sidebar .side-nav a{color:#253e42!important}
+.sidebar .brand small{color:#65777a!important}
+.sidebar .brand-mark{color:#176e62!important;border-color:#176e62!important}
+.sidebar .side-nav a.active{background:#dce8e4!important;color:#154d42!important}
+.sidebar .brand{border-bottom:1px solid #d5dfdc!important}
+.main-column{background:#fff!important}
+.metrics article{background:transparent!important;border:0!important;border-right:1px solid #dce3e5!important;border-radius:0!important}
+.metrics article:last-child{border-right:0!important}
+.metrics{border-bottom:1px solid #dce3e5;padding-bottom:20px!important}
+.side-nav a{border-radius:5px!important;font-size:14px!important;min-height:46px}
+.main-column{min-width:0}
+.hero{background:#fff!important;color:#172c30!important;padding:28px!important;min-height:0!important;border-bottom:1px solid #dce3e5}
+.hero h1{font-size:30px!important;color:#172c30!important;letter-spacing:0!important}
+.hero p{color:#596c70!important}
+.panel,.view-panel{border-radius:6px!important;box-shadow:none!important}
+h2{font-size:21px!important;letter-spacing:0!important}
+.mapping-sector-card{border-radius:6px!important;box-shadow:none!important;padding:18px!important}
+table{font-variant-numeric:tabular-nums}
+th{background:#f1f5f5!important;color:#41575c!important;font-size:13px!important}
+td{font-size:14px!important;line-height:1.6}
+input,select,button{border-radius:5px!important}
+#research-desk{border-bottom:1px solid #b9d2ce!important;box-shadow:none!important;padding:16px 24px!important}
+#research-desk form button{background:#176e62!important;color:white!important;font-weight:600}
+#research-live{font-size:13px!important}
+#research-desk details p{margin:5px 0;font-size:13px}
+#research-jobs{max-height:36vh!important;background:#fff;padding:0 12px}
+@media(max-width:700px){.hero{padding:20px!important}.hero h1{font-size:24px!important}#research-desk{padding:12px!important}}
+.panel.overview-panel{background:#fff!important}
+button,.primary-button,#research-desk button,.app-frame,.main-column,.metrics,.view-panel,.panel{box-shadow:none!important}
+#topbar .eyebrow{color:#176e62!important;font-size:13px!important;letter-spacing:0!important;text-transform:none!important}
+.section-kicker{font-size:13px!important;letter-spacing:0!important;text-transform:none!important}
+.side-nav a,.side-nav a.active,.brand-mark{box-shadow:none!important;filter:none!important}
+.sidebar .brand small{color:#506569!important}
+.sidebar .side-nav a span{color:#526b70!important}
+.sidebar .side-nav a::before{color:#536c70!important}
+.sidebar .side-nav a.active::before{color:#176e62!important}
+.workspace-menu{display:none}
+td.numeric-cell{text-align:right!important;font-variant-numeric:tabular-nums}
+@media(max-width:700px){
+ .metrics{display:grid!important;grid-template-columns:repeat(2,minmax(0,1fr))!important;gap:0!important;padding:12px!important}
+ .metrics article{min-height:110px!important;padding:12px!important;border-bottom:1px solid #dce3e5!important}
+ .metrics article:nth-child(even){border-right:0!important}
+ #topbar{padding:20px!important}
+ #topbar .run-meta{margin-top:16px!important}
+ .sidebar{position:relative!important;padding:12px 16px!important;min-height:0!important;height:auto!important}
+ .sidebar .brand{margin:0!important;padding:0!important;border:0!important}
+ .workspace-menu{display:block;position:absolute;right:16px;top:20px;border:1px solid #baccc8;background:white;color:#253e42;padding:8px 12px}
+ body .shell .app-frame aside.sidebar nav.side-nav{display:none!important}
+ body .shell .app-frame aside.sidebar.mobile-open nav.side-nav{display:flex!important;margin-top:16px}
+}
+@media(max-width:700px){#topbar h1{font-size:24px!important}#research-desk{padding:16px!important}}
