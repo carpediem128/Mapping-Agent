@@ -29,8 +29,17 @@
   function init() {
     Promise.all([fetch("./data/site_data.json?progress=" + Date.now(), { cache: "no-store" }).then(function (r) { return r.json(); }), fetch("./data/mapping_sources.json?progress=" + Date.now(), { cache: "no-store" }).then(function (r) { return r.json(); })]).then(function (v) {
       data = v[0].contact_progress || {}; sourceData = v[1];
-      [{ id: "primary-mappings-overview", level: P }, { id: "secondary-mappings-overview", level: S }].forEach(function (e) {
+      [{ id: "overview-coverage", level: P }, { id: "primary-mappings-overview", level: P }, { id: "secondary-mappings-overview", level: S }].forEach(function (e) {
         var target = document.getElementById(e.id); if (!target) return;
+        if (e.id === "overview-coverage") target.addEventListener("click", function (event) {
+          var bar = event.target.closest('[data-progress-theme]'); if (!bar) return;
+          var entry = document.querySelector('.side-nav a[href="#primary-mappings"]');
+          if (entry) entry.click();
+          window.setTimeout(function () {
+            var card = document.querySelector('[data-view="primary-mappings"] [data-title="' + CSS.escape(bar.dataset.progressTheme) + '"]');
+            if (card) card.click();
+          }, 150);
+        });
         target.addEventListener("click", function (event) { var card = event.target.closest(".mapping-topic-card"); if (!card) return; var panel = target.closest(".mapping-split-panel"), left = panel && panel.querySelector('[data-title="' + CSS.escape(card.dataset.theme || "") + '"]'); if (left) left.click(); });
         new MutationObserver(function () { if (!target.dataset.progressBusy) sync(target, e.level); }).observe(target, { childList: true });
         draw(target, e.level);
