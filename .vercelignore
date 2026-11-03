@@ -1,0 +1,6 @@
+/*
+!/vercel.json
+!/deploy/
+/deploy/*
+!/deploy/vercel/
+!/deploy/vercel/**

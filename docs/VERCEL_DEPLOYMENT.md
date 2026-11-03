@@ -2,6 +2,14 @@
 
 ## 当前状态
 
+### Ready 但首页404的排查与修正
+
+构建现在通过 `build.cjs` 显式生成 Build Output API v3：一个 `api/gateway.func` Node.js 函数，以及全站指向该函数的路由。构建日志应出现 `MAPPING_GATEWAY_BUILD_V2`，Deployment 的输出中应有1个函数。仓库根目录和 `deploy/vercel` 均提供对应的 `vercel.json`，两者均可作为 Root Directory；推荐仍选择后者。不要选 `web` 或 `deploy`，也不要手动设置静态 Output Directory。
+
+截图中的旧提交 `7bd85d5` 尚未包含这一修正。部署最新提交，而不是在旧部署上反复 Redeploy；关闭旧缓存。如果最新部署没有上述构建标记，检查实际 Root Directory、构建覆盖和部署提交。若有函数仍404，需要查看真实构建输出与路由日志，不能只依据 Ready 认定成功。
+
+没有配置后端和账号时，正确进入网关会返回503配置未完成；配置完成但未登录会返回401。这两者与Vercel平台404不同，也不代表完整网站已经上线。
+
 本次准备了配置和隔离入口，尚未在云端部署。Vercel CLI 65.10.0 的账号检查结果为 Logged out；用户当前尚无后端服务器。没有创建收费资源，没有上传联系人、Excel、API Key 或本地数据库。完成代码测试不等于完成云端验收。
 
 ## 架构

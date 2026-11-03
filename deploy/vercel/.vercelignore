@@ -1,5 +1,6 @@
-*
-!api/
-!api/gateway.js
-!package.json
-!vercel.json
+/*
+!/api/
+!/api/gateway.js
+!/package.json
+!/vercel.json
+!/build.cjs

@@ -3,6 +3,24 @@ const assert=require('node:assert/strict');
 const {authenticate,targetURL}=require('./api/gateway.js');
 const handler=require('./api/gateway.js');
 const {Readable}=require('node:stream');
+const fs=require('node:fs');
+const os=require('node:os');
+const path=require('node:path');
+const {build}=require('./build.cjs');
+
+test('explicit build contains one executable gateway and catch-all route only',()=>{
+ const root=fs.mkdtempSync(path.join(os.tmpdir(),'mapping-build-'));
+ try{
+  const output=build(root);
+  const config=JSON.parse(fs.readFileSync(path.join(output,'config.json'),'utf8'));
+  assert.deepEqual(config,{version:3,routes:[{src:'/(.*)',dest:'/api/gateway'}]});
+  const dir=path.join(output,'functions','api','gateway.func');
+  assert.deepEqual(fs.readdirSync(dir).sort(),['.vc-config.json','index.js']);
+  assert.equal(JSON.parse(fs.readFileSync(path.join(dir,'.vc-config.json'),'utf8')).runtime,'nodejs22.x');
+  assert.equal(typeof require(path.join(dir,'index.js')),'function');
+  assert.deepEqual(fs.readdirSync(output).sort(),['config.json','functions']);
+ }finally{fs.rmSync(root,{recursive:true,force:true});}
+});
 test('requires a named account and correct password',()=>{
  const auth=s=>'Basic '+Buffer.from(s).toString('base64');
  assert.equal(authenticate(auth('colleague:example-pass'),{colleague:'example-pass'}),'colleague');
