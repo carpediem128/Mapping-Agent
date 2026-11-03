@@ -54,6 +54,42 @@ body,input,button,select,textarea{font-family:Georgia,'Noto Serif SC','Songti SC
 .reference-theme-list button{display:flex;align-items:center;gap:10px;flex-shrink:0;padding:6px 12px;background:#faf6ee!important;border:1px solid #ded4c5!important;border-radius:10px!important;color:#343e2c!important;font-size:15px;cursor:pointer}
 .reference-theme-list button strong{font-weight:600}.reference-theme-list button strong::before{content:'';display:inline-block;width:7px;height:7px;border-radius:50%;background:#6a8258;margin-right:8px}
 .reference-theme-list button:hover{background:#e8eddf!important}
+/* Metrics live inside the banner; working pages use a compact header. */
+#topbar{display:block!important;min-height:224px!important;padding:28px 32px!important}
+#topbar>div:first-child{max-width:44%}
+#topbar h1{font-size:43px!important}
+#topbar .subtitle{font-size:16px!important;line-height:1.65}
+#topbar .metrics{position:absolute!important;z-index:2;right:20px;bottom:18px;margin:0!important;width:53%;padding:12px 8px!important;display:grid!important;grid-template-columns:repeat(5,minmax(0,1fr))!important;gap:0!important;background:rgba(251,248,241,.68)!important;border:1px solid #e0d9c9!important;border-radius:10px!important;box-shadow:none!important}
+#topbar .metrics article,#topbar .metrics article:first-child{padding:0 9px!important;min-height:90px!important;border-bottom:0!important}
+#topbar .metrics article>span{margin-left:23px;min-height:25px;font-size:12px!important;white-space:nowrap}
+#topbar .reference-metric-icon,#topbar .metrics article:first-child .reference-metric-icon{left:7px;top:2px;width:20px;height:20px;background:transparent;border-radius:4px}
+#topbar .reference-metric-icon svg{width:17px;height:17px;stroke-width:1.7}
+#topbar .metrics article>strong{display:block;font-size:23px!important;margin:3px 0!important;color:#5c6951!important;opacity:.82;font-weight:500!important;font-variant-numeric:lining-nums tabular-nums}
+#topbar .metrics article>strong::after{content:attr(data-unit);font-size:11px;margin-left:4px;color:#59674f}
+#topbar .metrics article>small{display:none!important}
+.metric-mini-viz{display:block;width:80px;max-width:100%;height:28px}
+#topbar.compact-header{min-height:128px!important;padding:24px 28px!important}
+#topbar.compact-header>div:first-child{max-width:29%}
+#topbar.compact-header h1{font-size:25px!important;line-height:1.5}
+#topbar.compact-header .eyebrow,#topbar.compact-header .subtitle,#topbar.compact-header .run-meta{display:none!important}
+#topbar.compact-header .metrics{width:65%;top:12px;bottom:auto}
+@media(prefers-reduced-motion:no-preference){.reference-metric-icon:hover svg{transform:rotate(-8deg) scale(1.1)}.reference-metric-icon svg{transition:transform .25s cubic-bezier(.16,1,.3,1)}}
+@media(min-width:701px) and (max-width:1150px){
+ #topbar,#topbar.compact-header{min-height:0!important;padding:22px!important}
+ #topbar>div:first-child,#topbar.compact-header>div:first-child{max-width:100%}
+ #topbar h1{font-size:32px!important}#topbar .run-meta{display:none!important}
+ #topbar .metrics,#topbar.compact-header .metrics{position:relative!important;inset:auto!important;width:100%;margin-top:18px!important}
+ #topbar.compact-header .metrics{margin-top:8px!important}
+}
+@media(max-width:700px){
+ #topbar,#topbar.compact-header{min-height:0!important;padding:20px 14px!important}
+ #topbar>div:first-child,#topbar.compact-header>div:first-child{max-width:100%}
+ #topbar h1{font-size:29px!important}#topbar.compact-header h1{font-size:22px!important}
+ #topbar .run-meta{display:none!important}
+ #topbar .metrics,#topbar.compact-header .metrics{position:relative!important;inset:auto!important;width:100%;margin-top:16px!important;display:flex!important;overflow-x:auto;padding:10px 4px!important}
+ #topbar .metrics article,#topbar .metrics article:first-child{flex:0 0 105px;min-height:88px!important;border-right:1px solid #e4dacc!important}
+ #topbar .metrics article:last-child{border-right:0!important}
+}
 .metrics{margin:18px 9px 0!important;padding:22px 28px!important;border:1px solid #e3d9cb!important;border-radius:15px!important;background:#fbf7f1!important;gap:0!important;box-shadow:0 3px 8px #4e402e05!important}
 .metrics article{position:relative;padding:0 24px!important;min-height:116px!important;border-right:1px solid #e4dacc!important}
 .metrics article:first-child{padding-left:12px!important}

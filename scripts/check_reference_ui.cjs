@@ -10,11 +10,20 @@ const assert=require('node:assert/strict');
   await page.waitForFunction(()=>document.querySelectorAll('.reference-metric-icon svg').length===5);
   await page.locator('.reference-theme-list button').first().waitFor();
   await page.locator('#primary-mappings .mapping-sector-card').first().waitFor({state:'attached'});
+  assert.equal(await page.locator('#topbar .metrics').count(),1);
+  assert.equal(await page.locator('.metric-mini-viz').count(),5);
+  assert.equal(await page.locator('#metric-hotspots').getAttribute('data-unit'),'个');
+  const original=await page.locator('#metric-hotspots').textContent();
+  await page.locator('#metric-hotspots').evaluate(el=>el.textContent='25');
+  await page.waitForFunction(()=>document.querySelector('.metric-mini-viz').getAttribute('aria-label').includes('25个'));
+  assert.equal(await page.locator('.metric-mini-viz').first().locator('rect').count(),6);
+  await page.locator('#metric-hotspots').evaluate((el,value)=>el.textContent=value,original);
   const routes=['overview','hotspots','industries','contacts','primary-mappings','secondary-mappings','imports'];
   for(const route of routes){
    await page.locator(`.side-nav a[href="#${route}"]`).click();
    await page.locator(`.view-panel.active[data-view="${route}"]`).waitFor({state:'visible'});
    await page.waitForTimeout(450);
+   assert.equal(await page.locator('#topbar').evaluate(e=>e.classList.contains('compact-header')),route!=='overview');
    await page.screenshot({path:`runs/reference-${route}.png`});
   }
   await page.locator('.reference-metric-icon').first().click();
