@@ -1,0 +1,5 @@
+*
+!api/
+!api/gateway.js
+!package.json
+!vercel.json

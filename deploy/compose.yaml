@@ -1,0 +1,18 @@
+services:
+  backend:
+    build:
+      context: ..
+      dockerfile: deploy/backend.Dockerfile
+    restart: unless-stopped
+    env_file: .env.production
+    ports:
+      - "127.0.0.1:4173:4173"
+    volumes:
+      - ./state/data:/app/web/data
+      - ./state/artifacts:/app/web/artifacts
+      - ./state/runs:/app/runs
+    healthcheck:
+      test: ["CMD", "python", "-c", "import urllib.request; urllib.request.urlopen('http://127.0.0.1:4173/healthz', timeout=5)"]
+      interval: 30s
+      timeout: 6s
+      retries: 3

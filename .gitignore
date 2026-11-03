@@ -9,6 +9,9 @@ runs/
 web/artifacts/
 web/data/free_storage_backups/
 *.log
+.vercel/
+deploy/.env.production
+deploy/state/
 web/data/contact_updates.db*
 
 # Local credentials and machine-specific configuration

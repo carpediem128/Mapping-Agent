@@ -1,0 +1,14 @@
+.git
+.agents
+.taste-skill
+.env*
+**/.env*
+deploy/state
+**/__pycache__
+**/node_modules
+runs
+web/data
+web/artifacts
+config/local_config.json
+**/*.key
+**/*.pem

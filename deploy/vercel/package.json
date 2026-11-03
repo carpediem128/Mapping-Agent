@@ -1,0 +1,7 @@
+{
+  "name": "mapping-agent-gateway",
+  "private": true,
+  "version": "1.0.0",
+  "engines": {"node": "22.x"},
+  "scripts": {"test": "node --test gateway.test.cjs"}
+}
