@@ -42,10 +42,27 @@ export function topicModel(mapping, contacts=[]) {
  return {recordCount,topics:[...topics.values()].map(t=>({...t,companies:[...t.companies.values()]})).sort((a,b)=>b.companies.length-a.companies.length||a.name.localeCompare(b.name))};
 }
 let pending;
+let current;
+export async function confirmContact(company,reached) {
+ const response=await fetch('/api/contact-confirmations',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({company,reached})});
+ if(!response.ok)throw Error('保存失败，请稍后重试');
+ const result=await response.json();
+ if(current){
+   const item=current.contacts.find(c=>c.key===result.key);
+   if(item){item.flags.reached=result.reached;if(result.reached)item.flags.attempted=true;else item.flags.attempted=item.records.some(r=>contactFlags(r).attempted);}
+   window.dispatchEvent(new CustomEvent('contact-confirmed',{detail:result}));
+ }
+ return result;
+}
 export function loadWorkspace() {
  if(!pending)pending=Promise.all(['site_data.json','mapping_sources.json'].map(name=>fetch(new URL('./data/'+name,import.meta.url),{cache:'no-store'}).then(r=>{if(!r.ok)throw Error('数据读取失败 HTTP '+r.status);return r.json();}))).then(([site,mapping])=>{
    const contacts=contactsModel(site.contact_progress?.rows||[]);
-   return {site,mapping,contacts,graph:topicModel(mapping,contacts)};
+   return fetch('/api/contact-confirmations',{cache:'no-store'}).then(async response=>{
+     if(!response.ok)throw Error('联系确认记录读取失败');
+     const updates=(await response.json()).confirmations||{};
+     for(const c of contacts)if(updates[c.key]){c.flags.reached=updates[c.key].reached;if(c.flags.reached)c.flags.attempted=true;}
+     current={site,mapping,contacts,graph:topicModel(mapping,contacts)};return current;
+   });
  }).catch(e=>{pending=undefined;throw e});
  return pending;
 }

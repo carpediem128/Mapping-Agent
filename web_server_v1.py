@@ -10,6 +10,7 @@ from server import web_server_daily
 from server import web_server_product_fast as base
 from agent.settings import ROOT
 from server.research_routes import ResearchRoutes
+from server.contact_routes import ContactRoutes
 
 STYLE_ASSETS = ['mapping_ui_fix.css', 'mapping_split.css', 'mapping_progress.css',
                 'contact_v1.css', 'v1_design.css', 'brand_logo_v1.css',
@@ -19,7 +20,7 @@ SCRIPT_ASSETS = ['mapping_split_recovery.js', 'mapping_split_navigation_fix.js',
                  'contact_v1.js', 'hotspot_freshness_live.js', 'research_desk.js']
 
 
-class V1DashboardHandler(ResearchRoutes, base.ProductFastDashboardHandler):
+class V1DashboardHandler(ContactRoutes, ResearchRoutes, base.ProductFastDashboardHandler):
     server_version = "HardtechMappingServer/1.0"
 
     def do_GET(self) -> None:

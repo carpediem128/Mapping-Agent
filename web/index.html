@@ -45,6 +45,7 @@
           </section>
 
           <section class="view-panel active" data-view="overview" id="overview">
+            <section class="attention-overview" aria-labelledby="attention-title"><header><h2 id="attention-title">研究与市场方向</h2><p id="attention-date"></p></header><div class="attention-columns"><div><h3>一级研究覆盖</h3><div id="primary-attention"></div></div><div><h3>二级市场关注</h3><div id="market-attention"></div></div></div></section>
             <section class="terminal-coverage" aria-label="一级市场研究覆盖"><header><h2>研究覆盖</h2><span>Primary market coverage</span></header><div id="overview-coverage"></div></section>
             <div class="panel overview-panel">
               <div class="panel-head"><div><div class="section-kicker">01 / WORKSPACE</div><h2>研究工作台</h2><p>从左侧选择环节，当前页面只展示对应工作内容。</p></div><span class="status-tag" id="overview-status">运行状态</span></div>
@@ -147,6 +148,7 @@
     <script type="importmap">{"imports":{"three":"./vendor/three/three.module.js"}}</script>
     <script defer src="./vendor/d3.min.js"></script>
     <script type="module" src="./contact_funnel.mjs?v=1"></script>
+  <script type="module" src="./attention_overview.mjs?v=1"></script>
     <script type="module" src="./topic_network.mjs?v=1"></script>
   </body>
 </html>

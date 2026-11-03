@@ -9,6 +9,7 @@ runs/
 web/artifacts/
 web/data/free_storage_backups/
 *.log
+web/data/contact_updates.db*
 
 # Local credentials and machine-specific configuration
 .env.*

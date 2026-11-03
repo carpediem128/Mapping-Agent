@@ -52,3 +52,16 @@
  .network-layout{display:block}.network-scene{height:470px;margin:0 -8px}.network-inspector{border-left:0;border-top:1px solid #e2dacd;padding:18px 4px;max-height:420px}
  .network-node-label{max-width:120px;padding:4px 6px}.network-node-label strong{font-size:13px}
 }
+.attention-overview{padding:24px 12px;border-bottom:1px solid #dfd8cc;margin-bottom:20px}
+.attention-overview h2{font-size:26px;margin:0 0 10px}.attention-overview p{font-size:14px;color:#626956;line-height:1.7}
+.attention-columns{display:grid;grid-template-columns:1fr 1.4fr;gap:28px}.attention-columns h3{font-size:19px;margin:8px 0 14px}
+#primary-attention,#market-attention{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px;min-height:400px}
+#primary-attention .attention-tile:last-child:nth-child(odd){grid-column:1/-1}
+#market-attention{grid-template-columns:repeat(4,minmax(0,1fr))}
+.attention-tile{border:1px solid #d7dccf;border-radius:6px;padding:14px 12px;text-align:left;min-height:86px;background:rgba(106,133,87,var(--intensity));color:#182714;transition:transform .18s,box-shadow .18s}
+.attention-tile[data-palette=market]{background:rgba(103,143,158,var(--intensity));color:#172d35;border-color:#c9d8d9}
+.attention-overview button.attention-tile{color:#182714!important}.attention-overview button.attention-tile[data-palette=market]{color:#172d35!important}
+.attention-tile strong{display:block;font-size:16px;line-height:1.4;overflow-wrap:anywhere;color:inherit!important}.attention-tile span{display:block;font-size:14px;margin-top:7px;color:inherit!important}.attention-tile:hover{transform:translateY(-3px);box-shadow:0 4px 12px #33452d18}.attention-tile:focus-visible{outline:2px solid #33452d;outline-offset:2px}
+.contact-confirm{width:20px;height:20px;accent-color:#526e42;cursor:pointer}.contact-confirm:disabled{opacity:.4}#contact-save-status{font-size:14px;color:#526348;min-height:22px}
+@media(max-width:800px){.attention-columns{grid-template-columns:1fr}.attention-tile{min-height:80px}#primary-attention,#market-attention{min-height:0;grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(prefers-reduced-motion:reduce){.attention-tile{transition:none}}

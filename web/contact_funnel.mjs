@@ -35,6 +35,7 @@ function draw(stats){
 }
 function render(){
  const stats=funnelStats(companies,selected);
+ const all=funnelStats(companies);$('contacted-count').textContent=all.reached;
  $('contact-funnel-title').textContent=selected||'全部行业';
  $('contact-funnel-meta').textContent=`${stats.total} 家公司 · 有联系方式 ${stats.withContact} 家`;
  document.querySelectorAll('#contact-industry-tags button').forEach(b=>b.setAttribute('aria-pressed',String(b.dataset.industry===selected)));
@@ -60,6 +61,7 @@ async function init(){
    $('contact-industry-filter').addEventListener('change',e=>{selected=clean(e.target.value);render();});
    const replay=document.createElement('button');replay.type='button';replay.textContent='重播';replay.className='funnel-replay';replay.setAttribute('aria-label','重播联系漏斗');replay.onclick=()=>render();document.querySelector('.contact-overview-head').append(replay);
    render();
+   window.addEventListener('contact-confirmed',render);
    // Replay only when this page becomes visible; respect reduced-motion CSS.
    new MutationObserver(()=>{if($('contacts').classList.contains('active'))render();}).observe($('contacts'),{attributes:true,attributeFilter:['class']});
  }catch(e){$('contact-funnel-meta').textContent='联系进展暂时不可用';$('contact-funnel-note').textContent=e.message;}
