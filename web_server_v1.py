@@ -11,18 +11,39 @@ from server import web_server_product_fast as base
 from agent.settings import ROOT
 from server.research_routes import ResearchRoutes
 
+STYLE_ASSETS = ['mapping_ui_fix.css', 'mapping_split.css', 'mapping_progress.css',
+                'contact_v1.css', 'v1_design.css', 'brand_logo_v1.css',
+                'research_desk.css', 'readability.css']
+SCRIPT_ASSETS = ['mapping_split_recovery.js', 'mapping_split_navigation_fix.js',
+                 'mapping_progress_interactions_v3.js', 'mapping_v1_interactions.js',
+                 'contact_v1.js', 'hotspot_freshness_live.js', 'research_desk.js']
+
 
 class V1DashboardHandler(ResearchRoutes, base.ProductFastDashboardHandler):
     server_version = "HardtechMappingServer/1.0"
 
     def do_GET(self) -> None:
+        asset_path = urlparse(self.path).path
+        if asset_path in ('/dashboard_bundle.css', '/dashboard_bundle.js'):
+            css = asset_path.endswith('.css')
+            files = STYLE_ASSETS if css else SCRIPT_ASSETS
+            separator = '\n' if css else '\n;\n'
+            body = separator.join((ROOT / 'web' / name).read_text(encoding='utf-8') for name in files).encode('utf-8')
+            self.send_response(200)
+            self.send_header('Content-Type', ('text/css' if css else 'application/javascript') + '; charset=utf-8')
+            self.send_header('Content-Length', str(len(body)))
+            self.send_header('Cache-Control', 'no-cache')
+            self.end_headers()
+            self.wfile.write(body)
+            return
         if urlparse(self.path).path == "/":
             html = (ROOT / "web" / "index.html").read_text(encoding="utf-8")
             marker = '<script src="./app.js?v=20260715"></script>'
             injected = ('<link rel="stylesheet" href="./mapping_ui_fix.css?v=v1"><link rel="stylesheet" href="./mapping_split.css?v=v1"><link rel="stylesheet" href="./mapping_progress.css?v=v1"><link rel="stylesheet" href="./contact_v1.css?v=v1"><link rel="stylesheet" href="./v1_design.css?v=reference"><link rel="stylesheet" href="./brand_logo_v1.css?v=v2"><script src="./mapping_split_recovery.js?v=routes6"></script><script src="./mapping_split_navigation_fix.js?v=v1"></script><script src="./mapping_progress_interactions_v3.js?v=v1"></script><script src="./mapping_v1_interactions.js?v=v1"></script><script src="./contact_v1.js?v=v1"></script><script src="./hotspot_freshness_live.js?v=v1"></script>')
             preload = '<script>window.__dashboardInitialRoute = location.hash.replace("#", "");</script><script src="./navigation_v1.js?v=routes4"></script>'
             research = '<link rel="stylesheet" href="./research_desk.css?v=2"><link rel="stylesheet" href="./readability.css?v=1"><script defer src="./research_desk.js?v=1"></script>'
-            body = html.replace(marker, preload + marker + injected + research).encode("utf-8")
+            injected = '<link rel="stylesheet" href="./dashboard_bundle.css?v=reference"><script defer src="./dashboard_bundle.js?v=reference"></script>'
+            body = html.replace(marker, preload + marker + injected).encode("utf-8")
             self.send_response(200)
             self.send_header("Content-Type", "text/html; charset=utf-8")
             self.send_header("Content-Length", str(len(body)))
@@ -32,10 +53,15 @@ class V1DashboardHandler(ResearchRoutes, base.ProductFastDashboardHandler):
         super().do_GET()
 
 
+class DashboardHTTPServer(ThreadingHTTPServer):
+    # Browsers request the dashboard's many legacy assets concurrently.
+    request_queue_size = 128
+
+
 def run_server(port: int = 4173) -> None:
     from agent.market_runtime import refresh_loop
     threading.Thread(target=refresh_loop, daemon=True).start()
-    server = ThreadingHTTPServer(("127.0.0.1", port), partial(V1DashboardHandler, directory=str(ROOT / "web")))
+    server = DashboardHTTPServer(("127.0.0.1", port), partial(V1DashboardHandler, directory=str(ROOT / "web")))
     print(f"Hardtech Mapping v1: http://127.0.0.1:{port}/")
     try:
         server.serve_forever()
