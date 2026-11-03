@@ -8,7 +8,7 @@ const fs = require('fs');
   await page.goto('http://127.0.0.1:4173/#hotspots');
   await page.locator('#research-desk').waitFor();
   await page.getByLabel('研究主题', {exact:true}).fill('玻璃基板 TGV');
-  const routes=['overview','hotspots','industries','contacts','primary-mappings','secondary-mappings','imports'];
+  const routes=['overview','hotspots','contacts','primary-mappings','secondary-mappings','imports','topic-network'];
   const checks=[];
   for(const route of routes){
     await page.locator(`.side-nav a[href="#${route}"]`).click();

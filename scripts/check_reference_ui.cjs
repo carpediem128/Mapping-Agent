@@ -18,7 +18,7 @@ const assert=require('node:assert/strict');
   await page.waitForFunction(()=>document.querySelector('.metric-mini-viz').getAttribute('aria-label').includes('25个'));
   assert.equal(await page.locator('.metric-mini-viz').first().locator('rect').count(),6);
   await page.locator('#metric-hotspots').evaluate((el,value)=>el.textContent=value,original);
-  const routes=['overview','hotspots','industries','contacts','primary-mappings','secondary-mappings','imports'];
+  const routes=['overview','hotspots','contacts','primary-mappings','secondary-mappings','imports','topic-network'];
   for(const route of routes){
    await page.locator(`.side-nav a[href="#${route}"]`).click();
    await page.locator(`.view-panel.active[data-view="${route}"]`).waitFor({state:'visible'});

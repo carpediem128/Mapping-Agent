@@ -88,6 +88,7 @@ function setupNavigation() {
 }
 
 function showView(view) {
+  if (view === 'industries') view = 'contacts';
   document.querySelectorAll(".view-panel").forEach((panel) => {
     panel.classList.toggle("active", panel.dataset.view === view);
   });

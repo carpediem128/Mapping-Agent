@@ -1,0 +1,54 @@
+.contact-legacy[hidden],.contact-layout,#industries{display:none!important}
+.contact-overview{margin:24px 0 30px;border-top:1px solid #e0d8cb;padding-top:22px}
+.contact-overview-head{display:flex;align-items:center;gap:16px;flex-wrap:wrap;margin-bottom:18px}
+.contact-overview-head h3{font-size:22px!important;margin:0}.contact-overview-head>span{color:#67705d;font-size:14px}
+.contact-overview-head .funnel-replay{margin-left:auto}
+.contact-funnel-layout{display:grid;grid-template-columns:210px minmax(0,1fr);gap:28px;align-items:start}
+#contact-industry-tags{display:flex;flex-direction:column;gap:6px;max-height:490px;overflow:auto;padding-right:12px;border-right:1px solid #e1d8cb}
+#contact-industry-tags button{display:flex;justify-content:space-between;align-items:center;gap:12px;min-height:42px;border:0;background:transparent;padding:8px 12px;border-radius:7px;text-align:left;cursor:pointer;color:#44523a}
+#contact-industry-tags button[aria-pressed="true"]{background:#e1e6d5!important;color:#293e20!important;font-weight:700}
+#contact-industry-tags small{font-size:12px;color:#68735f;white-space:nowrap}
+.contact-funnel-main{min-width:0}.contact-funnel-main h4{font-size:20px;font-weight:500;margin:0 0 4px;color:#33452d}
+#contact-funnel{display:block;width:100%;max-height:380px;min-height:220px;font-family:Georgia,'SimSun',serif}
+.funnel-stage-summary{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px;padding:12px 0}
+.funnel-stage-summary div{display:grid;gap:6px}.funnel-stage-summary span{font-size:12px;color:#67705d}.funnel-stage-summary strong{font-size:19px;color:#33452d;font-weight:500}
+.chart-source{font-size:12px!important;line-height:1.7!important;color:#68735f!important;margin:14px 0 0}
+.funnel-replay,.network-controls button{padding:7px 12px;border:1px solid #c7d0bb;background:#faf7f0;border-radius:6px;cursor:pointer;color:#405734}
+.network-heading{display:flex;align-items:center;justify-content:space-between;gap:22px;padding:10px 12px 20px;border-bottom:1px solid #e2dacd}
+.network-heading h2{font-size:28px!important;margin:6px 0;color:#253b1d}.network-heading p{margin:0;font-size:14px;color:#65705b}
+.network-controls{display:flex;gap:8px;flex-wrap:wrap;flex-shrink:0}.network-controls button[disabled]{opacity:.5;cursor:default}
+.network-toolbar{display:flex;align-items:center;justify-content:space-between;padding:18px 12px;gap:18px;flex-wrap:wrap}
+.network-toolbar label{display:flex;gap:12px;align-items:center;font-size:14px;color:#65705b}.network-toolbar input{width:260px;max-width:100%;padding:8px 12px}
+#network-breadcrumb{font-size:19px;color:#33452d}
+.network-layout{display:grid;grid-template-columns:minmax(0,1fr) 260px;gap:22px;min-width:0}
+.network-scene{position:relative;min-width:0;height:610px;overflow:hidden;background:transparent;isolation:isolate}
+#network-canvas{width:100%;height:100%;touch-action:none;cursor:grab}#network-canvas:active{cursor:grabbing}
+#network-canvas canvas{display:block;width:100%;height:100%;outline:none}
+#network-labels{position:absolute;inset:0;pointer-events:none}
+.network-node-label{position:absolute;pointer-events:auto;max-width:150px;border:0;background:rgba(251,247,241,.9);padding:5px 9px;border-radius:4px;color:#33452d;cursor:pointer;white-space:nowrap;box-shadow:none}
+.network-node-label strong{display:block;font-size:14px;font-weight:600}.network-node-label small{font-size:12px;color:#65705b}
+.network-node-label[data-selected="true"]{background:#e3e8d8}
+#network-render-status{position:absolute;bottom:8px;left:12px;font-size:12px;color:#65705b;pointer-events:none}
+.network-inspector{border-left:1px solid #e2dacd;padding-left:20px;min-width:0;max-height:610px;overflow:auto}
+#network-selection{padding:0 0 16px;border-bottom:1px solid #e2dacd;margin-bottom:12px;overflow-wrap:anywhere}
+#network-selection h3{font-size:20px!important;margin:0 0 8px}#network-selection p{font-size:13px;line-height:1.75;margin:7px 0}
+#network-selection dl{margin:10px 0;font-size:13px}#network-selection dt{color:#68735f;margin-top:10px}#network-selection dd{margin:3px 0 0;line-height:1.7;color:#33452d}
+#network-list{display:grid;gap:5px}#network-list button{display:flex;gap:9px;align-items:center;justify-content:space-between;width:100%;padding:9px 10px;border:0;border-radius:5px;text-align:left;background:transparent;color:#405734;cursor:pointer}
+#network-list button:hover,#network-list button[aria-pressed="true"]{background:#e5e9dc}
+#network-list button small{font-size:12px;color:#68735f;white-space:nowrap}
+.network-source{padding:12px;border-top:1px solid #e2dacd}
+.network-detail-link{display:inline-block;padding:7px 10px;margin-top:8px;border:1px solid #c7d0bb;border-radius:5px;background:#faf7f0;color:#405734}
+@media(prefers-reduced-motion:no-preference){
+ .funnel-tick{animation:funnel-appear .4s cubic-bezier(.16,1,.3,1) both;animation-delay:var(--delay)}
+ .funnel-thread{animation:funnel-appear .6s cubic-bezier(.16,1,.3,1) both;animation-delay:var(--delay)}
+ @keyframes funnel-appear{from{opacity:0;transform:translateY(-5px)}to{opacity:1;transform:translateY(0)}}
+}
+@media(prefers-reduced-motion:reduce){.funnel-tick,.funnel-thread{animation:none!important}}
+@media(max-width:1100px){.contact-funnel-layout{grid-template-columns:160px minmax(0,1fr);gap:18px}.network-layout{grid-template-columns:minmax(0,1fr) 210px;gap:12px}.network-heading{align-items:start;flex-direction:column}.network-scene{height:550px}}
+@media(max-width:700px){
+ .contact-funnel-layout{display:block}#contact-industry-tags{flex-direction:row;overflow:auto;border:0;padding:0 0 12px;margin-bottom:12px;max-height:none}#contact-industry-tags button{flex:0 0 auto}
+ #contact-funnel{min-height:180px}.funnel-stage-summary{grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}
+ .network-heading{padding:8px 4px 14px}.network-heading h2{font-size:25px!important}.network-toolbar{padding:14px 4px}.network-toolbar input{width:225px}
+ .network-layout{display:block}.network-scene{height:470px;margin:0 -8px}.network-inspector{border-left:0;border-top:1px solid #e2dacd;padding:18px 4px;max-height:420px}
+ .network-node-label{max-width:120px;padding:4px 6px}.network-node-label strong{font-size:13px}
+}

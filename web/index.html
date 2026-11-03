@@ -18,11 +18,11 @@
           <nav class="side-nav" aria-label="看板导航">
             <a class="active" href="#overview" data-view="overview"><span>01</span>概览</a>
             <a href="#hotspots" data-view="hotspots"><span>02</span>二级热点</a>
-            <a href="#industries" data-view="industries"><span>03</span>行业统计</a>
             <a href="#contacts" data-view="contacts"><span>04</span>联系总表</a>
             <a href="#primary-mappings" data-view="primary-mappings" data-split="primary-mappings"><span>05</span>一级市场 Mapping</a>
             <a href="#secondary-mappings" data-view="secondary-mappings" data-split="secondary-mappings"><span>06</span>二级市场 Mapping</a>
             <a href="#imports" data-view="imports"><span>07</span>导入与配置</a>
+            <a href="#topic-network" data-view="topic-network"><span>08</span>主题网络</a>
           </nav>
         </aside>
 
@@ -83,8 +83,12 @@
             <div class="panel">
               <div class="panel-head"><div><div class="section-kicker">04 / BD PIPELINE</div><h2>联系总表</h2><p id="contact-source">-</p></div></div>
               <div class="contact-metrics"><div><span>公司数</span><strong id="contact-rows">0</strong></div><div><span>有联系方式</span><strong id="contact-found">0</strong></div><div><span>覆盖率</span><strong id="contact-rate">0%</strong></div><div><span>已联系</span><strong id="contacted-count">0</strong></div><div><span>已约见</span><strong id="meeting-count">0</strong></div></div>
-              <div class="contact-layout"><div class="table-wrap"><h3>分行业覆盖</h3><table><thead><tr><th>赛道</th><th>项目</th><th>有联系方式</th><th>覆盖率</th></tr></thead><tbody id="contact-sector-body"></tbody></table></div><div class="table-wrap"><h3>BD 总表预览</h3><table><thead><tr><th>赛道</th><th>公司</th><th>联系方式</th><th>联系进展</th></tr></thead><tbody id="contact-preview-body"></tbody></table></div>
+              <div class="contact-legacy" hidden><div class="table-wrap"><table><tbody id="contact-sector-body"></tbody></table></div><div class="table-wrap"><table><tbody id="contact-preview-body"></tbody></table></div>
               </div>
+              <section class="contact-overview" aria-labelledby="contact-overview-title">
+                <div class="contact-overview-head"><h3 id="contact-overview-title">分行业联系进展</h3><span id="contact-funnel-meta" role="status">正在读取记录</span></div>
+                <div class="contact-funnel-layout"><nav id="contact-industry-tags" aria-label="行业标签"></nav><div class="contact-funnel-main"><h4 id="contact-funnel-title">全部行业</h4><svg id="contact-funnel" viewBox="0 0 800 370" role="img" aria-label="联系进展漏斗"></svg><div id="contact-funnel-stages" class="funnel-stage-summary"></div><p id="contact-funnel-note" class="chart-source"></p></div></div>
+              </section>
               <div class="contact-progress-section">
                 <div class="section-head-row"><div><h3>联系进度明细</h3><p>以招聘联系信息汇总表为主记录，Mapping 仅补充公司研究字段；同一公司多条进展会合并保留。</p></div><span class="status-tag" id="contact-progress-count">0 家</span></div>
                 <div class="contact-filter-row">
@@ -125,6 +129,12 @@
               <div class="config-grid"><div><span>API 地址</span><strong id="glm-base-url">-</strong></div><div><span>模型</span><strong id="glm-model">-</strong></div><div><span>环境变量</span><strong id="glm-api-env">GLM_API_KEY</strong></div><div><span>状态</span><strong id="glm-configured">未配置</strong></div></div>
             </div>
           </section>
+          <section class="view-panel" data-view="topic-network" id="topic-network">
+            <header class="network-heading"><div><div class="section-kicker">08 / RESEARCH ATLAS</div><h2>主题网络</h2><p id="network-summary" role="status">正在读取一级市场研究</p></div><div class="network-controls"><button id="network-home" type="button">全部主题</button><button id="network-motion" type="button" aria-pressed="false">暂停旋转</button><button id="network-reset" type="button">复位视角</button></div></header>
+            <div class="network-toolbar"><div id="network-breadcrumb">全部主题</div><label>搜索<input id="network-search" type="search" placeholder="主题 / 公司名称" aria-label="搜索主题或公司"></label></div>
+            <div class="network-layout"><div class="network-scene" id="network-scene"><div id="network-canvas" aria-label="交互式主题球形与公司网络"></div><div id="network-labels"></div><p id="network-render-status" role="status"></p></div><aside class="network-inspector"><div id="network-selection"></div><div id="network-list" aria-label="主题和公司列表"></div></aside></div>
+            <p class="chart-source network-source">来源：已导入 Mapping 的一级市场记录。主题连线仅表示研究归类，不代表供应、投资或合作关系。</p>
+          </section>
         </div>
       </div>
     </main>
@@ -133,6 +143,11 @@
     <link rel="stylesheet" href="./reference_design.css?v=1" />
     <script defer src="./vendor/lucide.min.js"></script>
     <script defer src="./reference_design.js?v=1"></script>
+    <link rel="stylesheet" href="./research_atlas.css?v=1" />
+    <script type="importmap">{"imports":{"three":"./vendor/three/three.module.js"}}</script>
+    <script defer src="./vendor/d3.min.js"></script>
+    <script type="module" src="./contact_funnel.mjs?v=1"></script>
+    <script type="module" src="./topic_network.mjs?v=1"></script>
   </body>
 </html>
 

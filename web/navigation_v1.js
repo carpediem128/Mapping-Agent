@@ -5,7 +5,7 @@
 
   function normalize(value) {
     var route = String(value || "").replace(/^#/, "");
-    return route === "mappings" ? "primary-mappings" : (route || "overview");
+    return route === "industries" ? "contacts" : route === "mappings" ? "primary-mappings" : (route || "overview");
   }
 
   var initialRoute = normalize(window.__dashboardInitialRoute || window.location.hash);
